@@ -1,0 +1,513 @@
+[
+    {
+        "ability": "את מתחילה בידיעה של שחקן טוב והדמות שלו. אם השד הורג אותם, את מתה בנוסף.",
+        "edition": "bmr",
+        "firstNight": 39,
+        "firstNightReminder": "תראה את האסימון של הדמות המסומנת, ותצביע על השחקן שזה הדמות שלו.",
+        "id": "he_IL_grandmother",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/grandmother.png?raw=true",
+        "name": "הסבתא",
+        "otherNight": 50,
+        "otherNightReminder": "אם נכד של הסבתא נהרג ע\"י השד בלילה: הסבתא מתה.",
+        "reminders": [
+            "נכד"
+        ],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אתה חייב להשתמש באסימון ההצבעה שלך כדי להצביע. שחקנים מתים רשאים לתת לך את שלהם אם הם בוחרים בכך. אם זה קורה, אתה לומד האם הם טובים או רעים. אתה פיקח ובריא.",
+        "edition": "tb",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_beggar",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/beggar.png?raw=true",
+        "name": "קבצן",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false,
+        "team": "traveler",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה*, תבחר שחקן: הוא מת. משרתים שאתה הורג שומרים את היכולת שלהם ומרעילים תושב-עיירה אחד ששכן להם. [-1 זר]",
+        "edition": "snv",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_vigormortis",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/vigormortis.png?raw=true",
+        "name": "ויגורמורטיס",
+        "otherNight": 32,
+        "otherNightReminder": "הויגורמורטיס מצביע על שחקן. הוא מת. אם משרת מת ככה, הוא משאיר את היכולת שלו ואחד מהשכנים שלו הופך למורעל.",
+        "reminders": [
+            "מת",
+            "יש יכולת",
+            "מורעל"
+        ],
+        "setup": true,
+        "team": "demon",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בלילה הראשון שלך, תסתכלי בגרימואר ותבחרי שחקן: הוא מורעל. שחקן טוב אחד יודע שהאלמנה במשחק.",
+        "edition": "",
+        "firstNight": 18,
+        "firstNightReminder": "תראה את הגרימואר לאלמנה לכמה זמן שהיא צריכה. האלמנה מצביעה על שחקן. השחקן הזה מורעל. תעיר שחקן טוב כלשהו. תראה לו את קלף \"הדמות הזו במשחק\" ואז את אסימון ה\"אלמנה\".",
+        "id": "he_IL_widow",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/widow.png?raw=true",
+        "name": "אלמנה",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [
+            "מורעל"
+        ],
+        "remindersGlobal": [
+            "יודע"
+        ],
+        "setup": false,
+        "team": "minion"
+    },
+    {
+        "ability": "בכל לילה*, תבחר שחקן: הוא מת. אם בחרת בעצמך בדרך הזו, משרת הופך להיות השדון.",
+        "edition": "tb",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_imp",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/imp.png?raw=true",
+        "name": "שדון",
+        "otherNight": 24,
+        "otherNightReminder": "השדון מצביע על שחקן. השחקן הזה מת. אם השדון בחר בעצמו בדרך הזו: תחליף את התפקיד של משרת חי אחד עם אסימון השדון המיותר. תראה לו את אסימון \"אתה\" ואת אסימון השדון.",
+        "reminders": [
+            "מת"
+        ],
+        "setup": false,
+        "team": "demon",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה, תבחר שחקן חי: אם בחרת בשד אתה מחליף דמויות וקבוצות איתו, ואז הוא מורעל.",
+        "edition": "snv",
+        "firstNight": 20,
+        "firstNightReminder": "מהפנט הנחשים מצביע על שחקן. אם השחקן הזה הוא השד: תחליף את הדמויות והקבוצות של השד ושל מהפנט הנחשים. תעיר כל אחד מהם ותראה להם את הדמות והקבוצה החדשה שלהם. מהפנט הנחשים החדש מורעל.",
+        "id": "he_IL_snakecharmer",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/snakecharmer.png?raw=true",
+        "name": "מהפנט נחשים",
+        "otherNight": 12,
+        "otherNightReminder": "מהפנט הנחשים מצביע על שחקן. אם השחקן הזה הוא השד: תחליף את הדמויות והקבוצות של השד ושל מהפנט הנחשים. תעיר כל אחד מהם ותראה להם את הדמות והקבוצה החדשה שלהם. מהפנט הנחשים החדש מורעל.",
+        "reminders": [
+            "מורעל"
+        ],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אתה לא יודע מה היכולת שלך. בכל יום, אתה יכול לנחש בפרטיות מה היכולת. אתה לומד כמה אתה קרוב.",
+        "edition": "",
+        "firstNight": 12,
+        "firstNightReminder": "תחליט מה היכולת של האמנזי. אם היכולת שלו גורמת לו לקום בלילה, תעיר את האמנזי ותבצע את הפעולה בהתאם.",
+        "id": "he_IL_amnesiac",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/amnesiac.png?raw=true",
+        "name": "אמנזי",
+        "otherNight": 5,
+        "otherNightReminder": "אם היכולת של האמנזי גורמת לו לקום בלילה, תעיר אותו ותבצע את הפעולה בהתאם.",
+        "reminders": [
+            "?"
+        ],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה*, תבחרי שחקן ודמות שהוא הופך אליה (אם לא במשחק). אם נוצר שד הלילה, מיתות הלילה יקבעו באופן שרירותי.",
+        "edition": "snv",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_pithag",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/pithag.png?raw=true",
+        "name": "קרואלה",
+        "otherNight": 17,
+        "otherNightReminder": "קרואלה מצביעה על שחקן ועל דמות בדף הדמויות. אם הדמות הזו לא במשחק, תעיר את השחקן ותראה לו \"אתה\" ואת אסימון הדמות הרלוונטית. אם הדמות הזו במשחק, כלום לא קורה.",
+        "reminders": [],
+        "setup": false,
+        "team": "minion",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "יש לך את היכולת של האדם האחרון שהוצא להורג. אם  הוא היה רע, אתה מורעל עד ששחקן טוב מת על ידי הוצאה להורג.",
+        "edition": "",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_cannibal",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/cannibal.png?raw=true",
+        "name": "קניבל",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [
+            "מורעל",
+            "מת היום"
+        ],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה, תבחר שחקן (חוץ מעצמך וממטיילים): אתה לומד דמות אחת רעה ואחת טובה, מתוכם אחד נכון.",
+        "edition": "snv",
+        "firstNight": 41,
+        "firstNightReminder": "החולמני מצביע על שחקן. תראה לו דמות אחת טובה ואחת רעה, כשאחת מהן היא הדמות האמיתית.",
+        "id": "he_IL_dreamer",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/dreamer.png?raw=true",
+        "name": "חולמני",
+        "otherNight": 57,
+        "otherNightReminder": "החולמני מצביע על שחקן. תראה לו דמות אחת טובה ואחת רעה, כשאחת מהן היא הדמות האמיתית.",
+        "reminders": [],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אתה חושב שאתה השד, אבל אתה לא. השד יודע מי אתה ואת מי אתה בוחר בלילה.",
+        "edition": "bmr",
+        "firstNight": 7,
+        "firstNightReminder": "אם יש 7 שחקנים או יותר: תראה למשוגע מספר משרתים שרירותיים, כמספר המשרתים שבמשחק. תראה למשוגע 3 אסימוני דמויות טובות שרירותיות. אם האסימון שהמשוגע קיבל הוא של שד שקם בלילה הראשון: הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
+        "id": "he_IL_lunatic",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/lunatic.png?raw=true",
+        "name": "משוגע",
+        "otherNight": 21,
+        "otherNightReminder": "הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
+        "reminders": [
+            "התקפה 1",
+            "התקפה 2",
+            "התקפה 3"
+        ],
+        "setup": false,
+        "team": "outsider",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה, תבחר שחקן ודמות טובה: הוא \"משוגע\" שהוא הדמות הזו מחר, או שהוא עלול למות.",
+        "edition": "snv",
+        "firstNight": 25,
+        "firstNightReminder": "הסרנובוס מצביע על שחקן ואז על דמות בדף שלו. תעיר את השחקן שנבחר. תראה את \"הדמות הזו בחרה אותך\" ואז את אסימון הסרנובוס. תראה את הדמות שנבחרה. אם השחקן לא \"משוגע\" שהוא הדמות הזו, הוא יכול למות.",
+        "id": "he_IL_cerenovus",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/cerenovus.png?raw=true",
+        "name": "סרנובוס",
+        "otherNight": 16,
+        "otherNightReminder": "הסרנובוס מצביע על שחקן ואז על דמות בדף שלו. תעיר את השחקן שנבחר. תראה את \"הדמות הזו בחרה אותך\" ואז את אסימון הסרנובוס. תראה את הדמות שנבחרה. אם השחקן לא \"משוגע\" שהוא הדמות הזו, הוא יכול למות.",
+        "reminders": [
+            "משוגע"
+        ],
+        "setup": false,
+        "team": "minion",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אתה מתחיל עם הידיעה ששחקן אחד מתוך שניים הוא משרת מסוים.",
+        "edition": "tb",
+        "firstNight": 34,
+        "firstNightReminder": "תראה אסימון של משרת שנמצא במשחק לחוקר. תצביע על שני שחקנים, כאשר אחד מהם הוא הדמות הזו.",
+        "id": "he_IL_investigator",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/investigator.png?raw=true",
+        "name": "חוקר",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [
+            "משרת",
+            "לא משרת"
+        ],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "כשאת מתה, שחקן אחד הוא שיכור מעכשיו והלאה.",
+        "edition": "snv",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_sweetheart",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/sweetheart.png?raw=true",
+        "name": "מותק",
+        "otherNight": 41,
+        "otherNightReminder": "אם המותק מתה, תבחר שחקן שיהיה שיכור.",
+        "reminders": [
+            "שיכור"
+        ],
+        "setup": false,
+        "team": "outsider",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה*, תבחר שחקן ותנחש מה הדמות שלו: אם ניחשת שגוי, אתה מת.",
+        "edition": "bmr",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_gambler",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/gambler.png?raw=true",
+        "name": "מהמר",
+        "otherNight": 11,
+        "otherNightReminder": "המהמר מצביע על שחקן, ועל דמות בדף הדמויות. אם זה לא נכון, המהמר מת.",
+        "reminders": [
+            "מת"
+        ],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל יום, אתה רשאי לבקר את מספר הסיפורים וללמוד 2 דברים: אחד מהם הוא אמת ואחד הוא שקר.",
+        "edition": "snv",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_savant",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/savant.png?raw=true",
+        "name": "מלומד",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה, אתה לומד שחקן אחד מכל סוג דמות, עד שאין יותר סוגים ללמוד (תושב-עיירה, זר, משרת, שד). [+1 זר]",
+        "edition": "",
+        "firstNight": 44,
+        "firstNightReminder": "בחר סוג דמות. הצבע על שחקן שדמותו מהסוג הנבחר. הנח את אסימון ה\"נראה\" של מפריח הבלונים ליד הדמות הזו.",
+        "id": "he_IL_balloonist",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/balloonist.png?raw=true",
+        "name": "מפריח הבלונים",
+        "otherNight": 63,
+        "otherNightReminder": "בחר סוג דמות שאין אסימון \"נראה\" ליד דמות מהסוג הזה כבר. הצבע על שחקן שדמותו מהסוג הנבחר, אם נשארו כאלה. הנח את אסימון ה\"נראה\" של מפריח הבלונים ליד הדמות הזו,.",
+        "reminders": [
+            "ראה תושב-עיירה",
+            "ראה זר",
+            "ראה משרת",
+            "ראה שד",
+            "ראה מטייל"
+        ],
+        "setup": true,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אתה מתחיל בידיעה של איזה זרים יש  במשחק. אם אחד מהם מת היום, תבחר שחקן הלילה: הוא מת. [-1 או +1 זר]",
+        "edition": "bmr",
+        "firstNight": 21,
+        "firstNightReminder": "תראה כל אסימון של זר שבמשחק לסנדק.",
+        "id": "he_IL_godfather",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/godfather.png?raw=true",
+        "name": "הסנדק",
+        "otherNight": 38,
+        "otherNightReminder": "אם זר מת היום: הסנדק מצביע על שחקן. השחקן הזה מת.",
+        "reminders": [
+            "מת היום",
+            "מת"
+        ],
+        "setup": true,
+        "team": "minion",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה*, תבחר שחקן: הוא מת. הזר הראשון שהיכולת הזו הורגת הופך לפאנג גו רע ואתה מת במקום [+1 זר]",
+        "edition": "snv",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_fanggu",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/fanggu.png?raw=true",
+        "name": "פאנג גו",
+        "otherNight": 29,
+        "otherNightReminder": "הפאנג גו מצביע על שחקן. השחקן הזה מת. או, אם השחקן הזה היה זר ואין עוד פאנג גו במשחק: הפאנג גו מת במקום השחקן שנבחר. השחקן שנבחר הוא עכשיו פאנג גו רשע. תעיר את הפאנג גו החדש. תראה לו את אסימון \"אתה\" ואת אסימון הפאנג גו. תראה לו את אסימון \"אתה\" ואגודל כלפי מטה שמסמן \"רשע\".",
+        "reminders": [
+            "מת",
+            "פעם אחת"
+        ],
+        "setup": true,
+        "team": "demon",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "פעם אחת במשחק, בלילה, בחר שחקן מת: הוא מקבל את היכולת שלו עד השחר.",
+        "edition": "snv",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_bonecollector",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/bonecollector.png?raw=true",
+        "name": "אספן העצמות",
+        "otherNight": 1,
+        "otherNightReminder": "אספן העצמות מנדנד את ראשו לשלילה או מצביע על שחקן מת. אם הוא הצביע על שחקן מת כלשהו, תשים את אסימון התזכורת \"יש יכולת\" של אספן העצמות על האסימון של השחקן המת. (יכול להיות שהוא יצטרך לקום בלילה).",
+        "reminders": [
+            "אין יכולת",
+            "יש יכולת"
+        ],
+        "setup": false,
+        "team": "traveler",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "פעם אחת במשחק, בלילה, תבחר דמות טובה: תקבל את היכולת שלה. אם הדמות הזו במשחק, השחקן שלה שיכור.",
+        "edition": "snv",
+        "firstNight": 2,
+        "firstNightReminder": "הפילוסוף מנדנד את ראשו לשלילה או מצביע על דמות טובה בדף הדמות שלו. אם הוא בחר בדמות: תחליף את האסימון של הדמות הזו עם האסימון של הפילוסוף. אם הדמות הזו במשחק, שים את סממן ה\"שיכור\" על הדמות ואת סממן \"לא הפילוסוף\" על הפילוסוף.",
+        "id": "he_IL_philosopher",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/philosopher.png?raw=true",
+        "name": "פילוסוף",
+        "otherNight": 2,
+        "otherNightReminder": "אם הפילוסוף עוד לא השתמש ביכולת שלו: הפילוסוף מנדנד את ראשו לשלילה או מצביע על דמות טובה בדף הדמות שלו. אם הוא בחר בדמות: תחליף את האסימון של הדמות הזו עם האסימון של הפילוסוף. אם הדמות הזו במשחק, שים את סממן ה\"שיכור\" על הדמות ואת סממן \"לא הפילוסוף\" על הפילוסוף.",
+        "remindersGlobal": [
+            "שיכור",
+            "לא הפילוסוף"
+        ],
+        "setup": false,
+        "team": "townsfolk",
+        "reminders": []
+    },
+    {
+        "ability": "בכל לילה*, תבחרי שחקן חי: אם הוא מסכים, את לומדת מה הדמות שלו, אבל שניכם עלולים למות.",
+        "edition": "snv",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_harlot",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/harlot.png?raw=true",
+        "name": "פרוצה",
+        "otherNight": 1,
+        "otherNightReminder": "הפרוצה מצביעה על שחקן כלשהו. אחר כך, תרדים את הפרוצה. תעיר את השחקן הנבחר, ותראה להם \"הדמות הזו בחרה אותך\" ואת אסימון ה\"פרוצה\". השחקן הזה מנענע בראשו לחיוב או מנדנד לשלילה. אם הוא נענע לחיוב, תעיר את הפרוצה ותראה לה את הדמות של השחקן הנבחר. לאחר מכן תחליט אם שניהם מתים.",
+        "reminders": [
+            "מת"
+        ],
+        "setup": false,
+        "team": "traveler",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אתה לא יודע שאתה שיכור. אתה חושב שאתה תושב-עיירה, אבל אתה לא.",
+        "edition": "tb",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_drunk",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/drunk.png?raw=true",
+        "name": "שיכור",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [],
+        "remindersGlobal": [
+            "שיכור"
+        ],
+        "setup": true,
+        "team": "outsider"
+    },
+    {
+        "ability": "בכל לילה, תבחר 2 שחקנים: אתה לומד האם אחד מהם הוא השד. יש שחקן טוב שנחשב עבורך כמו שד.",
+        "edition": "tb",
+        "firstNight": 37,
+        "firstNightReminder": "מגלה העתידות מצביע על שני שחקנים. תנענע בראשך לחיוב או תנדנד לשלילה לגבי האם אחד משניהם הוא השד.",
+        "id": "he_IL_fortuneteller",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/fortuneteller.png?raw=true",
+        "name": "מגלה עתידות",
+        "otherNight": 54,
+        "otherNightReminder": "מגלה העתידות מצביע על שני שחקנים. תנענע בראשך לחיוב או תנדנד לשלילה לגבי האם אחד משניהם הוא השד.",
+        "reminders": [
+            "הסחת דעת"
+        ],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אם אתה \"משתגע\" על זה שאתה זר, אתה עלול למות.",
+        "edition": "snv",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_mutant",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/mutant.png?raw=true",
+        "name": "מוטנט",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false,
+        "team": "outsider",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אתה מתחיל בידיעה של כמה זוגות של שחקנים רעים יש במשחק.",
+        "edition": "tb",
+        "firstNight": 35,
+        "firstNightReminder": "תסמן עם האצבעות (0,1,2,...) את מספר הזוגות של שחקנים שכנים רעים.",
+        "id": "he_IL_chef",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/chef.png?raw=true",
+        "name": "שף",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אם אתה מת בלילה, אתה מתעורר ובוחר שחקן: אתה לומד מה הדמות שלו.",
+        "edition": "tb",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_ravenkeeper",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/ravenkeeper.png?raw=true",
+        "name": "שומר העורבים",
+        "otherNight": 42,
+        "otherNightReminder": "אם שומר העורבים מת הלילה: שומר העורבים מצביע על שחקן, תראה לו את אסימון הדמות של השחקן הזה.",
+        "reminders": [],
+        "setup": false,
+        "team": "townsfolk",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בכל לילה, עד השחר 1) שחקן הופך לפיקח ובריא ומקבל את המידע הנכון או 2) היכולת שלו פועלת פעמיים. הבריסטה לומד מה קרה.",
+        "edition": "snv",
+        "firstNight": 1,
+        "firstNightReminder": "בחר שחקן, הער אותו וספר לו איזה מכוחות הבריסטה משפיע עליו. התייחס אליו בהתאם.",
+        "id": "he_IL_barista",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/barista.png?raw=true",
+        "name": "בריסטה",
+        "otherNight": 1,
+        "otherNightReminder": "בחר שחקן, הער אותו וספר לו איזה מכוחות הבריסטה משפיע עליו. התייחס אליו בהתאם.",
+        "reminders": [
+            "פיקח ובריא",
+            "יכולת פעמיים"
+        ],
+        "setup": false,
+        "team": "traveler",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "בלילה הראשון שלך, אתה מקבל יכולת של תושב-עיירה (אם אתה טוב) או של משרת (אם אתה רע).",
+        "edition": "bmr",
+        "firstNight": 1,
+        "firstNightReminder": "הראה למתמחה את קל, \"אתה\" ואז קלף של תושב-עיירה או משרת. החלף את האסימון של המתמחה בגרימואר באסימון של תושב-העיירה או המשרת שהראית לו, והוסף את התזכורת של המתמחה לידו.",
+        "id": "he_IL_apprentice",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/apprentice.png?raw=true",
+        "name": "מתמחה",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [
+            "המתמחה"
+        ],
+        "setup": false,
+        "team": "traveler",
+        "remindersGlobal": []
+    },
+    {
+        "ability": "אתה עלול להיחשב כרע וכמשרת או שד, אפילו אם אתה מת.",
+        "edition": "tb",
+        "firstNight": 0,
+        "firstNightReminder": "",
+        "id": "he_IL_recluse",
+        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/recluse.png?raw=true",
+        "name": "מתבודד",
+        "otherNight": 0,
+        "otherNightReminder": "",
+        "reminders": [],
+        "setup": false,
+        "team": "outsider",
+        "remindersGlobal": []
+    }
+]
