@@ -1,6 +1,7 @@
 from PIL import Image, ImageChops
 import requests
 from io import BytesIO
+import os
 
 def kebab2snake(m):
    return m.replace('-','_')
@@ -38,8 +39,12 @@ def url_to_image(url):
   '''
   turn white to transparent
   '''
-  response = requests.get(url)
-  img = Image.open(BytesIO(response.content))
+  if os.path.exists(os.path.exists(url)):
+    img = Image.open(url)
+  else:
+    print(url)
+    response = requests.get(url)
+    img = Image.open(BytesIO(response.content))
   # img = img.convert("RGBA")
   
   # pixdata = img.load()

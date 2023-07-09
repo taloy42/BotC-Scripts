@@ -11,20 +11,20 @@ def create_token(name,img,text):
   
   draw = ImageDraw.Draw(res)
   # add ability text
-  font = ImageFont.truetype(font='dorian2.ttf', size=20)
+  font = ImageFont.truetype(font=const.FONT_PATH, size=20)
   s = font.getsize(name)
   # draw.multiline_text(((W-s[0])//2,50),text,font=font,align='right',fill='black',)
-  font = get_optimal_multiline_font('dorian2.ttf',text,H*5/16,im_size=H)
+  font = get_optimal_multiline_font(const.FONT_PATH,text,H*5/16,im_size=H)
   draw_multiline(draw,res.size,font,text)
   # add name
   # font = ImageFont.truetype(font='dorian2.ttf', size=50)
-  font = get_optimal_font('dorian2.ttf',name,W*7/12)
+  font = get_optimal_font(const.FONT_PATH,name,W*7/12)
   s = font.getsize(name)
   draw.text(((W-s[0])//2,int(512*19/24)),name,font=font,align='right',fill='black')
 
   return res
 def create_token_ch(character):
-  image = utils.url_to_image(character['image'])
+  image = utils.url_to_image(character['image']).resize((const.IMG_SIZE,const.IMG_SIZE))
   return create_token(character['name'],image,character['ability'])
 # def cv2_to_PIL(img):
 #   img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -32,7 +32,7 @@ def create_token_ch(character):
 #   return im_pil
 def get_optimal_font_size(font_path,text,width,is_width=True):
   for size in range(50,1,-1):
-    font = ImageFont.truetype(font='dorian2.ttf', size=size)
+    font = ImageFont.truetype(font=font_path, size=size)
     s = font.getsize(text)
     
     if s[is_width] < width:
@@ -40,7 +40,7 @@ def get_optimal_font_size(font_path,text,width,is_width=True):
   return 1
 def get_optimal_font(font_path,text,width,is_height=False):
   for size in range(50,1,-1):
-    font = ImageFont.truetype(font='dorian2.ttf', size=size)
+    font = ImageFont.truetype(font=font_path, size=size)
     s = font.getsize(text)
     
     if s[int(is_height)] < width:
@@ -48,13 +48,13 @@ def get_optimal_font(font_path,text,width,is_height=False):
   return font
 def get_optimal_multiline_size(font_path,text,max_height,min_height=60,im_size=512):
   for size in range(50,1,-1):
-    font = ImageFont.truetype(font='dorian2.ttf', size=size)
+    font = ImageFont.truetype(font=font_path, size=size)
     if check_multiline_font(font,text,max_height,min_height,im_size):
       return size
   return 1
 def get_optimal_multiline_font(font_path,text,max_height,min_height=60,im_size=512):
   for size in range(50,1,-1):
-    font = ImageFont.truetype(font='dorian2.ttf', size=size)
+    font = ImageFont.truetype(font=font_path, size=size)
     if check_multiline_font(font,text,max_height,min_height,im_size):
       break
   return font
