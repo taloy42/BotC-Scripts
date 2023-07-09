@@ -3,6 +3,23 @@ import requests
 from io import BytesIO
 import os
 
+def change_dir(text):
+  text = text[::-1]
+  new_text = ''
+  for c in text:
+    match c:
+      case '[':
+        new_text+=']'
+      case ']':
+        new_text+='['
+      case '(':
+        new_text+=')'
+      case ')':
+        new_text+='('
+      case _:
+        new_text+=c
+  return new_text
+      
 def kebab2snake(m):
    return m.replace('-','_')
 def split(list_a, chunk_size):
@@ -39,10 +56,9 @@ def url_to_image(url):
   '''
   turn white to transparent
   '''
-  if os.path.exists(os.path.exists(url)):
+  if os.path.isfile(url):
     img = Image.open(url)
   else:
-    print(url)
     response = requests.get(url)
     img = Image.open(BytesIO(response.content))
   # img = img.convert("RGBA")

@@ -20,6 +20,8 @@ def create_token(name,img,text):
   # font = ImageFont.truetype(font='dorian2.ttf', size=50)
   font = get_optimal_font(const.FONT_PATH,name,W*7/12)
   s = font.getsize(name)
+  if const.DIRECTION=='rtl':
+    name = utils.change_dir(name)
   draw.text(((W-s[0])//2,int(512*19/24)),name,font=font,align='right',fill='black')
 
   return res
@@ -67,6 +69,8 @@ def draw_multiline(draw,size,font,text,min_height=60):
   while later is not None:
     now, later = split_by_width(font,width4height(h,R),later)
     s = font.getsize(now)
+    if const.DIRECTION=='rtl':
+      now = utils.change_dir(now)
     draw.text(((W-s[0])//2,h),now,fill='black',font=font)
     h+=font.getsize(now)[1]
   return draw

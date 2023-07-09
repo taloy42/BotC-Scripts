@@ -4,6 +4,7 @@ import token_creation as tc
 import sheet_creation as sc
 import json
 import os
+from tqdm import tqdm
 # import click
 
 
@@ -30,7 +31,7 @@ def gen_sheets_for_script(script_dir,script,out_dir):
 
 if __name__=='__main__':
     script = const.SCRIPTS['all-roles']
-    imgs = [tc.create_token_ch(ch) for ch in script]
+    imgs = [tc.create_token_ch(ch) for ch in tqdm(script)]
     sheets = sc.generate_sheets(imgs)
     
     sheet_path = 'sheets'
