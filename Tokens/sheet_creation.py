@@ -17,11 +17,22 @@ def idx_to_tabular(idx):
   idx_row = idx_in_sheet//const.TOKENS_PER_WIDTH
   return (sheet_num,idx_row,idx_col)
 
+def list_total_items(lst):
+  total = 0
+  for x in lst:
+    if isinstance(x,list):
+      total += list_total_items(x)
+    else:
+      total += 1
+  return total
+
 def generate_sheets(imgs):
   # print('here')
+  imgs = utils.flatten_list(imgs)
   total_tokens = len(imgs)
+  # total_tokens = list_total_items(imgs)
   num_sheets = ceil(total_tokens/const.TOKENS_PER_SHEET)
-  sheets = [Image.new("RGB", const.PAGE_SIZE, "white") for i in range(num_sheets)]
+  sheets = [Image.new("RGBA", const.PAGE_SIZE, (0,0,0,0)) for i in range(num_sheets)]
 
   x_space = (const.PAGE_WIDTH - const.TOKENS_PER_WIDTH*const.IMG_SIZE)//(const.TOKENS_PER_WIDTH+1)
   y_space = (const.PAGE_HEIGHT - const.TOKENS_PER_HEIGHT*const.IMG_SIZE)//(const.TOKENS_PER_HEIGHT+1)

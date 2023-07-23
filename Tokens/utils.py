@@ -1,4 +1,5 @@
 from PIL import Image, ImageChops
+import PIL
 import requests
 from io import BytesIO
 import os
@@ -52,10 +53,22 @@ def img_concat(images,horizontal=True,pad_percent=5):
       y_offset += im.size[1] + h_pad
   return new_im
 
+def flatten_list(lst):
+  res = []
+  for x in lst:
+    if isinstance(x,list):
+      flat = flatten_list(x)
+    else:
+      flat = [x]
+    res += flat
+  return res
+
 def url_to_image(url):
   '''
   turn white to transparent
   '''
+  if isinstance(url,list):
+    return [url_to_image(u) for u in url]
   if os.path.isfile(url):
     img = Image.open(url)
   else:
@@ -101,13 +114,50 @@ def position_foreground(img,bg_size,fg_size,fg_loc):
   bg = Image.new('RGBA',bg_size,color=(0,0,0,0))
   bg.paste(img,fg_loc,img)
   return bg
-def add_img_to_bg(img,bg,perc=0.5,loc=None):
-  img = crop_and_square(img)
+def add_img_to_bg(img,bg,perc=1/3,vertical_offset_frac=7/12,loc=None):
+  # img = crop_and_square(img)
+  
+  # W,H = bg.size
+  # size = int(H*perc)
+
+  # img = crop_image(img)
+  # box_size = get_box_size(img,(bg.size[0]*.7,size*.9))
+  
+  # if loc is None:
+  #   offset = (1-perc)
+  #   loc = ((W-box_size[0])//2,H-size-int(H*vertical_offset_frac))
+
+  # resized = position_foreground(img,(W,H),box_size,loc)
+  
+  # res = overlay(bg,resized)
+  # return res
   W,H = bg.size
-  size = int(H*perc)
+  # size = 
+
+  img = crop_image(img)
+  # box_width = bg.size[0]*(1-0.13*2)
+  # box_height = bg.size[1]*(1-0.36-0.2)
+  box_width = W//2
+  box_height = H//3
+  box = (box_width, box_height)
+  box_size = get_box_size(img,box)
   if loc is None:
-    offset = (1-perc)
-    loc = (int(W*offset/2),int(H*7*offset/12))
-  resized = position_foreground(img,(W,H),(size,size),loc)
+    x = (W-box_size[0])//2
+    y = int(H*0.4)
+    if box_size[0] >= box_width-1:
+      y += (box_height-box_size[1])//2
+    loc = (x,y)
+
+
+  resized = position_foreground(img,(W,H),box_size,loc)
+  
   res = overlay(bg,resized)
   return res
+
+def get_box_size(img,box):
+  W,H = img.size
+  xbox, ybox = box
+  xscale = xbox/W
+  yscale = ybox/H
+  scale = min(xscale,yscale)
+  return (int(W*scale),int(H*scale))

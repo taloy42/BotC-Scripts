@@ -63,6 +63,7 @@ def gen_all(csv_dir,json_dir,desc_dir,script_dir,locale,script):
     gen_json_aux(csv_dir,json_dir,locale)
     gen_scripts_aux(desc_dir,json_dir,script_dir,locale,script)
     click.echo("Done with everything!")
+    
 cli.add_command(gen_json)
 cli.add_command(gen_scripts)
 cli.add_command(gen_all)

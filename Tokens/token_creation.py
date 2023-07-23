@@ -1,33 +1,145 @@
 import utils
 import const
 from PIL import ImageDraw,ImageFont
+import PIL
+from wand.image import Image as WandImage
+from wand.font import Font as WandFont
+import numpy as np
+  
 
-def create_token(name,img,text):
+def create_token_backup(name,img,text):
+  # font_space_frac = 5/16
+  font_space_frac = 7/16
 
   # put image on background
-  res = utils.add_img_to_bg(img,const.TOKEN_BG())
+  res = utils.add_img_to_bg(img,const.TOKEN_BG(),vertical_offset_frac=0.2)#,vertical_space_frac=font_space_frac)
   W,H = res.size
   
   
   draw = ImageDraw.Draw(res)
   # add ability text
-  font = ImageFont.truetype(font=const.FONT_PATH, size=20)
+  font = ImageFont.truetype(font=const.FONT_PATH(), size=20)
   s = font.getsize(name)
   # draw.multiline_text(((W-s[0])//2,50),text,font=font,align='right',fill='black',)
-  font = get_optimal_multiline_font(const.FONT_PATH,text,H*5/16,im_size=H)
+  font = get_optimal_multiline_font(const.FONT_PATH(),text,H*font_space_frac,im_size=H)
+  font = ImageFont.truetype(font=const.FONT_PATH(), size=25)
   draw_multiline(draw,res.size,font,text)
   # add name
   # font = ImageFont.truetype(font='dorian2.ttf', size=50)
-  font = get_optimal_font(const.FONT_PATH,name,W*7/12)
+  font = get_optimal_font(const.FONT_PATH(),name,W*7/12)
   s = font.getsize(name)
   if const.DIRECTION=='rtl':
     name = utils.change_dir(name)
-  draw.text(((W-s[0])//2,int(512*19/24)),name,font=font,align='right',fill='black')
+  draw.text(((W-s[0])//2,int(512*19/24)),name,font=font,align='right' if const.DIRECTION=='rtl' else 'left',fill='black')
 
   return res
-def create_token_ch(character):
-  image = utils.url_to_image(character['image']).resize((const.IMG_SIZE,const.IMG_SIZE))
-  return create_token(character['name'],image,character['ability'])
+def add_leaves(character, img,group=None):
+  edition = character.get('edition')
+  is_fabled = character.get('team') == 'fabled'
+  if is_fabled:
+    group = 'fabled'
+  elif edition in const.groups:
+    group = edition
+  
+
+
+  firstNight = len(character.get('firstNightReminder',''))>0
+
+  otherNight = len(character.get('otherNightReminder',''))>0
+
+  ability = character.get('ability','')
+  changeSetup = '[' in ability and ']' in ability
+  
+  n_reminders = len(character.get('reminders',[]))
+
+
+  if firstNight:
+    left_leaf = const.LEFT_LEAF(group)
+    img.paste(left_leaf,(0,0),left_leaf)
+  
+  if otherNight:
+    right_leaf = const.RIGHT_LEAF(group)
+    img.paste(right_leaf,(0,0),right_leaf)
+  
+  if changeSetup:
+    orange_leaf = const.ORANGE_LEAF(group)
+    img.paste(orange_leaf,(0,0),orange_leaf)
+  
+  if n_reminders>0:
+    top_leaf = const.TOP_LEAF(n_reminders,group)
+    img.paste(top_leaf,(0,0),top_leaf)
+  return img
+
+def add_name_to_img(name,img):
+  font = ImageFont.truetype(const.NAME_FONT_PATH(),size=60)
+  font_width = font.getsize(name)[0]
+  r = img.size[0]//2
+  # degs_per_let = 12
+  let_width = const.LETTER_WIDTH()
+  # rmax,rmin,cx,cy,angmin,angmax = 0.8*r,0.55*r,r,r,-degs_per_let*len(name)/2,degs_per_let*len(name)/2
+  rmax,rmin,cx,cy,angmin,angmax = 0.8*r,0.55*r,r,r,-let_width*font_width/2,let_width*font_width/2
+
+  with WandImage(width=2*r,height=2*r) as wand_img:
+      wand_img.background_color = 'transparent'
+      wand_img.font = WandFont(const.NAME_FONT_PATH(),60)
+      wand_img.read(filename='label: {} '.format(name))
+      wand_img.resize(2*r,2*r)
+      wand_img.virtual_pixel = 'transparent'
+      # 360 degree arc, rotated -90 degrees
+      wand_img.distort('polar', (rmax,rmin,cx,cy,angmin,angmax))
+
+      # img.save(filename='arc_text.png')
+      wand_img.format = 'png'
+      # display(img)
+      # img_buffer = np.asarray(bytearray(img.make_blob()), dtype='uint8')
+      # bytesio = BytesIO(img_buffer)
+      # img = skimage.io.imread(bytesio)
+      npa = np.array(wand_img)
+      # text = wand2pil(img)
+  # bg.show()
+  text = PIL.Image.fromarray(npa)
+
+  img.paste(text,(0,0),text)
+  return img
+def create_token(character,img,group=None):
+  # font_space_frac = 5/16
+  # font_space_frac = 7/16
+  name, text = character['name'],character['ability']
+  # put image on background
+  res = utils.add_img_to_bg(img,const.TOKEN_BG(group),vertical_offset_frac=0.2)#,vertical_space_frac=font_space_frac)
+  res = add_leaves(character, res, group)
+  W,H = res.size
+  
+  
+  draw = ImageDraw.Draw(res)
+  # add ability text
+  # font = ImageFont.truetype(font=const.FONT_PATH(), size=20)
+  # s = font.getsize(name)
+  # draw.multiline_text(((W-s[0])//2,50),text,font=font,align='right',fill='black',)
+  # font = get_optimal_multiline_font(const.FONT_PATH(),text,H*font_space_frac,im_size=H)
+  font = ImageFont.truetype(font=const.FONT_PATH(), size=const.FONT_SIZE())
+  draw_multiline(draw,res.size,font,text)
+  # add name
+  # font = ImageFont.truetype(font='dorian2.ttf', size=50)
+  
+  name = name.upper()
+
+  # font = get_optimal_font(const.NAME_FONT_PATH(),name,W*5/12)
+  # s = font.getsize(name)
+  # if const.DIRECTION=='rtl':
+  #   name = utils.change_dir(name)
+  # draw.text(((W-s[0])//2,int(H*.8)),name,font=font,align='right' if const.DIRECTION=='rtl' else 'left',fill='black')
+  add_name_to_img(name,res)
+  return res
+def create_token_ch(character,group=None):
+  if character['id']=='_meta':
+    return None
+  images = character['image']
+  if isinstance(images,list):
+    images = [utils.url_to_image(image).resize((const.IMG_SIZE,const.IMG_SIZE)) for image in images]
+    return [create_token(character,im,group) for i,im in enumerate(images)]
+  image = utils.url_to_image(images).resize((const.IMG_SIZE,const.IMG_SIZE))
+  return create_token(character,image,group)
 # def cv2_to_PIL(img):
 #   img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 #   im_pil = Image.fromarray(img)
@@ -60,7 +172,7 @@ def get_optimal_multiline_font(font_path,text,max_height,min_height=60,im_size=5
     if check_multiline_font(font,text,max_height,min_height,im_size):
       break
   return font
-def draw_multiline(draw,size,font,text,min_height=60):
+def draw_multiline(draw,size,font,text,min_height=90):
   W,H = size
   # R = get_diam_for_size(W)
   R = W//2
@@ -103,7 +215,7 @@ def width4height(height,R,p=5):
   '''
   allowed width for given height in circle with diameter diam
   '''
-  p = 1-2*p/100
+  p = 1-5*p/100
   h = height - R*(1-p)
   delta = (p**2-1)*R**2+2*R*height-height**2
   if delta<0:
