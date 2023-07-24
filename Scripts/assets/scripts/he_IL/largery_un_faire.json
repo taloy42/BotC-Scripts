@@ -1,233 +1,31 @@
 [
     {
-        "ability": "יש יותר זרים במשחק. [+2 זרים]",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_baron",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/baron.png?raw=true",
-        "name": "ברון",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": true,
-        "team": "minion",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "פעם אחת במשחק, בלילה, תבחרי 2 שחקנים (לא את עצמך): את לומדת אם הם מאותה הקבוצה.",
-        "edition": "snv",
-        "firstNight": 42,
-        "firstNightReminder": "התופרת מנדנדת את ראשה לשלילה או מצביעה על 2 שחקנים. תנענע בראש כן או תנדנד לשלילה בהתאם להאם הם מאותה הקבוצה.",
-        "id": "he_IL_seamstress",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/seamstress.png?raw=true",
-        "name": "תופרת",
-        "otherNight": 61,
-        "otherNightReminder": "אם התופרת עוד לא השתמשה ביכולת שלה: התופרת מנדנדת את ראשה לשלילה או מצביעה על 2 שחקנים. תנענע בראש כן או תנדנד לשלילה בהתאם להאם הם מאותה הקבוצה.",
-        "reminders": [
-            "אין יכולת"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בלילה הראשון שלך, תסתכלי בגרימואר ותבחרי שחקן: הוא מורעל. שחקן טוב אחד יודע שהאלמנה במשחק.",
-        "edition": "",
-        "firstNight": 18,
-        "firstNightReminder": "תראה את הגרימואר לאלמנה לכמה זמן שהיא צריכה. האלמנה מצביעה על שחקן. השחקן הזה מורעל. תעיר שחקן טוב כלשהו. תראה לו את קלף \"הדמות הזו במשחק\" ואז את אסימון ה\"אלמנה\".",
-        "id": "he_IL_widow",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/widow.png?raw=true",
-        "name": "אלמנה",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "מורעל"
-        ],
-        "remindersGlobal": [
-            "יודע"
-        ],
-        "setup": false,
-        "team": "minion"
-    },
-    {
-        "ability": "בכל לילה*, אתם לומדים איזו דמות מתה היום בהוצאה להורג.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_undertaker",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/undertaker.png?raw=true",
-        "name": "קברן",
-        "otherNight": 56,
-        "otherNightReminder": "אם שחקן הוצא להורג היום: תראה את אסימון הדמות של השחקן הזה לקברן.",
-        "reminders": [
-            "הוצא להורג"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה, תבחר שחקן חי: אם בחרת בשד אתה מחליף דמויות וקבוצות איתו, ואז הוא מורעל.",
-        "edition": "snv",
-        "firstNight": 20,
-        "firstNightReminder": "מהפנט הנחשים מצביע על שחקן. אם השחקן הזה הוא השד: תחליף את הדמויות והקבוצות של השד ושל מהפנט הנחשים. תעיר כל אחד מהם ותראה להם את הדמות והקבוצה החדשה שלהם. מהפנט הנחשים החדש מורעל.",
-        "id": "he_IL_snakecharmer",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/snakecharmer.png?raw=true",
-        "name": "מהפנט נחשים",
-        "otherNight": 12,
-        "otherNightReminder": "מהפנט הנחשים מצביע על שחקן. אם השחקן הזה הוא השד: תחליף את הדמויות והקבוצות של השד ושל מהפנט הנחשים. תעיר כל אחד מהם ותראה להם את הדמות והקבוצה החדשה שלהם. מהפנט הנחשים החדש מורעל.",
-        "reminders": [
-            "מורעל"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "אתה לא יודע מה היכולת שלך. בכל יום, אתה יכול לנחש בפרטיות מה היכולת. אתה לומד כמה אתה קרוב.",
-        "edition": "",
-        "firstNight": 12,
-        "firstNightReminder": "תחליט מה היכולת של האמנזי. אם היכולת שלו גורמת לו לקום בלילה, תעיר את האמנזי ותבצע את הפעולה בהתאם.",
         "id": "he_IL_amnesiac",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/amnesiac.png?raw=true",
         "name": "אמנזי",
-        "otherNight": 5,
+        "ability": "אתה לא יודע מה היכולת שלך. בכל יום, אתה יכול לנחש בפרטיות מה היכולת. אתה לומד כמה אתה קרוב.",
+        "firstNightReminder": "תחליט מה היכולת של האמנזי. אם היכולת שלו גורמת לו לקום בלילה, תעיר את האמנזי ותבצע את הפעולה בהתאם.",
         "otherNightReminder": "אם היכולת של האמנזי גורמת לו לקום בלילה, תעיר אותו ותבצע את הפעולה בהתאם.",
         "reminders": [
             "?"
         ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/amnesiac.png"
     },
     {
-        "ability": "יש לך את היכולת של האדם האחרון שהוצא להורג. אם  הוא היה רע, אתה מורעל עד ששחקן טוב מת על ידי הוצאה להורג.",
-        "edition": "",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_cannibal",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/cannibal.png?raw=true",
-        "name": "קניבל",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "מורעל",
-            "מת היום"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "פעם אחת במשחק, במהלך היום, תבקר את מספר הסיפורים בשביל עצה שתעזור לך לנצח.",
-        "edition": "",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_fisherman",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/fisherman.png?raw=true",
-        "name": "דייג",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "אין יכולת"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "פעם אחת במשחק, במהלך היום, תכריז בפומבי על שחקן: אם הוא השד, הוא מת.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_slayer",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/slayer.png?raw=true",
-        "name": "קוטל",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "אין יכולת"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "פעם אחת במשחק, במהלך היום, תשאל את מספר-הסיפורים בפרטיות שאלה של כן או לא.",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
         "id": "he_IL_artist",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/artist.png?raw=true",
         "name": "אמן",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "אין יכולת"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "אתה חושב שאתה השד, אבל אתה לא. השד יודע מי אתה ואת מי אתה בוחר בלילה.",
-        "edition": "bmr",
-        "firstNight": 7,
-        "firstNightReminder": "אם יש 7 שחקנים או יותר: תראה למשוגע מספר משרתים שרירותיים, כמספר המשרתים שבמשחק. תראה למשוגע 3 אסימוני דמויות טובות שרירותיות. אם האסימון שהמשוגע קיבל הוא של שד שקם בלילה הראשון: הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
-        "id": "he_IL_lunatic",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/lunatic.png?raw=true",
-        "name": "משוגע",
-        "otherNight": 21,
-        "otherNightReminder": "הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
-        "reminders": [
-            "התקפה 1",
-            "התקפה 2",
-            "התקפה 3"
-        ],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה, אתה לומד מה הצד שמספר הסיפורים מאמין שמנצח: טוב, רע או אף אחד מהם.",
-        "edition": "",
-        "firstNight": 49,
-        "firstNightReminder": "תראה לגנרל אגודל כלפי מעלה עבור טוב מנצח, אגודל כלפי מטה עבור רע מנצח, ואגודל לצד אם אף אחד מהם.",
-        "id": "he_IL_general",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/general.png?raw=true",
-        "name": "גנרל",
-        "otherNight": 69,
-        "otherNightReminder": "תראה לגנרל אגודל כלפי מעלה עבור טוב מנצח, אגודל כלפי מטה עבור רע מנצח, ואגודל לצד אם אף אחד מהם.",
-        "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל יום, אתה רשאי לבקר את מספר הסיפורים וללמוד 2 דברים: אחד מהם הוא אמת ואחד הוא שקר.",
-        "edition": "snv",
-        "firstNight": 0,
+        "ability": "פעם אחת במשחק, במהלך היום, תשאל את מספר-הסיפורים בפרטיות כל שאלה של כן או לא.",
         "firstNightReminder": "",
-        "id": "he_IL_savant",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/savant.png?raw=true",
-        "name": "מלומד",
-        "otherNight": 0,
         "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "reminders": [
+            "ללא יכולת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/artist.png"
     },
     {
-        "ability": "בכל לילה, אתה לומד שחקן אחד מכל סוג דמות, עד שאין יותר סוגים ללמוד (תושב-עיירה, זר, משרת, שד). [+1 זר]",
-        "edition": "",
-        "firstNight": 44,
-        "firstNightReminder": "בחר סוג דמות. הצבע על שחקן שדמותו מהסוג הנבחר. הנח את אסימון ה\"נראה\" של מפריח הבלונים ליד הדמות הזו.",
         "id": "he_IL_balloonist",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/balloonist.png?raw=true",
         "name": "מפריח הבלונים",
-        "otherNight": 63,
+        "ability": "בכל לילה, אתה לומד שחקן אחד מכל סוג דמות, עד שאין יותר סוגים ללמוד (תושב-עיירה, זר, משרת, שד). [+1 זר]",
+        "firstNightReminder": "בחר סוג דמות. הצבע על שחקן שדמותו מהסוג הנבחר. הנח את אסימון ה\"נראה\" של מפריח הבלונים ליד הדמות הזו.",
         "otherNightReminder": "בחר סוג דמות שאין אסימון \"נראה\" ליד דמות מהסוג הזה כבר. הצבע על שחקן שדמותו מהסוג הנבחר, אם נשארו כאלה. הנח את אסימון ה\"נראה\" של מפריח הבלונים ליד הדמות הזו,.",
         "reminders": [
             "ראה תושב-עיירה",
@@ -236,19 +34,85 @@
             "ראה שד",
             "ראה מטייל"
         ],
-        "setup": true,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/balloonist.png"
     },
     {
-        "ability": "אם יותר משחקן טוב אחד מוצא להורג, אתה מנצח. כל השחקנים יודעים שאתה במשחק. אחרי היום החמישי, הרע מנצח.",
-        "edition": "",
-        "firstNight": 53,
-        "firstNightReminder": "תניח את סממן \"יום 1\" של הלוויתן. תכריז: \"הלוויתן במשחק, זה היום הראשון\".",
+        "id": "he_IL_baron",
+        "name": "ברון",
+        "ability": "יש יותר זרים במשחק. [+2 זרים]",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/baron.png"
+    },
+    {
+        "id": "he_IL_cannibal",
+        "name": "קניבל",
+        "ability": "יש לך את היכולת של השחקן האחרון שהוצא להורג. אם  הוא היה רע, אתה מורעל עד ששחקן טוב מת על ידי הוצאה להורג.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "מורעל",
+            "מת היום"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cannibal.png"
+    },
+    {
+        "id": "he_IL_drunk",
+        "name": "שיכור",
+        "ability": "אתה לא יודע שאתה שיכור. אתה חושב שאתה תושב-עיירה, אבל אתה לא.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "שיכור"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/drunk.png"
+    },
+    {
+        "id": "he_IL_empath",
+        "name": "בוחן לבבות",
+        "ability": "בכל לילה, אתה לומד כמה מבין 2 השכנים החיים שלך הם רעים.",
+        "firstNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
+        "otherNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/empath.png"
+    },
+    {
+        "id": "he_IL_fisherman",
+        "name": "דייג",
+        "ability": "פעם אחת במשחק, במהלך היום, תבקר את מספר הסיפורים בשביל עצה שתעזור לך לנצח.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "אין יכולת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fisherman.png"
+    },
+    {
+        "id": "he_IL_general",
+        "name": "גנרל",
+        "ability": "בכל לילה, אתה לומד מה הצד שמספר הסיפורים מאמין שמנצח: טוב, רע או אף אחד מהם.",
+        "firstNightReminder": "תראה לגנרל אגודל כלפי מעלה עבור טוב מנצח, אגודל כלפי מטה עבור רע מנצח, ואגודל לצד אם אף אחד מהם.",
+        "otherNightReminder": "תראה לגנרל אגודל כלפי מעלה עבור טוב מנצח, אגודל כלפי מטה עבור רע מנצח, ואגודל לצד אם אף אחד מהם.",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/general.png"
+    },
+    {
+        "id": "he_IL_goblin",
+        "name": "גובלין",
+        "ability": "אם אתה מודיע בפומבי שאתה הגובלין כשאתה מועמד להצבעה ואתה גם מוצא להורג באותו יום, הקבוצה שלך מנצחת.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "הודיע"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/goblin.png"
+    },
+    {
         "id": "he_IL_leviathan",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/leviathan.png?raw=true",
         "name": "לויתן",
-        "otherNight": 73,
+        "ability": "אם יותר משחקן טוב אחד מוצא להורג, אתה מנצח. כל השחקנים יודעים שאתה במשחק. אחרי היום החמישי, הרע מנצח.",
+        "firstNightReminder": "תניח את סממן \"יום 1\" של הלוויתן. תכריז: \"הלוויתן במשחק, זה היום הראשון\".",
         "otherNightReminder": "תשנה את סממן התזכורת של הלוויתן בהתאם.",
         "reminders": [
             "יום 1",
@@ -258,122 +122,125 @@
             "יום 5",
             "שחקן טוב הוצא להורג"
         ],
-        "setup": false,
-        "team": "demon",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/leviathan.png"
     },
     {
-        "ability": "אם אתה מודיע בפומבי שאתה הגובלין כשאתה מועמד להצבעה ואתה גם מוצא להורג באותו יום, הקבוצה שלך מנצחת.",
-        "edition": "",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_goblin",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/goblin.png?raw=true",
-        "name": "גובלין",
-        "otherNight": 0,
-        "otherNightReminder": "",
+        "id": "he_IL_lunatic",
+        "name": "משוגע",
+        "ability": "אתה חושב שאתה השד, אבל אתה לא. השד יודע מי אתה ואת מי אתה בוחר בלילה.",
+        "firstNightReminder": "אם יש 7 שחקנים או יותר: תראה למשוגע מספר משרתים שרירותיים, כמספר המשרתים שבמשחק. תראה למשוגע 3 אסימוני דמויות טובות שרירותיות. אם האסימון שהמשוגע קיבל הוא של שד שקם בלילה הראשון: הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
+        "otherNightReminder": "הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
         "reminders": [
-            "הודיע"
+            "התקפה 1",
+            "התקפה 2",
+            "התקפה 3"
         ],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lunatic.png"
     },
     {
-        "ability": "אם יש לפחות 5 שחקנים חיים והשד מת, את הופכת לשד (מטייליים לא נחשבים).",
-        "edition": "tb",
-        "firstNight": 0,
+        "id": "he_IL_mutant",
+        "name": "מוטנט",
+        "ability": "אם אתה \"משתגע\" על זה שאתה זר, אתה עלול למות.",
         "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mutant.png"
+    },
+    {
+        "id": "he_IL_philosopher",
+        "name": "פילוסוף",
+        "ability": "פעם אחת במשחק, בלילה, תבחר דמות טובה: תקבל את היכולת שלה. אם הדמות הזו במשחק, השחקן שלה שיכור.",
+        "firstNightReminder": "הפילוסוף מנדנד את ראשו לשלילה או מצביע על דמות טובה בדף הדמות שלו. אם הוא בחר בדמות: תחליף את האסימון של הדמות הזו עם האסימון של הפילוסוף. אם הדמות הזו במשחק, שים את סממן ה\"שיכור\" על הדמות ואת סממן \"לא הפילוסוף\" על הפילוסוף.",
+        "otherNightReminder": "אם הפילוסוף עוד לא השתמש ביכולת שלו: הפילוסוף מנדנד את ראשו לשלילה או מצביע על דמות טובה בדף הדמות שלו. אם הוא בחר בדמות: תחליף את האסימון של הדמות הזו עם האסימון של הפילוסוף. אם הדמות הזו במשחק, שים את סממן ה\"שיכור\" על הדמות ואת סממן \"לא הפילוסוף\" על הפילוסוף.",
+        "reminders": [
+            "שיכור",
+            "הוא הפילוסוף"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/philosopher.png"
+    },
+    {
+        "id": "he_IL_saint",
+        "name": "קדוש",
+        "ability": "אם אתה מת ע\"י הוצאה להורג, הקבוצה שלך מפסידה.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/saint.png"
+    },
+    {
+        "id": "he_IL_savant",
+        "name": "מלומד",
+        "ability": "בכל יום, אתה רשאי לבקר את מספר הסיפורים וללמוד 2 דברים: אחד מהם הוא אמת ואחד הוא שקר.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/savant.png"
+    },
+    {
         "id": "he_IL_scarletwoman",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/scarletwoman.png?raw=true",
         "name": "אשת הארגמן",
-        "otherNight": 20,
+        "ability": "אם יש לפחות 5 שחקנים חיים והשד מת, את הופכת לשד (מטייליים לא נחשבים).",
+        "firstNightReminder": "",
         "otherNightReminder": "אם אשת הארגמן הפכה לשד היום: תראה לה את קלף \"את\" ואת אסימון השד.",
         "reminders": [
             "שד"
         ],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/scarletwoman.png"
     },
     {
-        "ability": "פעם אחת במשחק, בלילה, תבחר דמות טובה: תקבל את היכולת שלה. אם הדמות הזו במשחק, השחקן שלה שיכור.",
-        "edition": "snv",
-        "firstNight": 2,
-        "firstNightReminder": "הפילוסוף מנדנד את ראשו לשלילה או מצביע על דמות טובה בדף הדמות שלו. אם הוא בחר בדמות: תחליף את האסימון של הדמות הזו עם האסימון של הפילוסוף. אם הדמות הזו במשחק, שים את סממן ה\"שיכור\" על הדמות ואת סממן \"לא הפילוסוף\" על הפילוסוף.",
-        "id": "he_IL_philosopher",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/philosopher.png?raw=true",
-        "name": "פילוסוף",
-        "otherNight": 2,
-        "otherNightReminder": "אם הפילוסוף עוד לא השתמש ביכולת שלו: הפילוסוף מנדנד את ראשו לשלילה או מצביע על דמות טובה בדף הדמות שלו. אם הוא בחר בדמות: תחליף את האסימון של הדמות הזו עם האסימון של הפילוסוף. אם הדמות הזו במשחק, שים את סממן ה\"שיכור\" על הדמות ואת סממן \"לא הפילוסוף\" על הפילוסוף.",
-        "remindersGlobal": [
-            "שיכור",
-            "לא הפילוסוף"
+        "id": "he_IL_seamstress",
+        "name": "תופרת",
+        "ability": "פעם אחת במשחק, בלילה, תבחרי 2 שחקנים (לא את עצמך): את לומדת אם הם מאותה הקבוצה.",
+        "firstNightReminder": "התופרת מנדנדת את ראשה לשלילה או מצביעה על 2 שחקנים. תנענע בראש כן או תנדנד לשלילה בהתאם להאם הם מאותה הקבוצה.",
+        "otherNightReminder": "אם התופרת עוד לא השתמשה ביכולת שלה: התופרת מנדנדת את ראשה לשלילה או מצביעה על 2 שחקנים. תנענע בראש כן או תנדנד לשלילה בהתאם להאם הם מאותה הקבוצה.",
+        "reminders": [
+            "אין יכולת"
         ],
-        "setup": false,
-        "team": "townsfolk",
-        "reminders": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/seamstress.png"
     },
     {
-        "ability": "אתה לא יודע שאתה שיכור. אתה חושב שאתה תושב-עיירה, אבל אתה לא.",
-        "edition": "tb",
-        "firstNight": 0,
+        "id": "he_IL_slayer",
+        "name": "קוטל",
+        "ability": "פעם אחת במשחק, במהלך היום, תכריז בפומבי על שחקן: אם הוא השד, הוא מת.",
         "firstNightReminder": "",
-        "id": "he_IL_drunk",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/drunk.png?raw=true",
-        "name": "שיכור",
-        "otherNight": 0,
         "otherNightReminder": "",
-        "reminders": [],
-        "remindersGlobal": [
-            "שיכור"
+        "reminders": [
+            "אין יכולת"
         ],
-        "setup": true,
-        "team": "outsider"
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/slayer.png"
     },
     {
-        "ability": "אם אתה \"משתגע\" על זה שאתה זר, אתה עלול למות.",
-        "edition": "snv",
-        "firstNight": 0,
+        "id": "he_IL_snakecharmer",
+        "name": "מהפנט נחשים",
+        "ability": "בכל לילה, תבחר שחקן חי: אם בחרת בשד אתה מחליף דמויות וקבוצות איתו, ואז הוא מורעל.",
+        "firstNightReminder": "מהפנט הנחשים מצביע על שחקן. אם השחקן הזה הוא השד: תחליף את הדמויות והקבוצות של השד ושל מהפנט הנחשים. תעיר כל אחד מהם ותראה להם את הדמות והקבוצה החדשה שלהם. מהפנט הנחשים החדש מורעל.",
+        "otherNightReminder": "מהפנט הנחשים מצביע על שחקן. אם השחקן הזה הוא השד: תחליף את הדמויות והקבוצות של השד ושל מהפנט הנחשים. תעיר כל אחד מהם ותראה להם את הדמות והקבוצה החדשה שלהם. מהפנט הנחשים החדש מורעל.",
+        "reminders": [
+            "מורעל"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/snakecharmer.png"
+    },
+    {
+        "id": "he_IL_undertaker",
+        "name": "קברן",
+        "ability": "בכל לילה*, אתם לומדים איזו דמות מתה היום בהוצאה להורג.",
         "firstNightReminder": "",
-        "id": "he_IL_mutant",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/mutant.png?raw=true",
-        "name": "מוטנט",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
+        "otherNightReminder": "אם שחקן הוצא להורג היום: תראה את אסימון הדמות של השחקן הזה לקברן.",
+        "reminders": [
+            "הוצא להורג"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/undertaker.png"
     },
     {
-        "ability": "אם אתה מת ע\"י הוצאה להורג, הקבוצה שלך מפסידה.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_saint",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/saint.png?raw=true",
-        "name": "קדוש",
-        "otherNight": 0,
+        "id": "he_IL_widow",
+        "name": "אלמנה",
+        "ability": "בלילה הראשון שלך, תסתכלי בגרימואר ותבחרי שחקן: הוא מורעל. שחקן טוב אחד יודע שהאלמנה במשחק.",
+        "firstNightReminder": "תראה את הגרימואר לאלמנה לכמה זמן שהיא צריכה. האלמנה מצביעה על שחקן. השחקן הזה מורעל. תעיר שחקן טוב כלשהו. תראה לו את קלף \"הדמות הזו במשחק\" ואז את אסימון ה\"אלמנה\".",
         "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה, אתה לומד כמה מבין 2 השכנים החיים שלך הם רעים.",
-        "edition": "tb",
-        "firstNight": 36,
-        "firstNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
-        "id": "he_IL_empath",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/empath.png?raw=true",
-        "name": "בוחן לבבות",
-        "otherNight": 53,
-        "otherNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
-        "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "reminders": [
+            "מורעל",
+            "יודע"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/widow.png"
     }
 ]

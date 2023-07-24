@@ -2,6 +2,8 @@ import configparser
 import os
 import json
 
+import pandas as pd
+
 ### PATHS ###
 config = configparser.ConfigParser()
 config.read(r'pyconfig.ini')
@@ -14,37 +16,57 @@ csv_folder = os.path.join(base_folder,dirs['csv'])
 
 
 ### LOCALES ###
+# known_locales = [
+#         "ar_AR",
+#         "de_DE",
+#         "en_GB",
+#         "es_ES",
+#         "fa_IR",
+#         "fil_PH", 
+#         "fr_FR", 
+#         "he_IL", 
+#         "hu_HU", 
+#         "it_IT", 
+#         "ja_JA", 
+#         "kw_KW", 
+#         "nl_NL", 
+#         "pl_PL", 
+#         "pt_BR", 
+#         "pt_PT", 
+#         "ru_RU", 
+#         "sv_SE", 
+#         "tr_TR", 
+#         "zh_CN", 
+#         "zh_TW",
+# ]
 known_locales = [
-        "ar_AR",
-        "de_DE",
-        "en_GB",
-        "es_ES",
-        "fa_IR",
-        "fil_PH", 
-        "fr_FR", 
-        "he_IL", 
-        "hu_HU", 
-        "it_IT", 
-        "ja_JA", 
-        "kw_KW", 
-        "nl_NL", 
-        "pl_PL", 
-        "pt_BR", 
-        "pt_PT", 
-        "ru_RU", 
-        "sv_SE", 
-        "tr_TR", 
-        "zh_CN", 
-        "zh_TW",
+    'en_GB',
+    'he_IL'
 ]
 
 ### FOR CSV ###
 csv_text_entries = ['name', 'ability', 'firstNightReminder', 'otherNightReminder']
-csv_list_entries =['remindersGlobal', 'reminders']
+# csv_list_entries =['remindersGlobal', 'reminders']
+csv_list_entries =['reminders']
 
 
+image_pattern = 'https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/{}.png'
 ### SOURCE FOR TRANSLATION ###
+def json_from_df(csv_path):
+   df = pd.read_csv(csv_path)
+   j = []
+    
+   for index,row in df.iterrows():
+      cur = dict()
+      for key in row.keys():
+         cur[key] = row[key]
+      cur['image'] = image_pattern.format(cur['id'])
+      j.append(cur)
+   return j 
+
 def json_source():
+    if os.path.isfile(os.path.join(csv_folder,'en_GB.csv')):
+        return json_from_df(os.path.join(csv_folder,'en_GB.csv'))
     return json.loads(r'''
 [
    {

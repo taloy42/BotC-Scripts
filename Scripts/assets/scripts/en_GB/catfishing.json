@@ -1,513 +1,332 @@
 [
     {
-        "ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",
-        "edition": "bmr",
-        "firstNight": 39,
-        "firstNightReminder": "Show the marked character token. Point to the marked player.",
-        "id": "en_GB_grandmother",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/grandmother.png?raw=true",
-        "name": "Grandmother",
-        "otherNight": 50,
-        "otherNightReminder": "If the Grandmother’s grandchild was killed by the Demon tonight: The Grandmother dies.",
-        "reminders": [
-            "Grandchild"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment. You are sober & healthy.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_beggar",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/beggar.png?raw=true",
-        "name": "Beggar",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. [−1 Outsider]",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_vigormortis",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/vigormortis.png?raw=true",
-        "name": "Vigormortis",
-        "otherNight": 32,
-        "otherNightReminder": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbours is poisoned.",
-        "reminders": [
-            "Dead",
-            "Has ability",
-            "Poisoned"
-        ],
-        "setup": true,
-        "team": "demon",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
-        "edition": "",
-        "firstNight": 18,
-        "firstNightReminder": "Show the Grimoire to the Widow for as long as they need. The Widow points to a player. That player is poisoned. Wake a good player. Show the 'These characters are in play' card, then the Widow character token.",
-        "id": "en_GB_widow",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/widow.png?raw=true",
-        "name": "Widow",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "Poisoned"
-        ],
-        "remindersGlobal": [
-            "Knows"
-        ],
-        "setup": false,
-        "team": "minion"
-    },
-    {
-        "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_imp",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/imp.png?raw=true",
-        "name": "Imp",
-        "otherNight": 24,
-        "otherNightReminder": "The Imp points to a player. That player dies. If the Imp chose themselves: Replace the character of 1 alive minion with a spare Imp token. Show the 'You are' card, then the Imp token.",
-        "reminders": [
-            "Dead"
-        ],
-        "setup": false,
-        "team": "demon",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
-        "edition": "snv",
-        "firstNight": 20,
-        "firstNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
-        "id": "en_GB_snakecharmer",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/snakecharmer.png?raw=true",
-        "name": "Snake Charmer",
-        "otherNight": 12,
-        "otherNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
-        "reminders": [
-            "Poisoned"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
-        "edition": "",
-        "firstNight": 12,
-        "firstNightReminder": "Decide the Amnesiac's entire ability. If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
         "id": "en_GB_amnesiac",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/amnesiac.png?raw=true",
         "name": "Amnesiac",
-        "otherNight": 5,
+        "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
+        "firstNightReminder": "Decide the Amnesiac's entire ability. If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
         "otherNightReminder": "If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
         "reminders": [
             "?"
         ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/amnesiac.png"
     },
     {
-        "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_pithag",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/pithag.png?raw=true",
-        "name": "Pit-Hag",
-        "otherNight": 17,
-        "otherNightReminder": "The Pit-Hag points to a player and a character on the sheet. If this character is not in play, wake that player and show them the 'You are' card and the relevant character token. If the character is in play, nothing happens.",
-        "reminders": [],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
-        "edition": "",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_cannibal",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/cannibal.png?raw=true",
-        "name": "Cannibal",
-        "otherNight": 0,
+        "id": "en_GB_apprentice",
+        "name": "Apprentice",
+        "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
+        "firstNightReminder": "Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",
         "otherNightReminder": "",
         "reminders": [
-            "Died today",
-            "Poisoned"
+            "Is the Apprentice"
         ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/apprentice.png"
     },
     {
-        "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
-        "edition": "snv",
-        "firstNight": 41,
-        "firstNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
+        "id": "en_GB_balloonist",
+        "name": "Balloonist",
+        "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
+        "firstNightReminder": "Choose a character type. Point to a player whose character is of that type. Place the Balloonist's Seen reminder next to that character.",
+        "otherNightReminder": "Choose a character type that does not yet have a Seen reminder next to a character of that type. Point to a player whose character is of that type, if there are any. Place the Balloonist's Seen reminder next to that character.",
+        "reminders": [
+            "Seen Townsfolk",
+            "Seen Outsider",
+            "Seen Minion",
+            "Seen Demon",
+            "Seen Traveller"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/balloonist.png"
+    },
+    {
+        "id": "en_GB_barista",
+        "name": "Barista",
+        "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which.",
+        "firstNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+        "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+        "reminders": [
+            "Sober & Healthy",
+            "Ability twice"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/barista.png"
+    },
+    {
+        "id": "en_GB_beggar",
+        "name": "Beggar",
+        "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment. You are sober & healthy.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/beggar.png"
+    },
+    {
+        "id": "en_GB_bonecollector",
+        "name": "Bone Collector",
+        "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk.",
+        "firstNightReminder": "",
+        "otherNightReminder": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",
+        "reminders": [
+            "No ability",
+            "Has ability"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bonecollector.png"
+    },
+    {
+        "id": "en_GB_cannibal",
+        "name": "Cannibal",
+        "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "Poisoned",
+            "Died today"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cannibal.png"
+    },
+    {
+        "id": "en_GB_cerenovus",
+        "name": "Cerenovus",
+        "ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
+        "firstNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
+        "otherNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
+        "reminders": [
+            "Mad"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cerenovus.png"
+    },
+    {
+        "id": "en_GB_chef",
+        "name": "Chef",
+        "ability": "You start knowing how many pairs of evil players there are.",
+        "firstNightReminder": "Show the finger signal (0, 1, 2, …) for the number of pairs of neighbouring evil players.",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/chef.png"
+    },
+    {
         "id": "en_GB_dreamer",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/dreamer.png?raw=true",
         "name": "Dreamer",
-        "otherNight": 57,
+        "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
+        "firstNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
         "otherNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
         "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/dreamer.png"
     },
     {
-        "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",
-        "edition": "bmr",
-        "firstNight": 7,
-        "firstNightReminder": "If 7 or more players: Show the Lunatic a number of arbitrary 'Minions', players equal to the number of Minions in play. Show 3 character tokens of arbitrary good characters. If the token received by the Lunatic is a Demon that would wake tonight: Allow the Lunatic to do the Demon actions. Place their 'attack' markers. Wake the Demon. Show the Demon’s real character token. Show them the Lunatic player. If the Lunatic attacked players: Show the real demon each marked player. Remove any Lunatic 'attack' markers.",
+        "id": "en_GB_drunk",
+        "name": "Drunk",
+        "ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "Drunk"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/drunk.png"
+    },
+    {
+        "id": "en_GB_fanggu",
+        "name": "Fang Gu",
+        "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
+        "firstNightReminder": "",
+        "otherNightReminder": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
+        "reminders": [
+            "Dead",
+            "Once"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fanggu.png"
+    },
+    {
+        "id": "en_GB_fortuneteller",
+        "name": "Fortune Teller",
+        "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
+        "firstNightReminder": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon. ",
+        "otherNightReminder": "The Fortune Teller points to two players. Show the head signal (nod 'yes', shake 'no') for whether one of those players is the Demon.",
+        "reminders": [
+            "Red herring"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fortuneteller.png"
+    },
+    {
+        "id": "en_GB_gambler",
+        "name": "Gambler",
+        "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
+        "firstNightReminder": "",
+        "otherNightReminder": "The Gambler points to a player, and a character on their sheet. If incorrect, the Gambler dies.",
+        "reminders": [
+            "Dead"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gambler.png"
+    },
+    {
+        "id": "en_GB_godfather",
+        "name": "Godfather",
+        "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [−1 or +1 Outsider]",
+        "firstNightReminder": "Show each of the Outsider tokens in play.",
+        "otherNightReminder": "If an Outsider died today: The Godfather points to a player. That player dies.",
+        "reminders": [
+            "Died today",
+            "Dead"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/godfather.png"
+    },
+    {
+        "id": "en_GB_grandmother",
+        "name": "Grandmother",
+        "ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",
+        "firstNightReminder": "Show the marked character token. Point to the marked player.",
+        "otherNightReminder": "If the Grandmother’s grandchild was killed by the Demon tonight: The Grandmother dies.",
+        "reminders": [
+            "Grandchild"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/grandmother.png"
+    },
+    {
+        "id": "en_GB_harlot",
+        "name": "Harlot",
+        "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
+        "firstNightReminder": "",
+        "otherNightReminder": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
+        "reminders": [
+            "Dead"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/harlot.png"
+    },
+    {
+        "id": "en_GB_imp",
+        "name": "Imp",
+        "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
+        "firstNightReminder": "",
+        "otherNightReminder": "The Imp points to a player. That player dies. If the Imp chose themselves: Replace the character of 1 alive minion with a spare Imp token. Show the 'You are' card, then the Imp token.",
+        "reminders": [
+            "Dead"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/imp.png"
+    },
+    {
+        "id": "en_GB_investigator",
+        "name": "Investigator",
+        "ability": "You start knowing that 1 of 2 players is a particular Minion.",
+        "firstNightReminder": "Show the character token of a Minion in play. Point to two players, one of which is that character.",
+        "otherNightReminder": "",
+        "reminders": [
+            "Minion",
+            "Wrong"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/investigator.png"
+    },
+    {
         "id": "en_GB_lunatic",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/lunatic.png?raw=true",
         "name": "Lunatic",
-        "otherNight": 21,
+        "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",
+        "firstNightReminder": "If 7 or more players: Show the Lunatic a number of arbitrary 'Minions', players equal to the number of Minions in play. Show 3 character tokens of arbitrary good characters. If the token received by the Lunatic is a Demon that would wake tonight: Allow the Lunatic to do the Demon actions. Place their 'attack' markers. Wake the Demon. Show the Demon’s real character token. Show them the Lunatic player. If the Lunatic attacked players: Show the real demon each marked player. Remove any Lunatic 'attack' markers.",
         "otherNightReminder": "Allow the Lunatic to do the actions of the Demon. Place their 'attack' markers. If the Lunatic selected players: Wake the Demon. Show the 'attack' marker, then point to each marked player. Remove any Lunatic 'attack' markers.",
         "reminders": [
             "Attack 1",
             "Attack 2",
             "Attack 3"
         ],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lunatic.png"
     },
     {
-        "ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
-        "edition": "snv",
-        "firstNight": 25,
-        "firstNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
-        "id": "en_GB_cerenovus",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/cerenovus.png?raw=true",
-        "name": "Cerenovus",
-        "otherNight": 16,
-        "otherNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
-        "reminders": [
-            "Mad"
-        ],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "You start knowing that 1 of 2 players is a particular Minion.",
-        "edition": "tb",
-        "firstNight": 34,
-        "firstNightReminder": "Show the character token of a Minion in play. Point to two players, one of which is that character.",
-        "id": "en_GB_investigator",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/investigator.png?raw=true",
-        "name": "Investigator",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "Minion",
-            "Wrong"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "When you die, 1 player is drunk from now on.",
-        "edition": "snv",
-        "firstNight": 0,
+        "id": "en_GB_mutant",
+        "name": "Mutant",
+        "ability": "If you are “mad” about being an Outsider, you might be executed.",
         "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mutant.png"
+    },
+    {
+        "id": "en_GB_philosopher",
+        "name": "Philosopher",
+        "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
+        "firstNightReminder": "The Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
+        "otherNightReminder": "If the Philosopher has not used their ability: the Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
+        "reminders": [
+            "Drunk",
+            "Is the Philosopher"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/philosopher.png"
+    },
+    {
+        "id": "en_GB_pithag",
+        "name": "Pit-Hag",
+        "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.",
+        "firstNightReminder": "",
+        "otherNightReminder": "The Pit-Hag points to a player and a character on the sheet. If this character is not in play, wake that player and show them the 'You are' card and the relevant character token. If the character is in play, nothing happens.",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pithag.png"
+    },
+    {
+        "id": "en_GB_ravenkeeper",
+        "name": "Ravenkeeper",
+        "ability": "If you die at night, you are woken to choose a player: you learn their character.",
+        "firstNightReminder": "",
+        "otherNightReminder": "If the Ravenkeeper died tonight: The Ravenkeeper points to a player. Show that player’s character token.",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/ravenkeeper.png"
+    },
+    {
+        "id": "en_GB_recluse",
+        "name": "Recluse",
+        "ability": "You might register as evil & as a Minion or Demon, even if dead.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/recluse.png"
+    },
+    {
+        "id": "en_GB_savant",
+        "name": "Savant",
+        "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/savant.png"
+    },
+    {
+        "id": "en_GB_snakecharmer",
+        "name": "Snake Charmer",
+        "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
+        "firstNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
+        "otherNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
+        "reminders": [
+            "Poisoned"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/snakecharmer.png"
+    },
+    {
         "id": "en_GB_sweetheart",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/sweetheart.png?raw=true",
         "name": "Sweetheart",
-        "otherNight": 41,
+        "ability": "When you die, 1 player is drunk from now on.",
+        "firstNightReminder": "",
         "otherNightReminder": "Choose a player that is drunk.",
         "reminders": [
             "Drunk"
         ],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sweetheart.png"
     },
     {
-        "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
-        "edition": "bmr",
-        "firstNight": 0,
+        "id": "en_GB_vigormortis",
+        "name": "Vigormortis",
+        "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. [−1 Outsider]",
         "firstNightReminder": "",
-        "id": "en_GB_gambler",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/gambler.png?raw=true",
-        "name": "Gambler",
-        "otherNight": 11,
-        "otherNightReminder": "The Gambler points to a player, and a character on their sheet. If incorrect, the Gambler dies.",
-        "reminders": [
-            "Dead"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_savant",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/savant.png?raw=true",
-        "name": "Savant",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
-        "edition": "",
-        "firstNight": 44,
-        "firstNightReminder": "Choose a character type. Point to a player whose character is of that type. Place the Balloonist's Seen reminder next to that character.",
-        "id": "en_GB_balloonist",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/balloonist.png?raw=true",
-        "name": "Balloonist",
-        "otherNight": 63,
-        "otherNightReminder": "Choose a character type that does not yet have a Seen reminder next to a character of that type. Point to a player whose character is of that type, if there are any. Place the Balloonist's Seen reminder next to that character.",
-        "reminders": [
-            "Seen Demon",
-            "Seen Minion",
-            "Seen Outsider",
-            "Seen Townsfolk",
-            "Seen Traveller"
-        ],
-        "setup": true,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [−1 or +1 Outsider]",
-        "edition": "bmr",
-        "firstNight": 21,
-        "firstNightReminder": "Show each of the Outsider tokens in play.",
-        "id": "en_GB_godfather",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/godfather.png?raw=true",
-        "name": "Godfather",
-        "otherNight": 38,
-        "otherNightReminder": "If an Outsider died today: The Godfather points to a player. That player dies.",
+        "otherNightReminder": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbours is poisoned.",
         "reminders": [
             "Dead",
-            "Died today"
-        ],
-        "setup": true,
-        "team": "minion",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_fanggu",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/fanggu.png?raw=true",
-        "name": "Fang Gu",
-        "otherNight": 29,
-        "otherNightReminder": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
-        "reminders": [
-            "Dead",
-            "Once"
-        ],
-        "setup": true,
-        "team": "demon",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk.",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_bonecollector",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/bonecollector.png?raw=true",
-        "name": "Bone Collector",
-        "otherNight": 1,
-        "otherNightReminder": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",
-        "reminders": [
             "Has ability",
-            "No ability"
+            "Poisoned"
         ],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vigormortis.png"
     },
     {
-        "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
-        "edition": "snv",
-        "firstNight": 2,
-        "firstNightReminder": "The Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
-        "id": "en_GB_philosopher",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/philosopher.png?raw=true",
-        "name": "Philosopher",
-        "otherNight": 2,
-        "otherNightReminder": "If the Philosopher has not used their ability: the Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
-        "remindersGlobal": [
-            "Drunk",
-            "Is the Philosopher"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "reminders": []
-    },
-    {
-        "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_harlot",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/harlot.png?raw=true",
-        "name": "Harlot",
-        "otherNight": 1,
-        "otherNightReminder": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
-        "reminders": [
-            "Dead"
-        ],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_drunk",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/drunk.png?raw=true",
-        "name": "Drunk",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "remindersGlobal": [
-            "Drunk"
-        ],
-        "setup": true,
-        "team": "outsider"
-    },
-    {
-        "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
-        "edition": "tb",
-        "firstNight": 37,
-        "firstNightReminder": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon.",
-        "id": "en_GB_fortuneteller",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/fortuneteller.png?raw=true",
-        "name": "Fortune Teller",
-        "otherNight": 54,
-        "otherNightReminder": "The Fortune Teller points to two players. Show the head signal (nod 'yes', shake 'no') for whether one of those players is the Demon.",
-        "reminders": [
-            "Red herring"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "If you are “mad” about being an Outsider, you might be executed.",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_mutant",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/mutant.png?raw=true",
-        "name": "Mutant",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "You start knowing how many pairs of evil players there are.",
-        "edition": "tb",
-        "firstNight": 35,
-        "firstNightReminder": "Show the finger signal (0, 1, 2, …) for the number of pairs of neighbouring evil players.",
-        "id": "en_GB_chef",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/chef.png?raw=true",
-        "name": "Chef",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "If you die at night, you are woken to choose a player: you learn their character.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_ravenkeeper",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/ravenkeeper.png?raw=true",
-        "name": "Ravenkeeper",
-        "otherNight": 42,
-        "otherNightReminder": "If the Ravenkeeper died tonight: The Ravenkeeper points to a player. Show that player’s character token.",
-        "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which.",
-        "edition": "snv",
-        "firstNight": 1,
-        "firstNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
-        "id": "en_GB_barista",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/barista.png?raw=true",
-        "name": "Barista",
-        "otherNight": 1,
-        "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
-        "reminders": [
-            "Ability twice",
-            "Sober & Healthy"
-        ],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
-        "edition": "bmr",
-        "firstNight": 1,
-        "firstNightReminder": "Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",
-        "id": "en_GB_apprentice",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/apprentice.png?raw=true",
-        "name": "Apprentice",
-        "otherNight": 0,
+        "id": "en_GB_widow",
+        "name": "Widow",
+        "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
+        "firstNightReminder": "Show the Grimoire to the Widow for as long as they need. The Widow points to a player. That player is poisoned. Wake a good player. Show the 'These characters are in play' card, then the Widow character token.",
         "otherNightReminder": "",
         "reminders": [
-            "Is the Apprentice"
+            "Poisoned",
+            "Knows"
         ],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "You might register as evil & as a Minion or Demon, even if dead.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "en_GB_recluse",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/recluse.png?raw=true",
-        "name": "Recluse",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/widow.png"
     }
 ]

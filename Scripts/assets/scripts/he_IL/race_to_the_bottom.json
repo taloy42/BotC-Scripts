@@ -1,148 +1,18 @@
 [
     {
-        "ability": "בכל לילה, אתה רואה את הגרימואר. אתה עלול להיחשב כטוב וכדמות תושב-עיירה או זר, אפילו אם אתה מת.",
-        "edition": "tb",
-        "firstNight": 48,
-        "firstNightReminder": "תראה את הגרימואר למרגל לכמה זמן שהוא צריך.",
-        "id": "he_IL_spy",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/spy.png?raw=true",
-        "name": "מרגל",
-        "otherNight": 68,
-        "otherNightReminder": "תראה את הגרימואר למרגל לכמה זמן שהוא צריך.",
-        "reminders": [],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "אם יש רק 3 שחקנים חיים ואין הוצאה להורג, הקבוצה שלך מנצחת. אם אתה מת בלילה, שחקן אחר עלול למות במקומך.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_mayor",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/mayor.png?raw=true",
-        "name": "ראש העיר",
-        "otherNight": 0,
+        "id": "he_IL_clockmaker",
+        "name": "יצרן השעונים",
+        "ability": "אתה מתחיל בידיעה של כמה צעדים יש מהשד למשרת הקרוב אליו.",
+        "firstNightReminder": "תסמן עם האצבעות (1,2,3,...) כמה מקומות מהשד נמצא המשרת הקרוב ביותר.",
         "otherNightReminder": "",
         "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/clockmaker.png"
     },
     {
-        "ability": "בכל לילה*, תבחר שחקן: הוא מת. יכולות של תושבי-עיירה נותנות מידע שגוי. בכל יום, אם אף אחד לא הוצא להורג, הרוע מנצח.",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_vortox",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/vortox.png?raw=true",
-        "name": "וורטוקס",
-        "otherNight": 31,
-        "otherNightReminder": "הוורטוקס מצביע על שחקן. הוא מת.",
-        "reminders": [
-            "מת"
-        ],
-        "setup": false,
-        "team": "demon",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "כשאתה לומד שמתת, תבחר בפומבי שחקן חי אחד: אם הוא רע, הקבוצה שלך מפסידה.",
-        "edition": "snv",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_klutz",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/klutz.png?raw=true",
-        "name": "קונילמל",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה, תבחר שחקן (חוץ מעצמך וממטיילים): אתה לומד דמות אחת רעה ואחת טובה, מתוכם אחד נכון.",
-        "edition": "snv",
-        "firstNight": 41,
-        "firstNightReminder": "החולמני מצביע על שחקן. תראה לו דמות אחת טובה ואחת רעה, כשאחת מהן היא הדמות האמיתית.",
-        "id": "he_IL_dreamer",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/dreamer.png?raw=true",
-        "name": "חולמני",
-        "otherNight": 57,
-        "otherNightReminder": "החולמני מצביע על שחקן. תראה לו דמות אחת טובה ואחת רעה, כשאחת מהן היא הדמות האמיתית.",
-        "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "פעם אחת במשחק, במהלך היום, תכריז בפומבי על שחקן: אם הוא השד, הוא מת.",
-        "edition": "tb",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_slayer",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/slayer.png?raw=true",
-        "name": "קוטל",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "אין יכולת"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "אתה חושב שאתה השד, אבל אתה לא. השד יודע מי אתה ואת מי אתה בוחר בלילה.",
-        "edition": "bmr",
-        "firstNight": 7,
-        "firstNightReminder": "אם יש 7 שחקנים או יותר: תראה למשוגע מספר משרתים שרירותיים, כמספר המשרתים שבמשחק. תראה למשוגע 3 אסימוני דמויות טובות שרירותיות. אם האסימון שהמשוגע קיבל הוא של שד שקם בלילה הראשון: הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
-        "id": "he_IL_lunatic",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/lunatic.png?raw=true",
-        "name": "משוגע",
-        "otherNight": 21,
-        "otherNightReminder": "הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
-        "reminders": [
-            "התקפה 1",
-            "התקפה 2",
-            "התקפה 3"
-        ],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "עלול להיות זר אחד יותר או פחות במשחק.",
-        "id": "he_IL_sentinel",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/sentinel.png?raw=true",
-        "name": "שומר",
-        "team": "fabled",
-        "firstNightReminder": "",
-        "otherNightReminder": "",
-        "remindersGlobal": [],
-        "reminders": []
-    },
-    {
-        "ability": "אם 4 או יותר שחקנים חיים, כל שחקן חי רשאי לבחור בפומבי (פעם אחת במשחק) ששחקן מאותה הקבוצה שלו ימות.",
-        "id": "he_IL_doomsayer",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/doomsayer.png?raw=true",
-        "name": "שוחר האבדון",
-        "team": "fabled",
-        "firstNightReminder": "",
-        "otherNightReminder": "",
-        "remindersGlobal": [],
-        "reminders": []
-    },
-    {
-        "ability": "פעם אחת במשחק, בלילה, תבחר דמות: היא שיכורה ל3 לילות ו3 ימים.",
-        "edition": "bmr",
-        "firstNight": 19,
-        "firstNightReminder": "החצרן מנדנד את ראשו לשלילה או מצביע על דמות בדף שלו. אם החצרן השתמש ביכולת שלו: אם הדמות הזו במשחק, הדמות הזו שיכורה ל3 ימים ו3 לילות.",
         "id": "he_IL_courtier",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/courtier.png?raw=true",
         "name": "חצרן",
-        "otherNight": 10,
+        "ability": "פעם אחת במשחק, בלילה, תבחר דמות: היא שיכורה ל3 לילות ו3 ימים.",
+        "firstNightReminder": "החצרן מנדנד את ראשו לשלילה או מצביע על דמות בדף שלו. אם החצרן השתמש ביכולת שלו: אם הדמות הזו במשחק, הדמות הזו שיכורה ל3 ימים ו3 לילות.",
         "otherNightReminder": "הורד באחד את מספר הימים שנשארו לשחקן שנבחר להיות שיכור. אם החצרן לא השתמש ביכולת שלו עדיין: החצרן מנדנד את ראשו לשלילה או מצביע על דמות בדף שלו. אם החצרן השתמש ביכולת שלו: אם הדמות הזו במשחק, הדמות הזו שיכורה ל3 ימים ו3 לילות.",
         "reminders": [
             "שיכור 3",
@@ -150,55 +20,115 @@
             "שיכור 1",
             "אין יכולת"
         ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/courtier.png"
     },
     {
-        "ability": "אם יש לפחות 5 שחקנים חיים והשד מת, את הופכת לשד (מטייליים לא נחשבים).",
-        "edition": "tb",
-        "firstNight": 0,
+        "id": "he_IL_doomsayer",
+        "name": "שוחר האבדון",
+        "ability": "אם 4 או יותר שחקנים חיים, כל שחקן חי רשאי לבחור בפומבי (פעם אחת במשחק) ששחקן מאותה הקבוצה שלו ימות.",
         "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/doomsayer.png"
+    },
+    {
+        "id": "he_IL_dreamer",
+        "name": "חולמני",
+        "ability": "בכל לילה, תבחר שחקן (חוץ מעצמך וממטיילים): אתה לומד דמות אחת רעה ואחת טובה, מתוכם אחד נכון.",
+        "firstNightReminder": "החולמני מצביע על שחקן. תראה לו דמות אחת טובה ואחת רעה, כשאחת מהן היא הדמות האמיתית.",
+        "otherNightReminder": "החולמני מצביע על שחקן. תראה לו דמות אחת טובה ואחת רעה, כשאחת מהן היא הדמות האמיתית.",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/dreamer.png"
+    },
+    {
+        "id": "he_IL_empath",
+        "name": "בוחן לבבות",
+        "ability": "בכל לילה, אתה לומד כמה מבין 2 השכנים החיים שלך הם רעים.",
+        "firstNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
+        "otherNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/empath.png"
+    },
+    {
+        "id": "he_IL_klutz",
+        "name": "קלוץ",
+        "ability": "כשאתה לומד שמתת, תבחר בפומבי שחקן חי אחד: אם הוא רע, הקבוצה שלך מפסידה.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/klutz.png"
+    },
+    {
+        "id": "he_IL_lunatic",
+        "name": "משוגע",
+        "ability": "אתה חושב שאתה השד, אבל אתה לא. השד יודע מי אתה ואת מי אתה בוחר בלילה.",
+        "firstNightReminder": "אם יש 7 שחקנים או יותר: תראה למשוגע מספר משרתים שרירותיים, כמספר המשרתים שבמשחק. תראה למשוגע 3 אסימוני דמויות טובות שרירותיות. אם האסימון שהמשוגע קיבל הוא של שד שקם בלילה הראשון: הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
+        "otherNightReminder": "הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
+        "reminders": [
+            "התקפה 1",
+            "התקפה 2",
+            "התקפה 3"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lunatic.png"
+    },
+    {
+        "id": "he_IL_mayor",
+        "name": "ראש העיר",
+        "ability": "אם יש רק 3 שחקנים חיים ואין הוצאה להורג, הקבוצה שלך מנצחת. אם אתה מת בלילה, שחקן אחר עלול למות במקומך.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mayor.png"
+    },
+    {
         "id": "he_IL_scarletwoman",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/scarletwoman.png?raw=true",
         "name": "אשת הארגמן",
-        "otherNight": 20,
+        "ability": "אם יש לפחות 5 שחקנים חיים והשד מת, את הופכת לשד (מטייליים לא נחשבים).",
+        "firstNightReminder": "",
         "otherNightReminder": "אם אשת הארגמן הפכה לשד היום: תראה לה את קלף \"את\" ואת אסימון השד.",
         "reminders": [
             "שד"
         ],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/scarletwoman.png"
     },
     {
-        "ability": "אתה מתחיל בידיעה של כמה צעדים יש מהשד למשרת הקרוב אליו.",
-        "edition": "snv",
-        "firstNight": 40,
-        "firstNightReminder": "תסמן עם האצבעות (1,2,3,...) כמה מקומות מהשד נמצא המשרת הקרוב ביותר.",
-        "id": "he_IL_clockmaker",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/clockmaker.png?raw=true",
-        "name": "יצרן השעונים",
-        "otherNight": 0,
+        "id": "he_IL_sentinel",
+        "name": "שומר",
+        "ability": "עלול להיות זר אחד יותר או פחות במשחק.",
+        "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sentinel.png"
     },
     {
-        "ability": "בכל לילה, אתה לומד כמה מבין 2 השכנים החיים שלך הם רעים.",
-        "edition": "tb",
-        "firstNight": 36,
-        "firstNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
-        "id": "he_IL_empath",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/empath.png?raw=true",
-        "name": "בוחן לבבות",
-        "otherNight": 53,
-        "otherNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
+        "id": "he_IL_slayer",
+        "name": "קוטל",
+        "ability": "פעם אחת במשחק, במהלך היום, תכריז בפומבי על שחקן: אם הוא השד, הוא מת.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "אין יכולת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/slayer.png"
+    },
+    {
+        "id": "he_IL_spy",
+        "name": "מרגל",
+        "ability": "בכל לילה, אתה רואה את הגרימואר. אתה עלול להיחשב כטוב וכדמות תושב-עיירה או זר, אפילו אם אתה מת.",
+        "firstNightReminder": "תראה את הגרימואר למרגל לכמה זמן שהוא צריך.",
+        "otherNightReminder": "תראה את הגרימואר למרגל לכמה זמן שהוא צריך.",
         "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/spy.png"
+    },
+    {
+        "id": "he_IL_vortox",
+        "name": "וורטוקס",
+        "ability": "בכל לילה*, תבחר שחקן: הוא מת. יכולות של תושבי-עיירה נותנות מידע שגוי. בכל יום, אם אף אחד לא הוצא להורג, הרעים מנצחים.",
+        "firstNightReminder": "",
+        "otherNightReminder": "הוורטוקס מצביע על שחקן. הוא מת.",
+        "reminders": [
+            "מת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vortox.png"
     }
 ]

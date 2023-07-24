@@ -1,341 +1,53 @@
 [
     {
-        "ability": "בכל לילה, השחקן הראשון שבוחר אותך עם היכולת שלו הוא שיכור עד השחר. אתה עובר לקבוצה שלו.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_goon",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/goon.png?raw=true",
-        "name": "בריון",
-        "otherNight": 0,
+        "id": "he_IL_apprentice",
+        "name": "מתמחה",
+        "ability": "בלילה הראשון שלך, אתה מקבל יכולת של תושב-עיירה (אם אתה טוב) או של משרת (אם אתה רע).",
+        "firstNightReminder": "הראה למתמחה את קל, \"אתה\" ואז קלף של תושב-עיירה או משרת. החלף את האסימון של המתמחה בגרימואר באסימון של תושב-העיירה או המשרת שהראית לו, והוסף את התזכורת של המתמחה לידו.",
         "otherNightReminder": "",
         "reminders": [
-            "שיכור"
+            "המתמחה"
         ],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/apprentice.png"
     },
     {
-        "ability": "כשמשרת מת בהוצאה להורג, כל שאר השחקנים (חוץ מהמטיילים) שיכורים עד השחר הבא.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_minstrel",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/minstrel.png?raw=true",
-        "name": "זמר",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "כולם שיכורים"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "את מתחילה בידיעה של שחקן טוב והדמות שלו. אם השד הורג אותם, את מתה בנוסף.",
-        "edition": "bmr",
-        "firstNight": 39,
-        "firstNightReminder": "תראה את האסימון של הדמות המסומנת, ותצביע על השחקן שזה הדמות שלו.",
-        "id": "he_IL_grandmother",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/grandmother.png?raw=true",
-        "name": "הסבתא",
-        "otherNight": 50,
-        "otherNightReminder": "אם נכד של הסבתא נהרג ע\"י השד בלילה: הסבתא מתה.",
-        "reminders": [
-            "נכד"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "אם שני השכנים שלך הם טובים, הם לא יכולים למות.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_tealady",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/tealady.png?raw=true",
-        "name": "נערת התה",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [
-            "לא יכול למות"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה*, תבחר שחקן (שונה מהלילה הקודם): אם בחרת את השד, הוא לומד מי אתה ולא קם בלילה.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_exorcist",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/exorcist.png?raw=true",
-        "name": "מגרש השדים",
-        "otherNight": 22,
-        "otherNightReminder": "מגרש השדים מצביע על שחקן, שונה מהלילה הקודם. אם השחקן שנבחר הוא השד: תעיר את השד. תראה לו את אסימון מגרש השדים. תצביע למגרש השדים. השד לא פועל הלילה.",
-        "reminders": [
-            "נבחר"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה, תבחר שחקן חי: או אתה או הוא שיכור עד השחר. אתה לא יכול למות.",
-        "edition": "bmr",
-        "firstNight": 10,
-        "firstNightReminder": "הימאי מצביע על שחקן חי. או הימאי או השחקן הנבחר שיכורים.",
-        "id": "he_IL_sailor",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/sailor.png?raw=true",
-        "name": "ימאי",
-        "otherNight": 4,
-        "otherNightReminder": "השחקן השיעור הקודם כבר לא שיכור. הימאי מצביע על שחקן חי. או הימאי או השחקן הנבחר שיכורים.",
-        "reminders": [
-            "שיכור"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "פעם אחת במשחק, במהלך הלילה, בחר שחקן: הוא מת, אפילו אם מסיבה מסוימת הוא לא יכול למות.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
         "id": "he_IL_assassin",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/assassin.png?raw=true",
         "name": "מתנקש",
-        "otherNight": 37,
+        "ability": "פעם אחת במשחק, במהלך הלילה, בחר שחקן: הוא מת, אפילו אם מסיבה מסוימת הוא לא יכול למות.",
+        "firstNightReminder": "",
         "otherNightReminder": "אם המתנקש עדיין לא השתמש ביכולת שלו: המתנקש מנדנד את הראש \"לא\" או מצביע על שחקן. השחקן הזה מת.",
         "reminders": [
             "מת",
-            "אין יכולת"
+            "ללא יכולת"
         ],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/assassin.png"
     },
     {
-        "ability": "בכל יום, את רשאית לבחור עד 3 זוגות שחקנים שיחליפו מקומות ביניהם. שחקנים לא רשאים לקום מהכיסאות כדי לדבר בפרטיות.",
-        "edition": "bmr",
-        "firstNight": 0,
+        "id": "he_IL_bishop",
+        "name": "בישוף",
+        "ability": "רק מספר-הסיפורים יכול להעמיד להצבעה. לפחות שחקן אחד מהקבוצה הנגדית חייב לעמוד להצבעה בכל יום.",
         "firstNightReminder": "",
-        "id": "he_IL_matron",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/matron.png?raw=true",
-        "name": "אם הבית",
-        "otherNight": 0,
         "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה*, תבחר 2 שחקנים: הם מתים. שחקן מת שבחרת בלילה הקודם עלול לחזור לחיים.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_shabaloth",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/shabaloth.png?raw=true",
-        "name": "שבלות'",
-        "otherNight": 27,
-        "otherNightReminder": "שחקן אחד ששבלות' בחר בלילה הקודם עלול לחזור לחיים. השבלות' מצביע על 2 שחקנים. הם מתים.",
         "reminders": [
-            "מת",
-            "חי"
+            "להציע טוב",
+            "להציע רע"
         ],
-        "setup": false,
-        "team": "demon",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bishop.png"
     },
     {
-        "ability": "בכל לילה, תבחרי 2 שחקנים חיים (לא את עצמך): את לומדת כמה מהם קמו הלילה בגלל היכולת שלהם.",
-        "edition": "bmr",
-        "firstNight": 50,
-        "firstNightReminder": "החדרנית מצביעה על שני שחקנים. תסמן את המספר (0,1,2) של כמה מהשחקנים שנבחרו קמו בלילה בגלל היכולת שלהם.",
         "id": "he_IL_chambermaid",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/chambermaid.png?raw=true",
         "name": "חדרנית",
-        "otherNight": 70,
+        "ability": "בכל לילה, תבחרי 2 שחקנים חיים (לא את עצמך): את לומדת כמה מהם קמו הלילה בגלל היכולת שלהם.",
+        "firstNightReminder": "החדרנית מצביעה על שני שחקנים. תסמן את המספר (0,1,2) של כמה מהשחקנים שנבחרו קמו בלילה בגלל היכולת שלהם.",
         "otherNightReminder": "החדרנית מצביעה על שני שחקנים. תסמן את המספר (0,1,2) של כמה מהשחקנים שנבחרו קמו בלילה בגלל היכולת שלהם.",
         "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/chambermaid.png"
     },
     {
-        "ability": "בכל לילה*, תבחר 2 שחקנים: הם לא יכולים למות הלילה, אבל אחד מהם שיכור עד השחר.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_innkeeper",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/innkeeper.png?raw=true",
-        "name": "בעל הפונדק",
-        "otherNight": 9,
-        "otherNightReminder": "השחקנים המוגנים והשיכורים מהלילה הקודם מאבדים את הסימונים הללו. בעל הפונדק מצביע על שני שחקנים. הם מוגנים. אחד מהם שיכור.",
-        "reminders": [
-            "מוגן",
-            "שיכור"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "אתה חושב שאתה השד, אבל אתה לא. השד יודע מי אתה ואת מי אתה בוחר בלילה.",
-        "edition": "bmr",
-        "firstNight": 7,
-        "firstNightReminder": "אם יש 7 שחקנים או יותר: תראה למשוגע מספר משרתים שרירותיים, כמספר המשרתים שבמשחק. תראה למשוגע 3 אסימוני דמויות טובות שרירותיות. אם האסימון שהמשוגע קיבל הוא של שד שקם בלילה הראשון: הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
-        "id": "he_IL_lunatic",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/lunatic.png?raw=true",
-        "name": "משוגע",
-        "otherNight": 21,
-        "otherNightReminder": "הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
-        "reminders": [
-            "התקפה 1",
-            "התקפה 2",
-            "התקפה 3"
-        ],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה, תבחר שחקן חי (שונה מהלילה הקודם): אם מוציאים אותו להורג מחר, הוא לא מת.",
-        "edition": "bmr",
-        "firstNight": 22,
-        "firstNightReminder": "פרקליט השטן מצביע על אדם חי. הוא שורד את ההוצאה להורג מחר.",
-        "id": "he_IL_devilsadvocate",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/devilsadvocate.png?raw=true",
-        "name": "פרקליט השטן",
-        "otherNight": 14,
-        "otherNightReminder": "פרקליט השטן מצביע על אדם חי. הוא שורד את ההוצאה להורג מחר.",
-        "reminders": [
-            "שורד הוצאה להורג"
-        ],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה*, אתה רשאי לבחור שחקן: הוא מת. אם הבחירה האחרונה שלך הייתה אף אחד, תבחר 3 שחקנים הלילה.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_po",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/po.png?raw=true",
-        "name": "פו",
-        "otherNight": 28,
-        "otherNightReminder": "אם פו לא בחר אף אחד בלילה הקודם: פו מצביע על 3 שחקנים. אחרת: פו מנדנד את ראשו לשלילה או מצביע על שחקן. מי שנבחר כך מת.",
-        "reminders": [
-            "מת",
-            "3 התקפות"
-        ],
-        "setup": false,
-        "team": "demon",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה*, תבחר שחקן ותנחש מה הדמות שלו: אם ניחשת שגוי, אתה מת.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_gambler",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/gambler.png?raw=true",
-        "name": "מהמר",
-        "otherNight": 11,
-        "otherNightReminder": "המהמר מצביע על שחקן, ועל דמות בדף הדמויות. אם זה לא נכון, המהמר מת.",
-        "reminders": [
-            "מת"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה, תבחר שחקן: הוא מורעל. השחקן המורעל הקודם מת והופך לבריא.",
-        "edition": "bmr",
-        "firstNight": 28,
-        "firstNightReminder": "הפוקה מצביע על שחקן, הוא מורעל.",
-        "id": "he_IL_pukka",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/pukka.png?raw=true",
-        "name": "פוקה",
-        "otherNight": 26,
-        "otherNightReminder": "הפוקה מצביע על שחקן, הוא מורעל, השחקן המורעל הקודם מת.",
-        "reminders": [
-            "מורעל",
-            "מת"
-        ],
-        "setup": false,
-        "team": "demon",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל יום, אתה רשאי לצאת בהצהרה פומבית. הלילה, אם היא נכונה, שחקן מת.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_gossip",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/gossip.png?raw=true",
-        "name": "רכלן",
-        "otherNight": 47,
-        "otherNightReminder": "אם ההצהרה הפומבית של הרכלן הייתה נכונה: תבחר שחקן שלא מוגן ממוות הלילה. הוא מת.",
-        "reminders": [
-            "מת"
-        ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "בכל לילה*, אם אף אחד לא מת היום, תבחר שחקן: הוא מת. הפעם הראשונה שאתה מת, אתה חי אבל נחשב כמת.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_zombuul",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/zombuul.png?raw=true",
-        "name": "זומבול",
-        "otherNight": 25,
-        "otherNightReminder": "אם אף אחד לא מת במהלך היום: הזומבול מצביע על שחקן. השחקן הזה מת.",
-        "reminders": [
-            "מתו היום",
-            "מת"
-        ],
-        "setup": false,
-        "team": "demon",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "אתה מתחיל בידיעה של איזה זרים יש  במשחק. אם אחד מהם מת היום, תבחר שחקן הלילה: הוא מת. [-1 או +1 זר]",
-        "edition": "bmr",
-        "firstNight": 21,
-        "firstNightReminder": "תראה כל אסימון של זר שבמשחק לסנדק.",
-        "id": "he_IL_godfather",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/godfather.png?raw=true",
-        "name": "הסנדק",
-        "otherNight": 38,
-        "otherNightReminder": "אם זר מת היום: הסנדק מצביע על שחקן. השחקן הזה מת.",
-        "reminders": [
-            "מת היום",
-            "מת"
-        ],
-        "setup": true,
-        "team": "minion",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "פעם אחת במשחק, בלילה, תבחר דמות: היא שיכורה ל3 לילות ו3 ימים.",
-        "edition": "bmr",
-        "firstNight": 19,
-        "firstNightReminder": "החצרן מנדנד את ראשו לשלילה או מצביע על דמות בדף שלו. אם החצרן השתמש ביכולת שלו: אם הדמות הזו במשחק, הדמות הזו שיכורה ל3 ימים ו3 לילות.",
         "id": "he_IL_courtier",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/courtier.png?raw=true",
         "name": "חצרן",
-        "otherNight": 10,
+        "ability": "פעם אחת במשחק, בלילה, תבחר דמות: היא שיכורה ל3 לילות ו3 ימים.",
+        "firstNightReminder": "החצרן מנדנד את ראשו לשלילה או מצביע על דמות בדף שלו. אם החצרן השתמש ביכולת שלו: אם הדמות הזו במשחק, הדמות הזו שיכורה ל3 ימים ו3 לילות.",
         "otherNightReminder": "הורד באחד את מספר הימים שנשארו לשחקן שנבחר להיות שיכור. אם החצרן לא השתמש ביכולת שלו עדיין: החצרן מנדנד את ראשו לשלילה או מצביע על דמות בדף שלו. אם החצרן השתמש ביכולת שלו: אם הדמות הזו במשחק, הדמות הזו שיכורה ל3 ימים ו3 לילות.",
         "reminders": [
             "שיכור 3",
@@ -343,174 +55,282 @@
             "שיכור 1",
             "אין יכולת"
         ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/courtier.png"
     },
     {
-        "ability": "אם השד מת בהוצאה להורג (מה שיסיים את המשחק), שחקו לעוד יום אחד. אם שחקן מוצא להורג, הקבוצה שלו מפסידה.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
-        "id": "he_IL_mastermind",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/mastermind.png?raw=true",
-        "name": "גאון",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "minion",
-        "remindersGlobal": []
+        "id": "he_IL_devilsadvocate",
+        "name": "פרקליט השטן",
+        "ability": "בכל לילה, תבחר שחקן חי (שונה מהלילה הקודם): אם מוציאים אותו להורג מחר, הוא לא מת.",
+        "firstNightReminder": "פרקליט השטן מצביע על אדם חי. הוא שורד את ההוצאה להורג מחר.",
+        "otherNightReminder": "פרקליט השטן מצביע על אדם חי. הוא שורד את ההוצאה להורג מחר.",
+        "reminders": [
+            "שורד הוצאה להורג"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/devilsadvocate.png"
     },
     {
-        "ability": "רק מספר-הסיפורים יכול להעמיד להצבעה. לפחות שחקן אחד מהקבוצה הנגדית חייב לעמוד להצבעה בכל יום.",
-        "edition": "bmr",
-        "firstNight": 0,
+        "id": "he_IL_exorcist",
+        "name": "מגרש השדים",
+        "ability": "בכל לילה*, תבחר שחקן (שונה מהלילה הקודם): אם בחרת את השד, הוא לומד מי אתה ולא קם בלילה.",
         "firstNightReminder": "",
-        "id": "he_IL_bishop",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/bishop.png?raw=true",
-        "name": "בישופ",
-        "otherNight": 0,
+        "otherNightReminder": "מגרש השדים מצביע על שחקן, שונה מהלילה הקודם. אם השחקן שנבחר הוא השד: תעיר את השד. תראה לו את אסימון מגרש השדים. תצביע למגרש השדים. השד לא פועל הלילה.",
+        "reminders": [
+            "נבחר"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/exorcist.png"
+    },
+    {
+        "id": "he_IL_fool",
+        "name": "שוטה",
+        "ability": "בפעם הראשונה שאתה מת, אתה לא מת.",
+        "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [
-            "להציע טוב",
-            "להציע רע"
+            "אין יכולת"
         ],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fool.png"
     },
     {
-        "ability": "כשאתה לומד שאתה מת, תכריז בפומבי על שחקן אחד חי. הלילה, אם הוא היה שחקן טוב, הוא מת.",
-        "edition": "bmr",
-        "firstNight": 0,
+        "id": "he_IL_gambler",
+        "name": "מהמר",
+        "ability": "בכל לילה*, תבחר שחקן ותנחש מה הדמות שלו: אם ניחשת שגוי, אתה מת.",
         "firstNightReminder": "",
+        "otherNightReminder": "המהמר מצביע על שחקן, ועל דמות בדף הדמויות. אם זה לא נכון, המהמר מת.",
+        "reminders": [
+            "מת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gambler.png"
+    },
+    {
+        "id": "he_IL_godfather",
+        "name": "סנדק",
+        "ability": "אתה מתחיל בידיעה של איזה זרים יש  במשחק. אם אחד מהם מת היום, תבחר שחקן הלילה: הוא מת. [-1 או +1 זר]",
+        "firstNightReminder": "תראה כל אסימון של זר שבמשחק לסנדק.",
+        "otherNightReminder": "אם זר מת היום: הסנדק מצביע על שחקן. השחקן הזה מת.",
+        "reminders": [
+            "מת היום",
+            "מת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/godfather.png"
+    },
+    {
+        "id": "he_IL_goon",
+        "name": "בריון",
+        "ability": "בכל לילה, השחקן הראשון שבוחר אותך עם היכולת שלו הוא שיכור עד השחר. אתה עובר לקבוצה שלו.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "שיכור"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/goon.png"
+    },
+    {
+        "id": "he_IL_gossip",
+        "name": "רכלן",
+        "ability": "בכל יום, אתה רשאי לצאת בהצהרה פומבית. הלילה, אם היא נכונה, שחקן מת.",
+        "firstNightReminder": "",
+        "otherNightReminder": "אם ההצהרה הפומבית של הרכלן הייתה נכונה: תבחר שחקן שלא מוגן ממוות הלילה. הוא מת.",
+        "reminders": [
+            "מת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gossip.png"
+    },
+    {
+        "id": "he_IL_grandmother",
+        "name": "סבתא",
+        "ability": "את מתחילה בידיעה של שחקן טוב והדמות שלו. אם השד הורג אותם, את מתה בנוסף.",
+        "firstNightReminder": "תראה את האסימון של הדמות המסומנת, ותצביע על השחקן שזה הדמות שלו.",
+        "otherNightReminder": "אם נכד של הסבתא נהרג ע\"י השד בלילה: הסבתא מתה.",
+        "reminders": [
+            "נכד"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/grandmother.png"
+    },
+    {
+        "id": "he_IL_innkeeper",
+        "name": "בעל הפונדק",
+        "ability": "בכל לילה*, תבחר 2 שחקנים: הם לא יכולים למות הלילה, אבל אחד מהם שיכור עד השחר.",
+        "firstNightReminder": "",
+        "otherNightReminder": "השחקנים המוגנים והשיכורים מהלילה הקודם מאבדים את הסימונים הללו. בעל הפונדק מצביע על שני שחקנים. הם מוגנים. אחד מהם שיכור.",
+        "reminders": [
+            "מוגן",
+            "שיכור"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/innkeeper.png"
+    },
+    {
+        "id": "he_IL_judge",
+        "name": "שופט",
+        "ability": "פעם אחת במשחק, אם שחקן אחר העלה להצבעה, אתה רשאי לאלץ את ההוצאה להורג להצליח או להיכשל.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "אין יכולת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/judge.png"
+    },
+    {
+        "id": "he_IL_lunatic",
+        "name": "משוגע",
+        "ability": "אתה חושב שאתה השד, אבל אתה לא. השד יודע מי אתה ואת מי אתה בוחר בלילה.",
+        "firstNightReminder": "אם יש 7 שחקנים או יותר: תראה למשוגע מספר משרתים שרירותיים, כמספר המשרתים שבמשחק. תראה למשוגע 3 אסימוני דמויות טובות שרירותיות. אם האסימון שהמשוגע קיבל הוא של שד שקם בלילה הראשון: הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
+        "otherNightReminder": "הרשה למשוגע לעשות את הפעולות של השד. תשים את סממן ה\"תקיפה\" על השחקנים שהמשוגע בחר בהם. תעיר את השד. תראה לו את סממני ה\"תקיפה\", ואז תצביע על השחקנים שהמשוגע בחר בהם. תסיר את סממני ה\"תקיפה\". ",
+        "reminders": [
+            "התקפה 1",
+            "התקפה 2",
+            "התקפה 3"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lunatic.png"
+    },
+    {
+        "id": "he_IL_mastermind",
+        "name": "גאון",
+        "ability": "אם השד מת בהוצאה להורג (מה שיסיים את המשחק), שחקו לעוד יום אחד. אם שחקן מוצא להורג, הקבוצה שלו מפסידה.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mastermind.png"
+    },
+    {
+        "id": "he_IL_matron",
+        "name": "אם הבית",
+        "ability": "בכל יום, את רשאית לבחור עד 3 זוגות שחקנים שיחליפו מקומות ביניהם. שחקנים לא רשאים לקום מהכיסאות כדי לדבר בפרטיות.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/matron.png"
+    },
+    {
+        "id": "he_IL_minstrel",
+        "name": "זמר",
+        "ability": "כשמשרת מת בהוצאה להורג, כל שאר השחקנים (חוץ מהמטיילים) שיכורים עד השחר הבא.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "כולם שיכורים"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/minstrel.png"
+    },
+    {
         "id": "he_IL_moonchild",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/moonchild.png?raw=true",
         "name": "ילד הירח",
-        "otherNight": 49,
+        "ability": "כשאתה לומד שאתה מת, תכריז בפומבי על שחקן אחד חי. הלילה, אם הוא היה שחקן טוב, הוא מת.",
+        "firstNightReminder": "",
         "otherNightReminder": "אם ילד הירח השתמש ביכולת שלו כדי לבחור שחקן היום: אם השחקן הזה היה טוב, הוא מת.",
         "reminders": [
             "מת"
         ],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/moonchild.png"
     },
     {
-        "ability": "פעם אחת במשחק, אם שחקן אחר העלה להצבעה, אתה רשאי לאלץ את ההוצאה להורג להצליח או להיכשל.",
-        "edition": "bmr",
-        "firstNight": 0,
+        "id": "he_IL_pacifist",
+        "name": "פציפיסט",
+        "ability": "שחקנים טובים שהוצאו להורג עלולים לא למות.",
         "firstNightReminder": "",
-        "id": "he_IL_judge",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/judge.png?raw=true",
-        "name": "שופט",
-        "otherNight": 0,
         "otherNightReminder": "",
-        "reminders": [
-            "אין יכולת"
-        ],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
+        "reminders": [],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pacifist.png"
     },
     {
-        "ability": "בפעם הראשונה שאתה מת, אתה לא מת.",
-        "edition": "bmr",
-        "firstNight": 0,
+        "id": "he_IL_po",
+        "name": "פו",
+        "ability": "בכל לילה*, אתה רשאי לבחור שחקן: הוא מת. אם הבחירה האחרונה שלך הייתה אף אחד, תבחר 3 שחקנים הלילה.",
         "firstNightReminder": "",
-        "id": "he_IL_fool",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/fool.png?raw=true",
-        "name": "שוטה",
-        "otherNight": 0,
-        "otherNightReminder": "",
+        "otherNightReminder": "אם פו לא בחר אף אחד בלילה הקודם: פו מצביע על 3 שחקנים. אחרת: פו מנדנד את ראשו לשלילה או מצביע על שחקן. מי שנבחר כך מת.",
         "reminders": [
-            "אין יכולת"
+            "מת",
+            "3 התקפות"
         ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/po.png"
     },
     {
-        "ability": "פעם אחת במשחק, בלילה*, תבחר שחקן מת: אם הוא תושב עיירה, הוא חוזר לחיים.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
         "id": "he_IL_professor",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/professor.png?raw=true",
         "name": "פרופסור",
-        "otherNight": 45,
+        "ability": "פעם אחת במשחק, בלילה*, תבחר שחקן מת: אם הוא תושב עיירה, הוא חוזר לחיים.",
+        "firstNightReminder": "",
         "otherNightReminder": "אם הפרופסור לא השתמש ביכולת שלו: הפרופסור מנדנד את ראשו לשלילה, או שהוא מצביע על שחקן. אם נבחר תושב-עיירה, הוא חזור לחיים.",
         "reminders": [
             "חי",
             "אין יכולת"
         ],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/professor.png"
     },
     {
-        "ability": "אתה עלול למות בכל רגע.",
-        "edition": "bmr",
-        "firstNight": 0,
+        "id": "he_IL_pukka",
+        "name": "פוקה",
+        "ability": "בכל לילה, תבחר שחקן: הוא מורעל. השחקן המורעל הקודם מת והופך לבריא.",
+        "firstNightReminder": "הפוקה מצביע על שחקן, הוא מורעל.",
+        "otherNightReminder": "הפוקה מצביע על שחקן, הוא מורעל, השחקן המורעל הקודם מת.",
+        "reminders": [
+            "מורעל",
+            "מת"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pukka.png"
+    },
+    {
+        "id": "he_IL_sailor",
+        "name": "ימאי",
+        "ability": "בכל לילה, תבחר שחקן חי: או אתה או הוא שיכור עד השחר. אתה לא יכול למות.",
+        "firstNightReminder": "הימאי מצביע על שחקן חי. או הימאי או השחקן הנבחר שיכורים.",
+        "otherNightReminder": "השחקן השיעור הקודם כבר לא שיכור. הימאי מצביע על שחקן חי. או הימאי או השחקן הנבחר שיכורים.",
+        "reminders": [
+            "שיכור"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sailor.png"
+    },
+    {
+        "id": "he_IL_shabaloth",
+        "name": "שבלות'",
+        "ability": "בכל לילה*, תבחר 2 שחקנים: הם מתים. שחקן מת שבחרת בלילה הקודם עלול לחזור לחיים.",
         "firstNightReminder": "",
+        "otherNightReminder": "שחקן אחד ששבלות' בחר בלילה הקודם עלול לחזור לחיים. השבלות' מצביע על 2 שחקנים. הם מתים.",
+        "reminders": [
+            "מת",
+            "חי"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/shabaloth.png"
+    },
+    {
+        "id": "he_IL_tealady",
+        "name": "נערת התה",
+        "ability": "אם שני השכנים שלך הם טובים, הם לא יכולים למות.",
+        "firstNightReminder": "",
+        "otherNightReminder": "",
+        "reminders": [
+            "לא יכול למות"
+        ],
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/tealady.png"
+    },
+    {
         "id": "he_IL_tinker",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/tinker.png?raw=true",
         "name": "פחח",
-        "otherNight": 48,
+        "ability": "אתה עלול למות בכל רגע.",
+        "firstNightReminder": "",
         "otherNightReminder": "הפחח עלול למות.",
         "reminders": [
             "מת"
         ],
-        "setup": false,
-        "team": "outsider",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/tinker.png"
     },
     {
-        "ability": "רק אתה והמתים יכולים להצביע. הם לא צריכים אסימון הצבעה בשביל להצביע כך. לא צריך רוב של 50%.",
-        "edition": "bmr",
-        "firstNight": 0,
-        "firstNightReminder": "",
         "id": "he_IL_voudon",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/voudon.png?raw=true",
         "name": "וודון",
-        "otherNight": 0,
-        "otherNightReminder": "",
-        "reminders": [],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
-    },
-    {
-        "ability": "שחקנים טובים שהוצאו להורג עלולים לא למות.",
-        "edition": "bmr",
-        "firstNight": 0,
+        "ability": "רק אתה והמתים יכולים להצביע. הם לא צריכים אסימון הצבעה בשביל להצביע. לא צריך רוב של 50%.",
         "firstNightReminder": "",
-        "id": "he_IL_pacifist",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/pacifist.png?raw=true",
-        "name": "פציפיסט",
-        "otherNight": 0,
         "otherNightReminder": "",
         "reminders": [],
-        "setup": false,
-        "team": "townsfolk",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/voudon.png"
     },
     {
-        "ability": "בלילה הראשון שלך, אתה מקבל יכולת של תושב-עיירה (אם אתה טוב) או של משרת (אם אתה רע).",
-        "edition": "bmr",
-        "firstNight": 1,
-        "firstNightReminder": "הראה למתמחה את קל, \"אתה\" ואז קלף של תושב-עיירה או משרת. החלף את האסימון של המתמחה בגרימואר באסימון של תושב-העיירה או המשרת שהראית לו, והוסף את התזכורת של המתמחה לידו.",
-        "id": "he_IL_apprentice",
-        "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/apprentice.png?raw=true",
-        "name": "מתמחה",
-        "otherNight": 0,
-        "otherNightReminder": "",
+        "id": "he_IL_zombuul",
+        "name": "זומבול",
+        "ability": "בכל לילה*, אם אף אחד לא מת היום, תבחר שחקן: הוא מת. הפעם הראשונה שאתה מת, אתה חי אבל נחשב כמת.",
+        "firstNightReminder": "",
+        "otherNightReminder": "אם אף אחד לא מת במהלך היום: הזומבול מצביע על שחקן. השחקן הזה מת.",
         "reminders": [
-            "המתמחה"
+            "מתו היום",
+            "מת"
         ],
-        "setup": false,
-        "team": "traveler",
-        "remindersGlobal": []
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/zombuul.png"
     }
 ]
