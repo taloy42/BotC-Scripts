@@ -114,7 +114,7 @@ def position_foreground(img,bg_size,fg_size,fg_loc):
   bg = Image.new('RGBA',bg_size,color=(0,0,0,0))
   bg.paste(img,fg_loc,img)
   return bg
-def add_img_to_bg(img,bg,perc=1/3,vertical_offset_frac=7/12,loc=None):
+def add_img_to_bg(img,bg,loc=None,box=None,from_height=None):
   # img = crop_and_square(img)
   
   # W,H = bg.size
@@ -137,13 +137,18 @@ def add_img_to_bg(img,bg,perc=1/3,vertical_offset_frac=7/12,loc=None):
   img = crop_image(img)
   # box_width = bg.size[0]*(1-0.13*2)
   # box_height = bg.size[1]*(1-0.36-0.2)
-  box_width = W//2
-  box_height = H//3
-  box = (box_width, box_height)
+  if from_height is None:
+    from_height = int(H*0.4)
+  if box is None:
+    box_width = W//2
+    box_height = H//3
+    box = (box_width, box_height)
+  else:
+    box_width,box_height = box
   box_size = get_box_size(img,box)
   if loc is None:
     x = (W-box_size[0])//2
-    y = int(H*0.4)
+    y = from_height
     if box_size[0] >= box_width-1:
       y += (box_height-box_size[1])//2
     loc = (x,y)

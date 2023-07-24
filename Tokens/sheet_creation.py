@@ -10,11 +10,15 @@ def generate_sheet(imgs):
   rows = [utils.img_concat(chunk) for chunk in utils.split(imgs,4)]
   return utils.img_concat(rows,horizontal=False)
 
-def idx_to_tabular(idx):
-  sheet_num = idx//(const.TOKENS_PER_SHEET)
-  idx_in_sheet = idx%(const.TOKENS_PER_SHEET)
-  idx_col = idx_in_sheet%const.TOKENS_PER_WIDTH
-  idx_row = idx_in_sheet//const.TOKENS_PER_WIDTH
+def idx_to_tabular(idx,mode='tokens'):
+  if mode=='tokens':
+    per_sheet, per_width = const.TOKENS_PER_SHEET,const.TOKENS_PER_WIDTH 
+  elif mode=='reminders':
+    per_sheet, per_width = const.REMINDERS_PER_SHEET,const.REMINDERS_PER_WIDTH
+  sheet_num = idx//per_sheet
+  idx_in_sheet = idx%per_sheet
+  idx_col = idx_in_sheet%per_width
+  idx_row = idx_in_sheet//per_width
   return (sheet_num,idx_row,idx_col)
 
 def list_total_items(lst):
@@ -26,21 +30,32 @@ def list_total_items(lst):
       total += 1
   return total
 
-def generate_sheets(imgs):
+def generate_sheets(imgs,mode='tokens'):
   # print('here')
   imgs = utils.flatten_list(imgs)
   total_tokens = len(imgs)
   # total_tokens = list_total_items(imgs)
-  num_sheets = ceil(total_tokens/const.TOKENS_PER_SHEET)
-  sheets = [Image.new("RGBA", const.PAGE_SIZE, (0,0,0,0)) for i in range(num_sheets)]
+  if mode=='tokens':
+    num_sheets = ceil(total_tokens/const.TOKENS_PER_SHEET)
+    sheets = [Image.new("RGBA", const.PAGE_SIZE, (0,0,0,0)) for i in range(num_sheets)]
+    
+    x_space = (const.PAGE_WIDTH - const.TOKENS_PER_WIDTH*const.IMG_SIZE)//(const.TOKENS_PER_WIDTH+1)
+    y_space = (const.PAGE_HEIGHT - const.TOKENS_PER_HEIGHT*const.IMG_SIZE)//(const.TOKENS_PER_HEIGHT+1)
+    
+    box_side = const.IMG_SIZE + min(x_space,y_space)
+  elif mode=='reminders':
+    num_sheets = ceil(total_tokens/const.REMINDERS_PER_SHEET)
+    sheets = [Image.new("RGBA", const.PAGE_SIZE, (0,0,0,0)) for i in range(num_sheets)]
 
-  x_space = (const.PAGE_WIDTH - const.TOKENS_PER_WIDTH*const.IMG_SIZE)//(const.TOKENS_PER_WIDTH+1)
-  y_space = (const.PAGE_HEIGHT - const.TOKENS_PER_HEIGHT*const.IMG_SIZE)//(const.TOKENS_PER_HEIGHT+1)
-  
-  box_side = const.IMG_SIZE + min(x_space,y_space)
-
+    x_space = (const.PAGE_WIDTH - const.REMINDERS_PER_WIDTH*const.REMINDER_SIZE)//(const.REMINDERS_PER_WIDTH+1)
+    y_space = (const.PAGE_HEIGHT - const.REMINDERS_PER_HEIGHT*const.REMINDER_SIZE)//(const.REMINDERS_PER_HEIGHT+1)
+    
+    box_side = const.REMINDER_SIZE + min(x_space,y_space)
+  else:
+    raise Exception('not right mode!')
+    return
   for idx,img in enumerate(imgs):
-    sheet_num,idx_row,idx_col = idx_to_tabular(idx)
+    sheet_num,idx_row,idx_col = idx_to_tabular(idx,mode=mode)
     x = x_space+idx_col*box_side
     y = y_space+idx_row*box_side
     sheets[sheet_num].paste(img,(x,y)) 

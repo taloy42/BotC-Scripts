@@ -34,15 +34,6 @@ def create_token_backup(name,img,text):
 
   return res
 def add_leaves(character, img,group=None):
-  edition = character.get('edition')
-  is_fabled = character.get('team') == 'fabled'
-  if is_fabled:
-    group = 'fabled'
-  elif edition in const.groups:
-    group = edition
-  
-
-
   firstNight = len(character.get('firstNightReminder',''))>0
 
   otherNight = len(character.get('otherNightReminder',''))>0
@@ -70,18 +61,26 @@ def add_leaves(character, img,group=None):
     img.paste(top_leaf,(0,0),top_leaf)
   return img
 
-def add_name_to_img(name,img):
-  font = ImageFont.truetype(const.NAME_FONT_PATH(),size=60)
+def add_name_to_img(name,img,color='black',mode='token',font_path=None):
+  if font_path is None:
+    font_path = const.NAME_FONT_PATH()
+  font = ImageFont.truetype(font_path,size=60)
   font_width = font.getsize(name)[0]
   r = img.size[0]//2
   # degs_per_let = 12
-  let_width = const.LETTER_WIDTH()
   # rmax,rmin,cx,cy,angmin,angmax = 0.8*r,0.55*r,r,r,-degs_per_let*len(name)/2,degs_per_let*len(name)/2
-  rmax,rmin,cx,cy,angmin,angmax = 0.8*r,0.55*r,r,r,-let_width*font_width/2,let_width*font_width/2
-
+  if mode=='token':
+    let_width = const.LETTER_WIDTH(mode)
+    rmax,rmin,cx,cy,angmin,angmax = 0.8*r,0.55*r,r,r,-let_width*font_width/2,let_width*font_width/2
+  elif mode=='reminder':
+    let_width = const.LETTER_WIDTH(mode)
+    rmax,rmin,cx,cy,angmin,angmax = 0.95*r,0.7*r,r,r,-let_width*font_width/2,let_width*font_width/2
+  else:
+    raise Exception()
   with WandImage(width=2*r,height=2*r) as wand_img:
       wand_img.background_color = 'transparent'
-      wand_img.font = WandFont(const.NAME_FONT_PATH(),60)
+      wand_img.font = WandFont(font_path,60)
+      wand_img.font_color = color
       wand_img.read(filename='label: {} '.format(name))
       wand_img.resize(2*r,2*r)
       wand_img.virtual_pixel = 'transparent'
@@ -106,7 +105,7 @@ def create_token(character,img,group=None):
   # font_space_frac = 7/16
   name, text = character['name'],character['ability']
   # put image on background
-  res = utils.add_img_to_bg(img,const.TOKEN_BG(group),vertical_offset_frac=0.2)#,vertical_space_frac=font_space_frac)
+  res = utils.add_img_to_bg(img,const.TOKEN_BG(group))#,vertical_space_frac=font_space_frac)
   res = add_leaves(character, res, group)
   W,H = res.size
   
@@ -129,21 +128,85 @@ def create_token(character,img,group=None):
   # if const.DIRECTION=='rtl':
   #   name = utils.change_dir(name)
   # draw.text(((W-s[0])//2,int(H*.8)),name,font=font,align='right' if const.DIRECTION=='rtl' else 'left',fill='black')
-  add_name_to_img(name,res)
+  add_name_to_img(name,res,mode='token')
   return res
 def create_token_ch(character,group=None):
   if character['id']=='_meta':
     return None
+  
+  edition = character.get('edition')
+  is_fabled = character.get('team') == 'fabled'
+  if is_fabled:
+    group = 'fabled'
+  elif edition in const.groups:
+    group = edition
+
+  
+  copies = character.get('copies',1)
   images = character['image']
   if isinstance(images,list):
     images = [utils.url_to_image(image).resize((const.IMG_SIZE,const.IMG_SIZE)) for image in images]
-    return [create_token(character,im,group) for i,im in enumerate(images)]
+    tokens = [create_token(character,im,group) for i,im in enumerate(images)]
+    return [x for x in tokens for i in range(copies)]
   image = utils.url_to_image(images).resize((const.IMG_SIZE,const.IMG_SIZE))
-  return create_token(character,image,group)
+  token = create_token(character,image,group)
+  return [token for i in range(copies)]
 # def cv2_to_PIL(img):
 #   img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 #   im_pil = Image.fromarray(img)
 #   return im_pil
+def create_reminder(image,reminder):
+  bg = const.REMINDER_BG()
+  W,H = bg.size
+  box = ((W*1)//2,(H*1)//2)
+  res = utils.add_img_to_bg(image,bg,box=box,from_height=int(H*0.2))#,vertical_space_frac=font_space_frac)
+  
+  
+  draw = ImageDraw.Draw(res)
+  # add ability text
+  # s = font.getsize(name)
+  # draw.multiline_text(((W-s[0])//2,50),text,font=font,align='right',fill='black',)
+  # font = get_optimal_multiline_font(const.FONT_PATH(),text,H*font_space_frac,im_size=H)
+  # font = ImageFont.truetype(font=const.FONT_PATH(), size=const.REMINDER_FONT_SIZE())
+  # draw_multiline(draw,res.size,font,reminder,min_height=H*0.8,color='white')
+  add_name_to_img(reminder,res,color='white',mode='reminder',font_path=const.FONT_PATH())
+  # add name
+  # font = ImageFont.truetype(font='dorian2.ttf', size=50)
+  
+  # font = ImageFont.truetype(font=const.FONT_PATH(), size=20)
+  # name = name.upper()
+
+  # font = get_optimal_font(const.NAME_FONT_PATH(),name,W*5/12)
+  # s = font.getsize(name)
+  # if const.DIRECTION=='rtl':
+  #   name = utils.change_dir(name)
+  # draw.text(((W-s[0])//2,int(H*.8)),name,font=font,align='right' if const.DIRECTION=='rtl' else 'left',fill='black')
+  # add_name_to_img(name,res)
+  return res
+def create_reminders_ch(character):
+  if character['id']=='_meta':
+    return None
+  
+  # edition = character.get('edition')
+  # is_fabled = character.get('team') == 'fabled'
+  # if is_fabled:
+  #   group = 'fabled'
+  # elif edition in const.groups:
+  #   group = edition
+
+  image = character['image']
+  if isinstance(image,list):
+    image = image[0]
+  image = utils.url_to_image(image).resize((const.REMINDER_SIZE,const.REMINDER_SIZE))
+  reminders = character.get('reminders',[])
+  reminders = [(x,1) if isinstance(x,str) else tuple(x) for x in reminders]
+  # if isinstance(reminders,list):
+  reminders = [[create_reminder(image,reminder)]*copies for reminder,copies in reminders]
+  # tokens = [create_token(character,im) for i,im in enumerate(reminders)]
+  return reminders
+  # image = utils.url_to_image(reminders).resize((const.IMG_SIZE,const.IMG_SIZE))
+  # token = create_token(character,image,group)
+  # return [token for i in range(copies)]
 def get_optimal_font_size(font_path,text,width,is_width=True):
   for size in range(50,1,-1):
     font = ImageFont.truetype(font=font_path, size=size)
@@ -172,7 +235,7 @@ def get_optimal_multiline_font(font_path,text,max_height,min_height=60,im_size=5
     if check_multiline_font(font,text,max_height,min_height,im_size):
       break
   return font
-def draw_multiline(draw,size,font,text,min_height=90):
+def draw_multiline(draw,size,font,text,min_height=90,color='black'):
   W,H = size
   # R = get_diam_for_size(W)
   R = W//2
@@ -183,7 +246,7 @@ def draw_multiline(draw,size,font,text,min_height=90):
     s = font.getsize(now)
     if const.DIRECTION=='rtl':
       now = utils.change_dir(now)
-    draw.text(((W-s[0])//2,h),now,fill='black',font=font)
+    draw.text(((W-s[0])//2,h),now,fill=color,font=font)
     h+=font.getsize(now)[1]
   return draw
 def check_multiline_font(font,text,max_height,min_height=60,im_size=512):
