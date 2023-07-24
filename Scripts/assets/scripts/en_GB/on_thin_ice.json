@@ -8,17 +8,27 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/artist.png"
     },
     {
         "id": "en_GB_eviltwin",
         "name": "Evil Twin",
         "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
-        "firstNightReminder": "Wake the Evil Twin and their twin. Confirm that they have acknowledged each other. Point to the Evil Twin. Show their Evil Twin token to the twin player. Point to the twin. Show their character token to the Evil Twin player.",
+        "firstNightReminder": "Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.",
         "otherNightReminder": "",
         "reminders": [
             "Twin"
         ],
+        "firstNight": 30,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/eviltwin.png"
     },
     {
@@ -28,6 +38,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/klutz.png"
     },
     {
@@ -37,6 +52,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mastermind.png"
     },
     {
@@ -44,22 +64,32 @@
         "name": "Moonchild",
         "ability": "When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player, they die.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Moonchild used their ability to target a player today: If that player is good, they die.",
+        "otherNightReminder": "If the Moonchild is due to kill a good player, they die.",
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 57,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/moonchild.png"
     },
     {
         "id": "en_GB_philosopher",
         "name": "Philosopher",
         "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
-        "firstNightReminder": "The Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
-        "otherNightReminder": "If the Philosopher has not used their ability: the Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
+        "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
+        "otherNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
         "reminders": [
             "Drunk",
             "Is the Philosopher"
         ],
+        "firstNight": 9,
+        "otherNight": 8,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/philosopher.png"
     },
     {
@@ -67,34 +97,49 @@
         "name": "Professor",
         "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Professor has not used their ability: The Professor either shakes their head no, or points to a player. If that player is a Townsfolk, they are now alive.",
+        "otherNightReminder": "The Professor might choose a dead player.",
         "reminders": [
             "Alive",
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": 50,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/professor.png"
     },
     {
         "id": "en_GB_pukka",
         "name": "Pukka",
         "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.",
-        "firstNightReminder": "The Pukka points to a player. That player is poisoned.",
-        "otherNightReminder": "The Pukka points to a player. That player is poisoned. The previously poisoned player dies.",
+        "firstNightReminder": "The Pukka chooses a player.",
+        "otherNightReminder": "The Pukka chooses a player. The previously poisoned player dies then becomes healthy.",
         "reminders": [
             "Poisoned",
             "Dead"
         ],
+        "firstNight": 36,
+        "otherNight": 33,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pukka.png"
     },
     {
         "id": "en_GB_seamstress",
         "name": "Seamstress",
         "ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",
-        "firstNightReminder": "The Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
-        "otherNightReminder": "If the Seamstress has not yet used their ability: the Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
+        "firstNightReminder": "The Seamstress might choose 2 players. Nod or shake your head.",
+        "otherNightReminder": "The Seamstress might choose 2 players. Nod or shake your head.",
         "reminders": [
             "No ability"
         ],
+        "firstNight": 51,
+        "otherNight": 67,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/seamstress.png"
     },
     {
@@ -104,6 +149,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sentinel.png"
     },
     {
@@ -115,6 +165,11 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/slayer.png"
     },
     {
@@ -126,6 +181,11 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/virgin.png"
     }
 ]

@@ -31,8 +31,6 @@ def gen_sheets_for_script(script_dir,script,out_dir):
     for i,sheet in enumerate(sheets):
         sheet.save(f'{out_dir}/{i}.png')
 
-def f():
-    const.DIRECTION = 'poop'
 def load_script_from_url(url):
     resp = requests.get(url)
     return json.loads(resp.content)
@@ -43,6 +41,15 @@ def load_local_script(name):
     # SCRIPTS[k] = json.load(open(path,'r',encoding='utf8'))
     return json.load(open(path,'r',encoding='utf8'))
 
+def get_script(uri):
+    if os.path.isfile(uri):
+        script = json.load(open(uri,'r',encoding='utf8'))
+    elif os.path.isfile(f'{const.ROOT_DIR}resources\\scripts\\{uri}.json'):
+        script = json.load(open(f'{const.ROOT_DIR}resources\\scripts\\{uri}.json','r',encoding='utf8'))
+    else:
+        resp = requests.get(uri)
+        script = json.loads(resp.content)
+    return [x for x in script if x['team']!='reminders']
 def gen_sheets_for_script(script,sheet_path = '.\\sheets',script_name='unnamed script'):
     meta = dict()
     if script[0]['id'] == '_meta':
@@ -75,15 +82,13 @@ def gen_sheets_for_script(script,sheet_path = '.\\sheets',script_name='unnamed s
         sheet.save(os.path.join(reminder_path,f'{name}_{i}.png'))
 
 def main():
-    # script = const.SCRIPTS['trouble-brewing']
-    # script = const.SCRIPTS['all-roles']
-    # script = json.load(open(r'C:\Users\anukh\Downloads\BotC\repository\BotC-Scripts\Tokens\resources\scripts\all_roles_en_underscore.json','r'))
-    script = json.load(open(r'C:\Users\anukh\Downloads\BotC\repository\BotC-Scripts\Tokens\resources\scripts\he_IL.json','r',encoding='utf8'))
-    
+    # script = get_script(r'C:\Users\anukh\Downloads\BotC\repository\BotC-Scripts\Tokens\resources\scripts\all_roles_en_underscore.json')
+    script = get_script('he_IL')
     if script[0]['id']=='_meta' and 'direction' in script[0]:
         const.DIRECTION = script[0]['direction']
     const.DIRECTION = 'rtl'
-    sheet_path = 'sheets'
+    sheet_path = 'sheets\\try'
+    script = script[:8]
     gen_sheets_for_script(script,sheet_path,script_name='all_roles_he')
 
 if __name__=='__main__':

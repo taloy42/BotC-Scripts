@@ -1,0 +1,152 @@
+,id,name,firstNightReminder,otherNightReminder,firstNightOrder,otherNightOrder
+0,acrobat,,,The Acrobat might die,-1,46
+1,alchemist,Alchemist,Show the YOU ARE token and the character token of a not in play Minion.,,10,-1
+2,alhadikhia,,,"The Al-Hadikhia chooses three players.    Wake the player marked 1 and say ""the Al-Hadikhia has chosen"", then the player's name, then ""Do you choose to live?"" They either nod or shake their head. Put them to sleep and add or remove shrouds accordingly. Repeat for players marked 2 and 3. If all three players are now alive, add a shroud to all three.",-1,40
+3,amnesiac,Amnesiac,,,40,54
+4,angel,Angel,"Announce which players are protected by the Angel. Add the ""Protected"" token to the relevant players.",,1,-1
+5,apprentice,Apprentice Seat 11,"Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",,5,-1
+6,artist,,,,-1,-1
+7,assassin,,,The Assassin might choose a player.  ,-1,43
+8,atheist,,,,-1,-1
+9,balloonist,Balloonist,Show any player ,Show a player with a different character type to previously ,55,69
+10,barber,,,"If the Barber died today or tonight, show the Demon the THIS CHARACTER SELECTED YOU & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the YOU ARE token & their new character token.",-1,47
+11,barista,Barista Seat 12,"Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).","Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",6,3
+12,baron,,,,-1,-1
+13,beggar,,,,-1,-1
+14,bishop,,,,-1,-1
+15,bonecollector,,,"The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",-1,4
+16,boomdandy,,,,-1,-1
+17,bootlegger,,,,-1,-1
+18,bountyhunter,Bounty Hunter,Point to the KNOWN player.,"If the KNOWN player died today or tonight, point to a new KNOWN player.",56,71
+19,buddhist,Buddhist,Declare which players are affected by the Buddhist.,,2,-1
+20,bureaucrat,Bureaucrat Seat 9,The Bureaucrat chooses a player. ,The Bureaucrat chooses a player. ,7,5
+21,butcher,,,,-1,-1
+22,butler,Butler,The Butler chooses a player. ,The Butler chooses a player. ,47,74
+23,cannibal,,,,-1,-1
+24,cerenovus,Cerenovus,"The Cerenovus chooses a player & a character.  Put the Cerenovus to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token, the Cerenovus token, then the madness-character token.","The Cerenovus chooses a player & a character.  Put the Cerenovus to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token, the Cerenovus token, then the madness-character token.",32,21
+25,chambermaid,Chambermaid,The Chambermaid chooses 2 living players. Give a finger signal.,The Chambermaid chooses 2 living players. Give a finger signal.,62,78
+26,chef,Chef,Give a finger signal.,,44,-1
+27,choirboy,,,"If the Demon killed the King, point to the Demon player.",-1,51
+28,clockmaker,Clockmaker,Give a finger signal.,,49,-1
+29,courtier,Courtier,The Courtier might choose a character  ,The Courtier might choose a character  ,26,14
+30,cultleader,Cult Leader,"The Cult Leader might change alignment. If so, show the YOU ARE info token and a thumbs up or down for their new alignment.","The Cult Leader might change alignment. If so, show the YOU ARE info token and a thumbs up or down for their new alignment.",58,73
+31,damsel,Damsel,Wake each Minion. Show the Damsel token. Put each Minion to sleep.,"If the Damsel was chosen by the Huntsman, show them the YOU ARE info token and their new character token.",39,53
+32,deviant,,,,-1,-1
+33,devilsadvocate,Devil's Advocate,The Devil's Advocate chooses a living player. ,The Devil's Advocate chooses a living player. ,29,19
+34,djinn,,,,-1,-1
+35,doomsayer,,,,-1,-1
+36,dreamer,Dreamer,"The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.","The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",50,63
+37,drunk,,,,-1,-1
+38,duchess,,,"Wake each player marked “Visitor” or “False Info” one at a time. Show them the Duchess token, then fingers (1, 2, 3) equaling the number of evil players marked “Visitor” or, if you are waking the player marked “False Info,” show them any number of fingers except the number of evil players marked “Visitor.”",-1,1
+39,empath,Empath,Give a finger signal.,Give a finger signal.,45,60
+40,engineer,Engineer,"The Engineer might choose Minions or Demons.  If they do: Put the Engineer to sleep. Wake a target, show them the YOU ARE token and their new character token, then put that target to sleep. Repeat for all players that changed characters.","The Engineer might choose Minions or Demons.  If they do: Put the Engineer to sleep. Wake a target, show them the YOU ARE token and their new character token, then put that target to sleep. Repeat for all players that changed characters.",20,11
+41,eviltwin,Evil Twin,Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.,,30,-1
+42,exorcist,,,The Exorcist chooses a player.  Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the THIS CHARACTER SELECTED YOU & Exorcist tokens. Point to the Exorcist.,-1,28
+43,fanggu,,,The Fang Gu chooses a player.  If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the YOU ARE and Fang Gu tokens & give a thumbs-down. ,-1,36
+44,farmer,,,"If the Farmer died tonight, wake an alive good player. Show them the YOU ARE info token and a Farmer character token. Replace their previous token with the Farmer token.",-1,55
+45,fearmonger,Fearmonger,"The Fearmonger chooses a player.  Declare that ""the Fearmonger has chosen a player.""","The Fearmonger chooses a player.  If the player wasn't already marked with the FEAR reminder, declare that ""the Fearmonger has chosen a player.""",33,23
+46,fibbin,,,,-1,-1
+47,fiddler,,,,-1,-1
+48,fisherman,,,,-1,-1
+49,flowergirl,,,Either nod or shake your head.,-1,64
+50,fool,,,,-1,-1
+51,fortuneteller,Fortune Teller,The Fortune Teller chooses 2 players. Nod if either is the Demon (or the RED HERRING).,The Fortune Teller chooses 2 players. Nod if either is the Demon (or the RED HERRING).,46,61
+52,gambler,,,The Gambler chooses a player & a character. ,-1,16
+53,gangster,,,,-1,-1
+54,gardener,,,,-1,-1
+55,general,General,Give a thumb signal.,Give a thumb signal.,61,77
+56,goblin,,,,-1,-1
+57,godfather,Godfather,Show the character tokens of all in-play Outsiders.,"If an Outsider died today, the Godfather chooses a player. ",28,44
+58,golem,,,,-1,-1
+59,goon,,,,-1,-1
+60,gossip,,,"If the Gossip is due to kill a player, they die. ",-1,45
+61,grandmother,Grandmother,Point to the grandchild player & show their character token.,"If the grandchild was killed by the Demon, the Grandmother dies too. ",48,58
+62,gunslinger,,,,-1,-1
+63,harlot,,,"The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",-1,6
+64,harpy,Harpy,"The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.","The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.",34,24
+65,hellslibrarian,,,,-1,-1
+66,heretic,,,,-1,-1
+67,highpriestess,High Priestess,Point to a player.,Point to a player.,60,76
+68,huntsman,Huntsman,The Huntsman might choose a player.  If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the YOU ARE info token and their new character token.,The Huntsman might choose a player.  If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the YOU ARE info token and their new character token.,38,52
+69,imp,,,"The Imp chooses a player.  If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the YOU ARE token, then show the Imp token.",-1,31
+70,innkeeper,,,The Innkeeper chooses 2 players.   ,-1,15
+71,investigator,Investigator,Show the Minion character token. Point to both the MINION and WRONG players.,,43,-1
+72,judge,,,,-1,-1
+73,juggler,,,Give a finger signal.,-1,68
+74,king,King,"Wake the Demon. Show the THIS PLAYER IS token and the King token, then point to the King.","If the dead outnumber the living, show the character token of an alive player.",17,70
+75,klutz,,,,-1,-1
+76,knight,Knight,Point to the two non-Demon players marked KNOW.,,53,-1
+77,legion,,,A player might die. ,-1,30
+78,leviathan,Leviathan,"Declare that ""The Leviathan is in play."" Mark the Leviathan with the DAY 1 reminder. ","Optionally, declare that ""The Leviathan is in play."" Replace the reminder token. ",65,81
+79,librarian,Librarian,Show the Outsider character token. Point to both the OUTSIDER and WRONG players.,,42,-1
+80,lilmonsta,Lil' Monsta,"Wake all Minions, allow them to choose a babysitter ","Wake all Minions, allow them to choose a babysitter  A player might die ",22,42
+81,lleech,Lleech,The Lleech chooses a player. ,The Lleech chooses a player. ,23,41
+82,lunatic,Lunatic,"If there are 7 or more players, wake the Lunatic: Show the THESE ARE YOUR MINIONS token. Point to any players. Show the THESE CHARACTERS ARE NOT IN PLAY token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the YOU ARE info token and the Demon token. Show the THIS PLAYER IS info token and the Lunatic token, then point to the Lunatic.","Do whatever needs to be done to simulate the Demon acting. Put the Lunatic to sleep. Wake the Demon. Show the Lunatic token & point to them, then their target(s).",15,27
+83,lycanthrope,,,The Lycanthrope chooses a player ,-1,29
+84,magician,Magician,Include the Magician in the Minion and Demon Info steps.,,12,-1
+85,marionette,Marionette,Wake the Demon. Point to the player marked IS THE MARIONETTE and show the THIS PLAYER IS token and the Marionette character token.,,19,-1
+86,mastermind,,,,-1,-1
+87,mathematician,Mathematician,Give a finger signal.,Give a finger signal.,63,79
+88,matron,,,,-1,-1
+89,mayor,,,,-1,-1
+90,mezepheles,Mezepheles,Show the written word.,"If a player is marked with the TURNS EVIL reminder, wake them. Show the YOU ARE info token and a thumbs down. The Mezepheles loses their ability ",35,25
+91,minstrel,,,,-1,-1
+92,monk,,,The Monk chooses a player. ,-1,18
+93,moonchild,,,"If the Moonchild is due to kill a good player, they die. ",-1,57
+94,mutant,,,,-1,-1
+95,nightwatchman,Nightwatchman,The Nightwatchman might choose a player  Put the Nightwatchman to sleep. Wake the target and show the THIS PLAYER IS and Nightwatchman tokens and point to the Nightwatchman.,The Nightwatchman might choose a player  Put the Nightwatchman to sleep. Wake the target and show the THIS PLAYER IS and Nightwatchman tokens and point to the Nightwatchman.,57,72
+96,noble,Noble,Point to all three players marked KNOW.,,54,-1
+97,nodashii,,,The No Dashii chooses a player. ,-1,37
+98,oracle,,,Give a finger signal.,-1,66
+99,organgrinder,,,,-1,-1
+100,pacifist,,,,-1,-1
+101,philosopher,Philosopher,"The Philosopher might choose a character. If necessary, swap their character token. ","The Philosopher might choose a character. If necessary, swap their character token. ",9,8
+102,pithag,,,The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the YOU ARE token & their new character token.,-1,22
+103,pixie,Pixie,Show the Townsfolk character token marked MAD.,,37,-1
+104,po,,,The Po may choose a player OR chooses 3 players if they chose no-one last night.  or   ,-1,35
+105,poisoner,Poisoner,The Poisoner chooses a player. ,The Poisoner chooses a player. ,24,13
+106,politician,,,,-1,-1
+107,poppygrower,Poppy Grower,"Do not do the Minion Info and Demon Info steps. Wake the Demon, show the THESE CHARACTERS ARE NOT IN PLAY info token and any three good character tokens that are not in play.","If the Poppy Grower died today or tonight, wake the Minions, show the THIS IS THE DEMON info token and point to the Demon. Put them to sleep. Wake the Demon, show the THESE ARE YOUR MINIONS info token and point to the Minions. Put the Demon to sleep.",11,9
+108,preacher,Preacher,The Preacher chooses a player.  If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token and the Preacher token.,The Preacher chooses a player.  If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token and the Preacher token.,21,12
+109,professor,,,The Professor might choose a dead player.  ,-1,50
+110,psychopath,,,,-1,-1
+111,pukka,Pukka,The Pukka chooses a player. ,The Pukka chooses a player.  The previously poisoned player dies then becomes healthy. ,36,33
+112,puzzlemaster,,,,-1,-1
+113,ravenkeeper,,,"If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",-1,59
+114,recluse,,,,-1,-1
+115,revolutionary,,,,-1,-1
+116,riot,,,,-1,-1
+117,sage,,,"If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon.",-1,49
+118,sailor,Sailor,The Sailor chooses a living player. ,The Sailor chooses a living player. ,18,10
+119,saint,,,,-1,-1
+120,savant,,,,-1,-1
+121,scapegoat,,,,-1,-1
+122,scarletwoman,,,"If the Scarlet Woman became the Imp today, show them the YOU ARE token, then the Imp token.",-1,26
+123,seamstress,Seamstress,The Seamstress might choose 2 players. Nod or shake your head. ,The Seamstress might choose 2 players. Nod or shake your head. ,51,67
+124,sentinel,,,,-1,-1
+125,shabaloth,,,A previously chosen player might be resurrected.  The Shabaloth chooses 2 players.  ,-1,34
+126,slayer,,,,-1,-1
+127,snakecharmer,Snake Charmer,The Snake Charmer chooses a player. If they chose the Demon: Show the YOU ARE & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the YOU ARE and Snake Charmer tokens & give a thumbs up. ,The Snake Charmer chooses a player. If they chose the Demon: Show the YOU ARE & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the YOU ARE and Snake Charmer tokens & give a thumbs up. ,27,17
+128,snitch,Snitch,Wake each Minion. Show the THESE CHARACTERS ARE NOT IN PLAY token and three not-in-play character tokens. Put each Minion to sleep.,,14,-1
+129,soldier,,,,-1,-1
+130,spiritofivory,,,,-1,-1
+131,spy,Spy,Show the Grimoire for as long as the Spy needs.,Show the Grimoire for as long as the Spy needs.,59,75
+132,steward,Steward,Point to the good player marked KNOW.,,52,-1
+133,stormcatcher,Storm Catcher,"At the start of the night, announce which character is favoured by the Storm Catcher. If that character is in play, mark that player as ""Safe"". Wake each evil player and show them the character token, then the marked player.
+ If not in play, wake each evil player, show them the ""These Characters Are Not In Play"" info token and the relevant character token.",,3,-1
+134,sweetheart,,,"If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now. ",-1,48
+135,tealady,,,,-1,-1
+136,thief,Thief Seat 15,The Thief chooses a player. ,The Thief chooses a player. ,8,7
+137,tinker,,,The Tinker might die. ,-1,56
+138,towncrier,,,Either nod or shake your head.,-1,65
+139,toymaker,Toymaker,Resolve the Minion Info and Demon Info steps even though there are fewer than 7 players.,"If it is a night when a Demon attack could end the game, and the Demon is marked “Final night: No Attack,” then the Demon does not act tonight. (Do not wake them.)",4,2
+140,undertaker,,,"If a player was executed today, show their character token.",-1,62
+141,vigormortis,,,"The Vigormortis chooses a player.  If that player is a Minion, poison a neighboring Townsfolk.  ",-1,39
+142,virgin,,,,-1,-1
+143,vizier,Vizier,Announce the Vizier player to the group.,,66,-1
+144,vortox,,,The Vortox chooses a player. ,-1,38
+145,voudon,,,,-1,-1
+146,washerwoman,Washerwoman,Show the Townsfolk character token. Point to both the TOWNSFOLK and WRONG players.,,41,-1
+147,widow,Widow,Show the Grimoire for as long as the Widow needs. The Widow chooses a player. ,,25,-1
+148,witch,Witch,The Witch chooses a player. ,The Witch chooses a player. ,31,20
+149,zombuul,,,"If no one died today, the Zombuul chooses a player. ",-1,32

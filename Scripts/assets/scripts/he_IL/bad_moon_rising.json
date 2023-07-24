@@ -8,6 +8,11 @@
         "reminders": [
             "המתמחה"
         ],
+        "firstNight": 5,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/apprentice.png"
     },
     {
@@ -20,6 +25,11 @@
             "מת",
             "ללא יכולת"
         ],
+        "firstNight": -1,
+        "otherNight": 43,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/assassin.png"
     },
     {
@@ -32,6 +42,11 @@
             "להציע טוב",
             "להציע רע"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bishop.png"
     },
     {
@@ -41,6 +56,11 @@
         "firstNightReminder": "החדרנית מצביעה על שני שחקנים. תסמן את המספר (0,1,2) של כמה מהשחקנים שנבחרו קמו בלילה בגלל היכולת שלהם.",
         "otherNightReminder": "החדרנית מצביעה על שני שחקנים. תסמן את המספר (0,1,2) של כמה מהשחקנים שנבחרו קמו בלילה בגלל היכולת שלהם.",
         "reminders": [],
+        "firstNight": 62,
+        "otherNight": 78,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/chambermaid.png"
     },
     {
@@ -55,6 +75,11 @@
             "שיכור 1",
             "אין יכולת"
         ],
+        "firstNight": 26,
+        "otherNight": 14,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/courtier.png"
     },
     {
@@ -66,6 +91,11 @@
         "reminders": [
             "שורד הוצאה להורג"
         ],
+        "firstNight": 29,
+        "otherNight": 19,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/devilsadvocate.png"
     },
     {
@@ -77,6 +107,11 @@
         "reminders": [
             "נבחר"
         ],
+        "firstNight": -1,
+        "otherNight": 28,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/exorcist.png"
     },
     {
@@ -88,6 +123,11 @@
         "reminders": [
             "אין יכולת"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fool.png"
     },
     {
@@ -99,6 +139,11 @@
         "reminders": [
             "מת"
         ],
+        "firstNight": -1,
+        "otherNight": 16,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gambler.png"
     },
     {
@@ -111,6 +156,11 @@
             "מת היום",
             "מת"
         ],
+        "firstNight": 28,
+        "otherNight": 44,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/godfather.png"
     },
     {
@@ -122,6 +172,11 @@
         "reminders": [
             "שיכור"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/goon.png"
     },
     {
@@ -133,6 +188,11 @@
         "reminders": [
             "מת"
         ],
+        "firstNight": -1,
+        "otherNight": 45,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gossip.png"
     },
     {
@@ -144,6 +204,11 @@
         "reminders": [
             "נכד"
         ],
+        "firstNight": 48,
+        "otherNight": 58,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/grandmother.png"
     },
     {
@@ -156,6 +221,11 @@
             "מוגן",
             "שיכור"
         ],
+        "firstNight": -1,
+        "otherNight": 15,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/innkeeper.png"
     },
     {
@@ -167,6 +237,11 @@
         "reminders": [
             "אין יכולת"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/judge.png"
     },
     {
@@ -180,6 +255,11 @@
             "התקפה 2",
             "התקפה 3"
         ],
+        "firstNight": 15,
+        "otherNight": 27,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lunatic.png"
     },
     {
@@ -189,6 +269,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mastermind.png"
     },
     {
@@ -198,6 +283,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/matron.png"
     },
     {
@@ -209,6 +299,11 @@
         "reminders": [
             "כולם שיכורים"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/minstrel.png"
     },
     {
@@ -220,6 +315,11 @@
         "reminders": [
             "מת"
         ],
+        "firstNight": -1,
+        "otherNight": 57,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/moonchild.png"
     },
     {
@@ -229,6 +329,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pacifist.png"
     },
     {
@@ -241,6 +346,11 @@
             "מת",
             "3 התקפות"
         ],
+        "firstNight": -1,
+        "otherNight": 35,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/po.png"
     },
     {
@@ -253,6 +363,11 @@
             "חי",
             "אין יכולת"
         ],
+        "firstNight": -1,
+        "otherNight": 50,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/professor.png"
     },
     {
@@ -265,6 +380,11 @@
             "מורעל",
             "מת"
         ],
+        "firstNight": 36,
+        "otherNight": 33,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pukka.png"
     },
     {
@@ -276,6 +396,11 @@
         "reminders": [
             "שיכור"
         ],
+        "firstNight": 18,
+        "otherNight": 10,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sailor.png"
     },
     {
@@ -288,6 +413,11 @@
             "מת",
             "חי"
         ],
+        "firstNight": -1,
+        "otherNight": 34,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/shabaloth.png"
     },
     {
@@ -299,6 +429,11 @@
         "reminders": [
             "לא יכול למות"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/tealady.png"
     },
     {
@@ -310,6 +445,11 @@
         "reminders": [
             "מת"
         ],
+        "firstNight": -1,
+        "otherNight": 56,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/tinker.png"
     },
     {
@@ -319,6 +459,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/voudon.png"
     },
     {
@@ -331,6 +476,11 @@
             "מתו היום",
             "מת"
         ],
+        "firstNight": -1,
+        "otherNight": 32,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/zombuul.png"
     }
 ]

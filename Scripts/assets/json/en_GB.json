@@ -4,21 +4,31 @@
         "name": "Acrobat",
         "ability": "Each night*, if either good living neighbour is drunk or poisoned, you die.",
         "firstNightReminder": "",
-        "otherNightReminder": "If a good living neighbour is drunk or poisoned, the Acrobat player dies.",
+        "otherNightReminder": "The Acrobat might die",
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 46,
+        "team": "outsider",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/acrobat.png"
     },
     {
         "id": "alchemist",
         "name": "Alchemist",
         "ability": "You have a not-in-play Minion ability.",
-        "firstNightReminder": "Show the Alchemist a not-in-play Minion token",
+        "firstNightReminder": "Show the YOU ARE token and the character token of a not in play Minion.",
         "otherNightReminder": "",
         "reminders": [
             "Is the Alchemist"
         ],
+        "firstNight": 10,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/alchemist.png"
     },
     {
@@ -26,7 +36,7 @@
         "name": "Al-Hadikhia",
         "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
         "firstNightReminder": "",
-        "otherNightReminder": "The Al-Hadikhia chooses 3 players. Announce the first player, wake them to nod yes to live or shake head no to die, kill or resurrect accordingly, then put to sleep and announce the next player. If all 3 are alive after this, all 3 die.",
+        "otherNightReminder": "The Al-Hadikhia chooses three players. Wake the player marked 1 and say \"the Al-Hadikhia has chosen\", then the player's name, then \"Do you choose to live?\" They either nod or shake their head. Put them to sleep and add or remove shrouds accordingly. Repeat for players marked 2 and 3. If all three players are now alive, add a shroud to all three.",
         "reminders": [
             "1",
             "2",
@@ -34,29 +44,44 @@
             "Chose death",
             "Chose life"
         ],
+        "firstNight": -1,
+        "otherNight": 40,
+        "team": "demon",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/alhadikhia.png"
     },
     {
         "id": "amnesiac",
         "name": "Amnesiac",
         "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
-        "firstNightReminder": "Decide the Amnesiac's entire ability. If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
-        "otherNightReminder": "If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
+        "firstNightReminder": "?",
+        "otherNightReminder": "?",
         "reminders": [
             "?"
         ],
+        "firstNight": 40,
+        "otherNight": 54,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/amnesiac.png"
     },
     {
         "id": "angel",
         "name": "Angel",
         "ability": "Something bad might happen to whoever is most responsible for the death of a new player.",
-        "firstNightReminder": "",
+        "firstNightReminder": "Announce which players are protected by the Angel. Add the \"Protected\" token to the relevant players.",
         "otherNightReminder": "",
         "reminders": [
             "Protect",
             "Something Bad"
         ],
+        "firstNight": 1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/angel.png"
     },
     {
@@ -68,6 +93,11 @@
         "reminders": [
             "Is the Apprentice"
         ],
+        "firstNight": 5,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/apprentice.png"
     },
     {
@@ -79,6 +109,11 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/artist.png"
     },
     {
@@ -86,11 +121,16 @@
         "name": "Assassin",
         "ability": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Assassin has not yet used their ability: The Assassin either shows the 'no' head signal, or points to a player. That player dies.",
+        "otherNightReminder": "The Assassin might choose a player.",
         "reminders": [
             "Dead",
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": 43,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/assassin.png"
     },
     {
@@ -100,14 +140,19 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/atheist.png"
     },
     {
         "id": "balloonist",
         "name": "Balloonist",
         "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
-        "firstNightReminder": "Choose a character type. Point to a player whose character is of that type. Place the Balloonist's Seen reminder next to that character.",
-        "otherNightReminder": "Choose a character type that does not yet have a Seen reminder next to a character of that type. Point to a player whose character is of that type, if there are any. Place the Balloonist's Seen reminder next to that character.",
+        "firstNightReminder": "Show any player",
+        "otherNightReminder": "Show a player with a different character type to previously",
         "reminders": [
             "Seen Townsfolk",
             "Seen Outsider",
@@ -115,6 +160,11 @@
             "Seen Demon",
             "Seen Traveller"
         ],
+        "firstNight": 55,
+        "otherNight": 69,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/balloonist.png"
     },
     {
@@ -122,10 +172,15 @@
         "name": "Barber",
         "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Barber died today: Wake the Demon. Show the 'This character selected you' card, then Barber token. The Demon either shows a 'no' head signal, or points to 2 players. If they chose players: Swap the character tokens. Wake each player. Show 'You are', then their new character token.",
+        "otherNightReminder": "If the Barber died today or tonight, show the Demon the THIS CHARACTER SELECTED YOU & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the YOU ARE token & their new character token.",
         "reminders": [
             "Haircuts tonight"
         ],
+        "firstNight": -1,
+        "otherNight": 47,
+        "team": "outsider",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/barber.png"
     },
     {
@@ -138,6 +193,11 @@
             "Sober & Healthy",
             "Ability twice"
         ],
+        "firstNight": 6,
+        "otherNight": 3,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/barista.png"
     },
     {
@@ -147,6 +207,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "tb",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/baron.png"
     },
     {
@@ -156,6 +221,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/beggar.png"
     },
     {
@@ -168,6 +238,11 @@
             "Nominate good",
             "Nominate evil"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bishop.png"
     },
     {
@@ -180,6 +255,11 @@
             "No ability",
             "Has ability"
         ],
+        "firstNight": -1,
+        "otherNight": 4,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bonecollector.png"
     },
     {
@@ -189,6 +269,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/boomdandy.png"
     },
     {
@@ -198,37 +283,57 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bootlegger.png"
     },
     {
         "id": "bountyhunter",
         "name": "Bounty Hunter",
         "ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",
-        "firstNightReminder": "Point to 1 evil player. Wake the townsfolk who is evil and show them the 'You are' card and the thumbs down evil sign.",
-        "otherNightReminder": "If the known evil player has died, point to another evil player. ",
+        "firstNightReminder": "Point to the KNOWN player.",
+        "otherNightReminder": "If the KNOWN player died today or tonight, point to a new KNOWN player.",
         "reminders": [
             "Known"
         ],
+        "firstNight": 56,
+        "otherNight": 71,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bountyhunter.png"
     },
     {
         "id": "buddhist",
         "name": "Buddhist",
         "ability": "For the first 2 minutes of each day, veteran players may not talk.",
-        "firstNightReminder": "",
+        "firstNightReminder": "Declare which players are affected by the Buddhist.",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": 2,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/buddhist.png"
     },
     {
         "id": "bureaucrat",
         "name": "Bureaucrat",
         "ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",
-        "firstNightReminder": "The Bureaucrat points to a player. Put the Bureaucrat's '3 votes' reminder by the chosen player's character token.",
-        "otherNightReminder": "The Bureaucrat points to a player. Put the Bureaucrat's '3 votes' reminder by the chosen player's character token.",
+        "firstNightReminder": "The Bureaucrat chooses a player.",
+        "otherNightReminder": "The Bureaucrat chooses a player.",
         "reminders": [
             "3 votes"
         ],
+        "firstNight": 7,
+        "otherNight": 5,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bureaucrat.png"
     },
     {
@@ -238,17 +343,27 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/butcher.png"
     },
     {
         "id": "butler",
         "name": "Butler",
         "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
-        "firstNightReminder": "The Butler points to a player. Mark that player as 'Master'.",
-        "otherNightReminder": "The Butler points to a player. Mark that player as 'Master'.",
+        "firstNightReminder": "The Butler chooses a player.",
+        "otherNightReminder": "The Butler chooses a player.",
         "reminders": [
             "Master"
         ],
+        "firstNight": 47,
+        "otherNight": 74,
+        "team": "outsider",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/butler.png"
     },
     {
@@ -261,35 +376,55 @@
             "Poisoned",
             "Died today"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cannibal.png"
     },
     {
         "id": "cerenovus",
         "name": "Cerenovus",
         "ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
-        "firstNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
-        "otherNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
+        "firstNightReminder": "The Cerenovus chooses a player & a character. Put the Cerenovus to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token, the Cerenovus token, then the madness-character token.",
+        "otherNightReminder": "The Cerenovus chooses a player & a character. Put the Cerenovus to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token, the Cerenovus token, then the madness-character token.",
         "reminders": [
             "Mad"
         ],
+        "firstNight": 32,
+        "otherNight": 21,
+        "team": "minion",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cerenovus.png"
     },
     {
         "id": "chambermaid",
         "name": "Chambermaid",
         "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
-        "firstNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, …) for how many of those players wake tonight for their ability.",
-        "otherNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, …) for how many of those players wake tonight for their ability.",
+        "firstNightReminder": "The Chambermaid chooses 2 living players. Give a finger signal.",
+        "otherNightReminder": "The Chambermaid chooses 2 living players. Give a finger signal.",
         "reminders": [],
+        "firstNight": 62,
+        "otherNight": 78,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/chambermaid.png"
     },
     {
         "id": "chef",
         "name": "Chef",
         "ability": "You start knowing how many pairs of evil players there are.",
-        "firstNightReminder": "Show the finger signal (0, 1, 2, …) for the number of pairs of neighbouring evil players.",
+        "firstNightReminder": "Give a finger signal.",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": 44,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/chef.png"
     },
     {
@@ -297,51 +432,76 @@
         "name": "Choirboy",
         "ability": "If the Demon kills the King, you learn which player is the Demon. [+ the King]",
         "firstNightReminder": "",
-        "otherNightReminder": "If the King was killed by the Demon, wake the Choirboy and point to the Demon player.",
+        "otherNightReminder": "If the Demon killed the King, point to the Demon player.",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": 51,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/choirboy.png"
     },
     {
         "id": "clockmaker",
         "name": "Clockmaker",
         "ability": "You start knowing how many steps from the Demon to its nearest Minion.",
-        "firstNightReminder": "Show the hand signal for the number (1, 2, 3, etc.) of places from Demon to closest Minion.",
+        "firstNightReminder": "Give a finger signal.",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": 49,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/clockmaker.png"
     },
     {
         "id": "courtier",
         "name": "Courtier",
         "ability": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days.",
-        "firstNightReminder": "The Courtier either shows a 'no' head signal, or points to a character on the sheet. If the Courtier used their ability: If that character is in play, that player is drunk.",
-        "otherNightReminder": "Reduce the remaining number of days the marked player is poisoned. If the Courtier has not yet used their ability: The Courtier either shows a 'no' head signal, or points to a character on the sheet. If the Courtier used their ability: If that character is in play, that player is drunk.",
+        "firstNightReminder": "The Courtier might choose a character",
+        "otherNightReminder": "The Courtier might choose a character",
         "reminders": [
             "Drunk 3",
             "Drunk 2",
             "Drunk 1",
             "No ability"
         ],
+        "firstNight": 26,
+        "otherNight": 14,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/courtier.png"
     },
     {
         "id": "cultleader",
         "name": "Cult Leader",
         "ability": "Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins.",
-        "firstNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
-        "otherNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
+        "firstNightReminder": "The Cult Leader might change alignment. If so, show the YOU ARE info token and a thumbs up or down for their new alignment.",
+        "otherNightReminder": "The Cult Leader might change alignment. If so, show the YOU ARE info token and a thumbs up or down for their new alignment.",
         "reminders": [],
+        "firstNight": 58,
+        "otherNight": 73,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cultleader.png"
     },
     {
         "id": "damsel",
         "name": "Damsel",
         "ability": "All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.",
-        "firstNightReminder": "Wake all the Minions, show them the 'This character selected you' card and the Damsel token.",
-        "otherNightReminder": "If selected by the Huntsman, wake the Damsel, show 'You are' card and a not-in-play Townsfolk token.",
+        "firstNightReminder": "Wake each Minion. Show the Damsel token. Put each Minion to sleep.",
+        "otherNightReminder": "If the Damsel was chosen by the Huntsman, show them the YOU ARE info token and their new character token.",
         "reminders": [
             "Guess used"
         ],
+        "firstNight": 39,
+        "otherNight": 53,
+        "team": "outsider",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/damsel.png"
     },
     {
@@ -351,17 +511,27 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/deviant.png"
     },
     {
         "id": "devilsadvocate",
         "name": "Devil's Advocate",
         "ability": "Each night, choose a living player (different to last night): if executed tomorrow, they don't die.",
-        "firstNightReminder": "The Devil’s Advocate points to a living player. That player survives execution tomorrow.",
-        "otherNightReminder": "The Devil’s Advocate points to a living player, different from the previous night. That player survives execution tomorrow.",
+        "firstNightReminder": "The Devil's Advocate chooses a living player.",
+        "otherNightReminder": "The Devil's Advocate chooses a living player.",
         "reminders": [
             "Survives execution"
         ],
+        "firstNight": 29,
+        "otherNight": 19,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/devilsadvocate.png"
     },
     {
@@ -371,6 +541,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/djinn.png"
     },
     {
@@ -380,15 +555,25 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/doomsayer.png"
     },
     {
         "id": "dreamer",
         "name": "Dreamer",
         "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
-        "firstNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
-        "otherNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
+        "firstNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+        "otherNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
         "reminders": [],
+        "firstNight": 50,
+        "otherNight": 63,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/dreamer.png"
     },
     {
@@ -400,6 +585,11 @@
         "reminders": [
             "Drunk"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "tb",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/drunk.png"
     },
     {
@@ -407,42 +597,62 @@
         "name": "Duchess",
         "ability": "Each day, 3 players may choose to visit you. At night*, each visitor learns how many visitors are evil, but 1 gets false info.",
         "firstNightReminder": "",
-        "otherNightReminder": "",
+        "otherNightReminder": "Wake each player marked â€œVisitorâ€ or â€œFalse Infoâ€ one at a time. Show them the Duchess token, then fingers (1, 2, 3) equaling the number of evil players marked â€œVisitorâ€ or, if you are waking the player marked â€œFalse Info,â€ show them any number of fingers except the number of evil players marked â€œVisitor.â€",
         "reminders": [
             "Visitor",
             "False Info"
         ],
+        "firstNight": -1,
+        "otherNight": 1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/duchess.png"
     },
     {
         "id": "empath",
         "name": "Empath",
         "ability": "Each night, you learn how many of your 2 alive neighbours are evil.",
-        "firstNightReminder": "Show the finger signal (0, 1, 2) for the number of evil alive neighbours of the Empath.",
-        "otherNightReminder": "Show the finger signal (0, 1, 2) for the number of evil neighbours.",
+        "firstNightReminder": "Give a finger signal.",
+        "otherNightReminder": "Give a finger signal.",
         "reminders": [],
+        "firstNight": 45,
+        "otherNight": 60,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/empath.png"
     },
     {
         "id": "engineer",
         "name": "Engineer",
         "ability": "Once per game, at night, choose which Minions or which Demon is in play.",
-        "firstNightReminder": "The Engineer shows a 'no' head signal, or points to a Demon or points to the relevant number of Minions. If the Engineer chose characters, replace the Demon or Minions with the choices, then wake the relevant players and show them the You are card and the relevant character tokens.",
-        "otherNightReminder": "The Engineer shows a 'no' head signal, or points to a Demon or points to the relevant number of Minions. If the Engineer chose characters, replace the Demon or Minions with the choices, then wake the relevant players and show them the 'You are' card and the relevant character tokens.",
+        "firstNightReminder": "The Engineer might choose Minions or Demons. If they do: Put the Engineer to sleep. Wake a target, show them the YOU ARE token and their new character token, then put that target to sleep. Repeat for all players that changed characters.",
+        "otherNightReminder": "The Engineer might choose Minions or Demons. If they do: Put the Engineer to sleep. Wake a target, show them the YOU ARE token and their new character token, then put that target to sleep. Repeat for all players that changed characters.",
         "reminders": [
             "No ability"
         ],
+        "firstNight": 20,
+        "otherNight": 11,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/engineer.png"
     },
     {
         "id": "eviltwin",
         "name": "Evil Twin",
         "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
-        "firstNightReminder": "Wake the Evil Twin and their twin. Confirm that they have acknowledged each other. Point to the Evil Twin. Show their Evil Twin token to the twin player. Point to the twin. Show their character token to the Evil Twin player.",
+        "firstNightReminder": "Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.",
         "otherNightReminder": "",
         "reminders": [
             "Twin"
         ],
+        "firstNight": 30,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/eviltwin.png"
     },
     {
@@ -450,10 +660,15 @@
         "name": "Exorcist",
         "ability": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight.",
         "firstNightReminder": "",
-        "otherNightReminder": "The Exorcist points to a player, different from the previous night. If that player is the Demon: Wake the Demon. Show the Exorcist token. Point to the Exorcist. The Demon does not act tonight.",
+        "otherNightReminder": "The Exorcist chooses a player. Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the THIS CHARACTER SELECTED YOU & Exorcist tokens. Point to the Exorcist.",
         "reminders": [
             "Chosen"
         ],
+        "firstNight": -1,
+        "otherNight": 28,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/exorcist.png"
     },
     {
@@ -461,11 +676,16 @@
         "name": "Fang Gu",
         "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
         "firstNightReminder": "",
-        "otherNightReminder": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
+        "otherNightReminder": "The Fang Gu chooses a player. If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the YOU ARE and Fang Gu tokens & give a thumbs-down.",
         "reminders": [
             "Dead",
             "Once"
         ],
+        "firstNight": -1,
+        "otherNight": 36,
+        "team": "demon",
+        "edition": "snv",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fanggu.png"
     },
     {
@@ -473,19 +693,29 @@
         "name": "Farmer",
         "ability": "If you die at night, an alive good player becomes a Farmer.",
         "firstNightReminder": "",
-        "otherNightReminder": "If a Farmer died tonight, choose another good player and make them the Farmer. Wake this player, show them the 'You are' card and the Farmer character token.",
+        "otherNightReminder": "If the Farmer died tonight, wake an alive good player. Show them the YOU ARE info token and a Farmer character token. Replace their previous token with the Farmer token.",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": 55,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/farmer.png"
     },
     {
         "id": "fearmonger",
         "name": "Fearmonger",
         "ability": "Each night, choose a player. If you nominate & execute them, their team loses. All players know if you choose a new player.",
-        "firstNightReminder": "The Fearmonger points to a player. Place the Fear token next to that player and announce that a new player has been selected with the Fearmonger ability.",
-        "otherNightReminder": "The Fearmonger points to a player. If different from the previous night, place the Fear token next to that player and announce that a new player has been selected with the Fearmonger ability.",
+        "firstNightReminder": "The Fearmonger chooses a player. Declare that \"the Fearmonger has chosen a player.\"",
+        "otherNightReminder": "The Fearmonger chooses a player. If the player wasn't already marked with the FEAR reminder, declare that \"the Fearmonger has chosen a player.\"",
         "reminders": [
             "Fear"
         ],
+        "firstNight": 33,
+        "otherNight": 23,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fearmonger.png"
     },
     {
@@ -497,6 +727,11 @@
         "reminders": [
             "Used"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fibbin.png"
     },
     {
@@ -506,6 +741,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fiddler.png"
     },
     {
@@ -517,6 +757,11 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fisherman.png"
     },
     {
@@ -524,11 +769,16 @@
         "name": "Flowergirl",
         "ability": "Each night*, you learn if a Demon voted today.",
         "firstNightReminder": "",
-        "otherNightReminder": "Nod 'yes' or shake head 'no' for whether the Demon voted today. Place the 'Demon not voted' marker (remove 'Demon voted', if any).",
+        "otherNightReminder": "Either nod or shake your head.",
         "reminders": [
             "Demon voted",
             "Demon not voted"
         ],
+        "firstNight": -1,
+        "otherNight": 64,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/flowergirl.png"
     },
     {
@@ -540,17 +790,27 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fool.png"
     },
     {
         "id": "fortuneteller",
         "name": "Fortune Teller",
         "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
-        "firstNightReminder": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon. ",
-        "otherNightReminder": "The Fortune Teller points to two players. Show the head signal (nod 'yes', shake 'no') for whether one of those players is the Demon.",
+        "firstNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the RED HERRING).",
+        "otherNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the RED HERRING).",
         "reminders": [
             "Red herring"
         ],
+        "firstNight": 46,
+        "otherNight": 61,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fortuneteller.png"
     },
     {
@@ -558,10 +818,15 @@
         "name": "Gambler",
         "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
         "firstNightReminder": "",
-        "otherNightReminder": "The Gambler points to a player, and a character on their sheet. If incorrect, the Gambler dies.",
+        "otherNightReminder": "The Gambler chooses a player & a character.",
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 16,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gambler.png"
     },
     {
@@ -571,6 +836,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gangster.png"
     },
     {
@@ -580,15 +850,25 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gardener.png"
     },
     {
         "id": "general",
         "name": "General",
         "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
-        "firstNightReminder": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
-        "otherNightReminder": "Show the General thumbs up for good winning, thumbs down for evil winning or thumb to the side for neither.",
+        "firstNightReminder": "Give a thumb signal.",
+        "otherNightReminder": "Give a thumb signal.",
         "reminders": [],
+        "firstNight": 61,
+        "otherNight": 77,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/general.png"
     },
     {
@@ -600,18 +880,28 @@
         "reminders": [
             "Claimed"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/goblin.png"
     },
     {
         "id": "godfather",
         "name": "Godfather",
         "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [−1 or +1 Outsider]",
-        "firstNightReminder": "Show each of the Outsider tokens in play.",
-        "otherNightReminder": "If an Outsider died today: The Godfather points to a player. That player dies.",
+        "firstNightReminder": "Show the character tokens of all in-play Outsiders.",
+        "otherNightReminder": "If an Outsider died today, the Godfather chooses a player.",
         "reminders": [
             "Died today",
             "Dead"
         ],
+        "firstNight": 28,
+        "otherNight": 44,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/godfather.png"
     },
     {
@@ -623,6 +913,11 @@
         "reminders": [
             "Can not nominate"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/golem.png"
     },
     {
@@ -634,6 +929,11 @@
         "reminders": [
             "Drunk"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/goon.png"
     },
     {
@@ -641,21 +941,31 @@
         "name": "Gossip",
         "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Gossip’s public statement was true: Choose a player not protected from dying tonight. That player dies.",
+        "otherNightReminder": "If the Gossip is due to kill a player, they die.",
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 45,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gossip.png"
     },
     {
         "id": "grandmother",
         "name": "Grandmother",
         "ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",
-        "firstNightReminder": "Show the marked character token. Point to the marked player.",
-        "otherNightReminder": "If the Grandmother’s grandchild was killed by the Demon tonight: The Grandmother dies.",
+        "firstNightReminder": "Point to the grandchild player & show their character token.",
+        "otherNightReminder": "If the grandchild was killed by the Demon, the Grandmother dies too.",
         "reminders": [
             "Grandchild"
         ],
+        "firstNight": 48,
+        "otherNight": 58,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/grandmother.png"
     },
     {
@@ -665,6 +975,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gunslinger.png"
     },
     {
@@ -676,18 +991,28 @@
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 6,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/harlot.png"
     },
     {
         "id": "harpy",
         "name": "Harpy",
         "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die.",
-        "firstNightReminder": "The Harpy chooses two players. mark the first \"Mad\" and the other \"2nd\".  Put the Harpy to sleep. Wake the 1st target. Show the 'THIS CHARACTER SELECTED YOU'  token, the Harpy token, then point to the 2nd target.",
-        "otherNightReminder": "The Harpy chooses two players. mark the first \"Mad\" and the other \"2nd\".  Put the Harpy to sleep. Wake the 1st target. Show the 'THIS CHARACTER SELECTED YOU'  token, the Harpy token, then point to the 2nd target.",
+        "firstNightReminder": "The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.",
+        "otherNightReminder": "The Harpy chooses two players. Put the Harpy to sleep. Wake the 1st target. Show the THIS CHARACTER SELECTED YOU token, the Harpy token, then point to the 2nd target.",
         "reminders": [
             "Mad",
             "2nd"
         ],
+        "firstNight": 34,
+        "otherNight": 24,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/harpy.png"
     },
     {
@@ -699,6 +1024,11 @@
         "reminders": [
             "Something Bad"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/hellslibrarian.png"
     },
     {
@@ -708,6 +1038,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/heretic.png"
     },
     {
@@ -717,17 +1052,27 @@
         "firstNightReminder": "Point to a player.",
         "otherNightReminder": "Point to a player.",
         "reminders": [],
+        "firstNight": 60,
+        "otherNight": 76,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/highpriestess.png"
     },
     {
         "id": "huntsman",
         "name": "Huntsman",
         "ability": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]",
-        "firstNightReminder": "The Huntsman shakes their head 'no' or points to a player. If they point to the Damsel, wake that player, show the 'You are' card and a not-in-play character token.",
-        "otherNightReminder": "The Huntsman shakes their head 'no' or points to a player. If they point to the Damsel, wake that player, show the 'You are' card and a not-in-play character token.",
+        "firstNightReminder": "The Huntsman might choose a player. If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the YOU ARE info token and their new character token.",
+        "otherNightReminder": "The Huntsman might choose a player. If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the YOU ARE info token and their new character token.",
         "reminders": [
             "No ability"
         ],
+        "firstNight": 38,
+        "otherNight": 52,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/huntsman.png"
     },
     {
@@ -735,10 +1080,15 @@
         "name": "Imp",
         "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
         "firstNightReminder": "",
-        "otherNightReminder": "The Imp points to a player. That player dies. If the Imp chose themselves: Replace the character of 1 alive minion with a spare Imp token. Show the 'You are' card, then the Imp token.",
+        "otherNightReminder": "The Imp chooses a player. If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the YOU ARE token, then show the Imp token.",
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 31,
+        "team": "demon",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/imp.png"
     },
     {
@@ -746,23 +1096,33 @@
         "name": "Innkeeper",
         "ability": "Each night*, choose 2 players: they can't die tonight, but 1 is drunk until dusk.",
         "firstNightReminder": "",
-        "otherNightReminder": "The previously protected and drunk players lose those markers. The Innkeeper points to two players. Those players are protected. One is drunk.",
+        "otherNightReminder": "The Innkeeper chooses 2 players.",
         "reminders": [
             "Protected",
             "Drunk"
         ],
+        "firstNight": -1,
+        "otherNight": 15,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/innkeeper.png"
     },
     {
         "id": "investigator",
         "name": "Investigator",
         "ability": "You start knowing that 1 of 2 players is a particular Minion.",
-        "firstNightReminder": "Show the character token of a Minion in play. Point to two players, one of which is that character.",
+        "firstNightReminder": "Show the Minion character token. Point to both the MINION and WRONG players.",
         "otherNightReminder": "",
         "reminders": [
             "Minion",
             "Wrong"
         ],
+        "firstNight": 43,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/investigator.png"
     },
     {
@@ -774,6 +1134,11 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/judge.png"
     },
     {
@@ -781,19 +1146,29 @@
         "name": "Juggler",
         "ability": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.",
         "firstNightReminder": "",
-        "otherNightReminder": "If today was the Juggler’s first day: Show the hand signal for the number (0, 1, 2, etc.) of 'Correct' markers. Remove markers.",
+        "otherNightReminder": "Give a finger signal.",
         "reminders": [
             "Correct"
         ],
+        "firstNight": -1,
+        "otherNight": 68,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/juggler.png"
     },
     {
         "id": "king",
         "name": "King",
         "ability": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
-        "firstNightReminder": "Wake the Demon, show them the 'This character selected you' card, show the King token and point to the King player.",
-        "otherNightReminder": "If there are more dead than living, show the King a character token of a living player.",
+        "firstNightReminder": "Wake the Demon. Show the THIS PLAYER IS token and the King token, then point to the King.",
+        "otherNightReminder": "If the dead outnumber the living, show the character token of an alive player.",
         "reminders": [],
+        "firstNight": 17,
+        "otherNight": 70,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/king.png"
     },
     {
@@ -803,17 +1178,27 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/klutz.png"
     },
     {
         "id": "knight",
         "name": "Knight",
         "ability": "You start knowing 2 players that are not the Demon.\r\n",
-        "firstNightReminder": "Point to the two non-Demon players marked 'Know'.",
+        "firstNightReminder": "Point to the two non-Demon players marked KNOW.",
         "otherNightReminder": "",
         "reminders": [
             "Know"
         ],
+        "firstNight": 53,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/knight.png"
     },
     {
@@ -821,19 +1206,24 @@
         "name": "Legion",
         "ability": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]",
         "firstNightReminder": "",
-        "otherNightReminder": "Choose a player, that player dies.",
+        "otherNightReminder": "A player might die.",
         "reminders": [
             "Dead",
             "About to die"
         ],
+        "firstNight": -1,
+        "otherNight": 30,
+        "team": "demon",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/legion.png"
     },
     {
         "id": "leviathan",
         "name": "Leviathan",
         "ability": "If more than 1 good player is executed, you win. All players know you are in play. After day 5, evil wins.",
-        "firstNightReminder": "Place the Leviathan 'Day 1' marker. Announce 'The Leviathan is in play; this is Day 1.'",
-        "otherNightReminder": "Change the Leviathan Day reminder for the next day.",
+        "firstNightReminder": "Declare that \"The Leviathan is in play.\" Mark the Leviathan with the DAY 1 reminder.",
+        "otherNightReminder": "Optionally, declare that \"The Leviathan is in play.\" Replace the reminder token.",
         "reminders": [
             "Day 1",
             "Day 2",
@@ -842,55 +1232,80 @@
             "Day 5",
             "Good player executed"
         ],
+        "firstNight": 65,
+        "otherNight": 81,
+        "team": "demon",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/leviathan.png"
     },
     {
         "id": "librarian",
         "name": "Librarian",
         "ability": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",
-        "firstNightReminder": "Show the character token of an Outsider in play. Point to two players, one of which is that character.",
+        "firstNightReminder": "Show the Outsider character token. Point to both the OUTSIDER and WRONG players.",
         "otherNightReminder": "",
         "reminders": [
             "Outsider",
             "Wrong"
         ],
+        "firstNight": 42,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/librarian.png"
     },
     {
         "id": "lilmonsta",
         "name": "Lil' Monsta",
         "ability": "Each night, Minions choose who babysits Lil' Monsta's token & \"is the Demon\". A player dies each night*. [+1 Minion]",
-        "firstNightReminder": "Wake all Minions together, allow them to vote by pointing at who they want to babysit Lil' Monsta.",
-        "otherNightReminder": "Wake all Minions together, allow them to vote by pointing at who they want to babysit Lil' Monsta. Choose a player, that player dies.",
+        "firstNightReminder": "Wake all Minions, allow them to choose a babysitter",
+        "otherNightReminder": "Wake all Minions, allow them to choose a babysitter A player might die",
         "reminders": [
             "Is the Demon",
             "Dead"
         ],
+        "firstNight": 22,
+        "otherNight": 42,
+        "team": "demon",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lilmonsta.png"
     },
     {
         "id": "lleech",
         "name": "Lleech",
         "ability": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if & only if they die.",
-        "firstNightReminder": "The Lleech points to a player. Place the Poisoned reminder token.",
-        "otherNightReminder": "The Lleech points to a player. That player dies.",
+        "firstNightReminder": "The Lleech chooses a player.",
+        "otherNightReminder": "The Lleech chooses a player.",
         "reminders": [
             "Dead",
             "Poisoned"
         ],
+        "firstNight": 23,
+        "otherNight": 41,
+        "team": "demon",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lleech.png"
     },
     {
         "id": "lunatic",
         "name": "Lunatic",
         "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",
-        "firstNightReminder": "If 7 or more players: Show the Lunatic a number of arbitrary 'Minions', players equal to the number of Minions in play. Show 3 character tokens of arbitrary good characters. If the token received by the Lunatic is a Demon that would wake tonight: Allow the Lunatic to do the Demon actions. Place their 'attack' markers. Wake the Demon. Show the Demon’s real character token. Show them the Lunatic player. If the Lunatic attacked players: Show the real demon each marked player. Remove any Lunatic 'attack' markers.",
-        "otherNightReminder": "Allow the Lunatic to do the actions of the Demon. Place their 'attack' markers. If the Lunatic selected players: Wake the Demon. Show the 'attack' marker, then point to each marked player. Remove any Lunatic 'attack' markers.",
+        "firstNightReminder": "If there are 7 or more players, wake the Lunatic: Show the THESE ARE YOUR MINIONS token. Point to any players. Show the THESE CHARACTERS ARE NOT IN PLAY token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the YOU ARE info token and the Demon token. Show the THIS PLAYER IS info token and the Lunatic token, then point to the Lunatic.",
+        "otherNightReminder": "Do whatever needs to be done to simulate the Demon acting. Put the Lunatic to sleep. Wake the Demon. Show the Lunatic token & point to them, then their target(s).",
         "reminders": [
             "Attack 1",
             "Attack 2",
             "Attack 3"
         ],
+        "firstNight": 15,
+        "otherNight": 27,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lunatic.png"
     },
     {
@@ -898,30 +1313,45 @@
         "name": "Lycanthrope",
         "ability": "Each night*, choose a living player: if good, they die, but they are the only player that can die tonight.",
         "firstNightReminder": "",
-        "otherNightReminder": "The Lycanthrope points to a living player: if good, they die and no one else can die tonight.",
+        "otherNightReminder": "The Lycanthrope chooses a player",
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 29,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lycanthrope.png"
     },
     {
         "id": "magician",
         "name": "Magician",
         "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",
-        "firstNightReminder": "",
+        "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": 12,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/magician.png"
     },
     {
         "id": "marionette",
         "name": "Marionette",
         "ability": "You think you are a good character but you are not. The Demon knows who you are. [You neighbour the Demon]",
-        "firstNightReminder": "Select one of the good players next to the Demon and place the Is the Marionette reminder token. Wake the Demon and show them the Marionette.",
+        "firstNightReminder": "Wake the Demon. Point to the player marked IS THE MARIONETTE and show the THIS PLAYER IS token and the Marionette character token.",
         "otherNightReminder": "",
         "reminders": [
             "Is the Marionette"
         ],
+        "firstNight": 19,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/marionette.png"
     },
     {
@@ -931,17 +1361,27 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mastermind.png"
     },
     {
         "id": "mathematician",
         "name": "Mathematician",
         "ability": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
-        "firstNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
-        "otherNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
+        "firstNightReminder": "Give a finger signal.",
+        "otherNightReminder": "Give a finger signal.",
         "reminders": [
             "Abnormal"
         ],
+        "firstNight": 63,
+        "otherNight": 79,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mathematician.png"
     },
     {
@@ -951,6 +1391,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/matron.png"
     },
     {
@@ -960,18 +1405,28 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mayor.png"
     },
     {
         "id": "mezepheles",
         "name": "Mezepheles",
         "ability": "You start knowing a secret word. The 1st good player to say this word becomes evil that night.",
-        "firstNightReminder": "Show the Mezepheles their secret word.",
-        "otherNightReminder": "Wake the 1st good player that said the Mezepheles' secret word and show them the 'You are' card and the thumbs down evil signal.",
+        "firstNightReminder": "Show the written word.",
+        "otherNightReminder": "If a player is marked with the TURNS EVIL reminder, wake them. Show the YOU ARE info token and a thumbs down. The Mezepheles loses their ability",
         "reminders": [
             "Turns evil",
             "No ability"
         ],
+        "firstNight": 35,
+        "otherNight": 25,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mezepheles.png"
     },
     {
@@ -983,6 +1438,11 @@
         "reminders": [
             "Everyone drunk"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/minstrel.png"
     },
     {
@@ -990,10 +1450,15 @@
         "name": "Monk",
         "ability": "Each night*, choose a player (not yourself): they are safe from the Demon tonight.",
         "firstNightReminder": "",
-        "otherNightReminder": "The previously protected player is no longer protected. The Monk points to a player not themself. Mark that player 'Protected'.",
+        "otherNightReminder": "The Monk chooses a player.",
         "reminders": [
             "Protected"
         ],
+        "firstNight": -1,
+        "otherNight": 18,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/monk.png"
     },
     {
@@ -1001,10 +1466,15 @@
         "name": "Moonchild",
         "ability": "When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player, they die.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Moonchild used their ability to target a player today: If that player is good, they die.",
+        "otherNightReminder": "If the Moonchild is due to kill a good player, they die.",
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 57,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/moonchild.png"
     },
     {
@@ -1014,28 +1484,43 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mutant.png"
     },
     {
         "id": "nightwatchman",
         "name": "Nightwatchman",
         "ability": "Once per game, at night, choose a player: they learn who you are.",
-        "firstNightReminder": "The Nightwatchman may point to a player. Wake that player, show the 'This character selected you' card and the Nightwatchman token, then point to the Nightwatchman player.",
-        "otherNightReminder": "The Nightwatchman may point to a player. Wake that player, show the 'This character selected you' card and the Nightwatchman token, then point to the Nightwatchman player.",
+        "firstNightReminder": "The Nightwatchman might choose a player Put the Nightwatchman to sleep. Wake the target and show the THIS PLAYER IS and Nightwatchman tokens and point to the Nightwatchman.",
+        "otherNightReminder": "The Nightwatchman might choose a player Put the Nightwatchman to sleep. Wake the target and show the THIS PLAYER IS and Nightwatchman tokens and point to the Nightwatchman.",
         "reminders": [
             "No ability"
         ],
+        "firstNight": 57,
+        "otherNight": 72,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/nightwatchman.png"
     },
     {
         "id": "noble",
         "name": "Noble",
         "ability": "You start knowing 3 players, 1 and only 1 of which is evil.",
-        "firstNightReminder": "Point to 3 players including one evil player, in no particular order.",
+        "firstNightReminder": "Point to all three players marked KNOW.",
         "otherNightReminder": "",
         "reminders": [
             "Seen"
         ],
+        "firstNight": 54,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/noble.png"
     },
     {
@@ -1043,11 +1528,16 @@
         "name": "No Dashii",
         "ability": "Each night*, choose a player: they die. Your 2 Townsfolk neighbours are poisoned.",
         "firstNightReminder": "",
-        "otherNightReminder": "The No Dashii points to a player. That player dies.",
+        "otherNightReminder": "The No Dashii chooses a player.",
         "reminders": [
             "Dead",
             "Poisoned"
         ],
+        "firstNight": -1,
+        "otherNight": 37,
+        "team": "demon",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/nodashii.png"
     },
     {
@@ -1055,8 +1545,13 @@
         "name": "Oracle",
         "ability": "Each night*, you learn how many dead players are evil.",
         "firstNightReminder": "",
-        "otherNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of dead evil players.",
+        "otherNightReminder": "Give a finger signal.",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": 66,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/oracle.png"
     },
     {
@@ -1068,6 +1563,11 @@
         "reminders": [
             "About to Die"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/organgrinder.png"
     },
     {
@@ -1077,18 +1577,28 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pacifist.png"
     },
     {
         "id": "philosopher",
         "name": "Philosopher",
         "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
-        "firstNightReminder": "The Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
-        "otherNightReminder": "If the Philosopher has not used their ability: the Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token. Or, if the character is in play, place the drunk marker by that player and the Not the Philosopher token by the Philosopher.",
+        "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
+        "otherNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
         "reminders": [
             "Drunk",
             "Is the Philosopher"
         ],
+        "firstNight": 9,
+        "otherNight": 8,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/philosopher.png"
     },
     {
@@ -1096,20 +1606,30 @@
         "name": "Pit-Hag",
         "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.",
         "firstNightReminder": "",
-        "otherNightReminder": "The Pit-Hag points to a player and a character on the sheet. If this character is not in play, wake that player and show them the 'You are' card and the relevant character token. If the character is in play, nothing happens.",
+        "otherNightReminder": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the YOU ARE token & their new character token.",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": 22,
+        "team": "minion",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pithag.png"
     },
     {
         "id": "pixie",
         "name": "Pixie",
         "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
-        "firstNightReminder": "Show the Pixie 1 in-play Townsfolk character token.",
+        "firstNightReminder": "Show the Townsfolk character token marked MAD.",
         "otherNightReminder": "",
         "reminders": [
             "Mad",
             "Has ability"
         ],
+        "firstNight": 37,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pixie.png"
     },
     {
@@ -1117,22 +1637,32 @@
         "name": "Po",
         "ability": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Po chose no-one the previous night: The Po points to three players. Otherwise: The Po either shows the 'no' head signal , or points to a player. Chosen players die",
+        "otherNightReminder": "The Po may choose a player OR chooses 3 players if they chose no-one last night. or",
         "reminders": [
             "Dead",
             "3 attacks"
         ],
+        "firstNight": -1,
+        "otherNight": 35,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/po.png"
     },
     {
         "id": "poisoner",
         "name": "Poisoner",
         "ability": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
-        "firstNightReminder": "The Poisoner points to a player. That player is poisoned.",
-        "otherNightReminder": "The previously poisoned player is no longer poisoned. The Poisoner points to a player. That player is poisoned.",
+        "firstNightReminder": "The Poisoner chooses a player.",
+        "otherNightReminder": "The Poisoner chooses a player.",
         "reminders": [
             "Poisoned"
         ],
+        "firstNight": 24,
+        "otherNight": 13,
+        "team": "minion",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/poisoner.png"
     },
     {
@@ -1142,28 +1672,43 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/politician.png"
     },
     {
         "id": "poppygrower",
         "name": "Poppy Grower",
         "ability": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",
-        "firstNightReminder": "Do not inform the Demon/Minions who each other are",
-        "otherNightReminder": "If the Poppy Grower has died, show the Minions/Demon who each other are.",
+        "firstNightReminder": "Do not do the Minion Info and Demon Info steps. Wake the Demon, show the THESE CHARACTERS ARE NOT IN PLAY info token and any three good character tokens that are not in play.",
+        "otherNightReminder": "If the Poppy Grower died today or tonight, wake the Minions, show the THIS IS THE DEMON info token and point to the Demon. Put them to sleep. Wake the Demon, show the THESE ARE YOUR MINIONS info token and point to the Minions. Put the Demon to sleep.",
         "reminders": [
             "Evil wakes"
         ],
+        "firstNight": 11,
+        "otherNight": 9,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/poppygrower.png"
     },
     {
         "id": "preacher",
         "name": "Preacher",
         "ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability.",
-        "firstNightReminder": "The Preacher chooses a player. If a Minion is chosen, wake the Minion and show the 'This character selected you' card and then the Preacher token.",
-        "otherNightReminder": "The Preacher chooses a player. If a Minion is chosen, wake the Minion and show the 'This character selected you' card and then the Preacher token.",
+        "firstNightReminder": "The Preacher chooses a player. If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token and the Preacher token.",
+        "otherNightReminder": "The Preacher chooses a player. If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token and the Preacher token.",
         "reminders": [
             "At a sermon"
         ],
+        "firstNight": 21,
+        "otherNight": 12,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/preacher.png"
     },
     {
@@ -1171,11 +1716,16 @@
         "name": "Professor",
         "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Professor has not used their ability: The Professor either shakes their head no, or points to a player. If that player is a Townsfolk, they are now alive.",
+        "otherNightReminder": "The Professor might choose a dead player.",
         "reminders": [
             "Alive",
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": 50,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/professor.png"
     },
     {
@@ -1185,18 +1735,28 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/psychopath.png"
     },
     {
         "id": "pukka",
         "name": "Pukka",
         "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.",
-        "firstNightReminder": "The Pukka points to a player. That player is poisoned.",
-        "otherNightReminder": "The Pukka points to a player. That player is poisoned. The previously poisoned player dies.",
+        "firstNightReminder": "The Pukka chooses a player.",
+        "otherNightReminder": "The Pukka chooses a player. The previously poisoned player dies then becomes healthy.",
         "reminders": [
             "Poisoned",
             "Dead"
         ],
+        "firstNight": 36,
+        "otherNight": 33,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pukka.png"
     },
     {
@@ -1209,6 +1769,11 @@
             "Drunk",
             "Guess used"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/puzzlemaster.png"
     },
     {
@@ -1216,8 +1781,13 @@
         "name": "Ravenkeeper",
         "ability": "If you die at night, you are woken to choose a player: you learn their character.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Ravenkeeper died tonight: The Ravenkeeper points to a player. Show that player’s character token.",
+        "otherNightReminder": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": 59,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/ravenkeeper.png"
     },
     {
@@ -1227,6 +1797,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/recluse.png"
     },
     {
@@ -1238,6 +1813,11 @@
         "reminders": [
             "Register Falsely?"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/revolutionary.png"
     },
     {
@@ -1247,6 +1827,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "demon",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/riot.png"
     },
     {
@@ -1254,19 +1839,29 @@
         "name": "Sage",
         "ability": "If the Demon kills you, you learn that it is 1 of 2 players.",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Sage was killed by a Demon: Point to two players, one of which is that Demon.",
+        "otherNightReminder": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon.",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": 49,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sage.png"
     },
     {
         "id": "sailor",
         "name": "Sailor",
         "ability": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die.",
-        "firstNightReminder": "The Sailor points to a living player. Either the Sailor, or the chosen player, is drunk.",
-        "otherNightReminder": "The previously drunk player is no longer drunk. The Sailor points to a living player. Either the Sailor, or the chosen player, is drunk.",
+        "firstNightReminder": "The Sailor chooses a living player.",
+        "otherNightReminder": "The Sailor chooses a living player.",
         "reminders": [
             "Drunk"
         ],
+        "firstNight": 18,
+        "otherNight": 10,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sailor.png"
     },
     {
@@ -1276,6 +1871,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/saint.png"
     },
     {
@@ -1285,6 +1885,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/savant.png"
     },
     {
@@ -1294,6 +1899,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/scapegoat.png"
     },
     {
@@ -1301,21 +1911,31 @@
         "name": "Scarlet Woman",
         "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)",
         "firstNightReminder": "",
-        "otherNightReminder": "If the Scarlet Woman became the Demon today: Show the 'You are' card, then the demon token.",
+        "otherNightReminder": "If the Scarlet Woman became the Imp today, show them the YOU ARE token, then the Imp token.",
         "reminders": [
             "Demon"
         ],
+        "firstNight": -1,
+        "otherNight": 26,
+        "team": "minion",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/scarletwoman.png"
     },
     {
         "id": "seamstress",
         "name": "Seamstress",
         "ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",
-        "firstNightReminder": "The Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
-        "otherNightReminder": "If the Seamstress has not yet used their ability: the Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
+        "firstNightReminder": "The Seamstress might choose 2 players. Nod or shake your head.",
+        "otherNightReminder": "The Seamstress might choose 2 players. Nod or shake your head.",
         "reminders": [
             "No ability"
         ],
+        "firstNight": 51,
+        "otherNight": 67,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/seamstress.png"
     },
     {
@@ -1325,6 +1945,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sentinel.png"
     },
     {
@@ -1332,11 +1957,16 @@
         "name": "Shabaloth",
         "ability": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
         "firstNightReminder": "",
-        "otherNightReminder": "One player that the Shabaloth chose the previous night might be resurrected. The Shabaloth points to two players. Those players die.",
+        "otherNightReminder": "A previously chosen player might be resurrected. The Shabaloth chooses 2 players.",
         "reminders": [
             "Dead",
             "Alive"
         ],
+        "firstNight": -1,
+        "otherNight": 34,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/shabaloth.png"
     },
     {
@@ -1348,26 +1978,41 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/slayer.png"
     },
     {
         "id": "snakecharmer",
         "name": "Snake Charmer",
         "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
-        "firstNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
-        "otherNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
+        "firstNightReminder": "The Snake Charmer chooses a player. If they chose the Demon: Show the YOU ARE & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the YOU ARE and Snake Charmer tokens & give a thumbs up.",
+        "otherNightReminder": "The Snake Charmer chooses a player. If they chose the Demon: Show the YOU ARE & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the YOU ARE and Snake Charmer tokens & give a thumbs up.",
         "reminders": [
             "Poisoned"
         ],
+        "firstNight": 27,
+        "otherNight": 17,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/snakecharmer.png"
     },
     {
         "id": "snitch",
         "name": "Snitch",
         "ability": "Minions start knowing 3 not-in-play characters.",
-        "firstNightReminder": "After Minion info wake each Minion and show them three not-in-play character tokens. These may be the same or different to each other and the ones shown to the Demon.",
+        "firstNightReminder": "Wake each Minion. Show the THESE CHARACTERS ARE NOT IN PLAY token and three not-in-play character tokens. Put each Minion to sleep.",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": 14,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/snitch.png"
     },
     {
@@ -1377,6 +2022,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/soldier.png"
     },
     {
@@ -1388,37 +2038,57 @@
         "reminders": [
             "No extra evil"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/spiritofivory.png"
     },
     {
         "id": "spy",
         "name": "Spy",
         "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
-        "firstNightReminder": "Show the Grimoire to the Spy for as long as they need.",
-        "otherNightReminder": "Show the Grimoire to the Spy for as long as they need.",
+        "firstNightReminder": "Show the Grimoire for as long as the Spy needs.",
+        "otherNightReminder": "Show the Grimoire for as long as the Spy needs.",
         "reminders": [],
+        "firstNight": 59,
+        "otherNight": 75,
+        "team": "minion",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/spy.png"
     },
     {
         "id": "steward",
         "name": "Steward",
         "ability": "You start knowing 1 good player.\r",
-        "firstNightReminder": "Point to the good player marked 'Know'",
+        "firstNightReminder": "Point to the good player marked KNOW.",
         "otherNightReminder": "",
         "reminders": [
             "Know"
         ],
+        "firstNight": 52,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/steward.png"
     },
     {
         "id": "stormcatcher",
         "name": "Storm Catcher",
         "ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is.",
-        "firstNightReminder": "",
+        "firstNightReminder": "At the start of the night, announce which character is favoured by the Storm Catcher. If that character is in play, mark that player as \"Safe\". Wake each evil player and show them the character token, then the marked player.\n  If not in play, wake each evil player, show them the \"These Characters Are Not In Play\" info token and the relevant character token.",
         "otherNightReminder": "",
         "reminders": [
             "Safe"
         ],
+        "firstNight": 3,
+        "otherNight": -1,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/stormcatcher.png"
     },
     {
@@ -1426,10 +2096,15 @@
         "name": "Sweetheart",
         "ability": "When you die, 1 player is drunk from now on.",
         "firstNightReminder": "",
-        "otherNightReminder": "Choose a player that is drunk.",
+        "otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now.",
         "reminders": [
             "Drunk"
         ],
+        "firstNight": -1,
+        "otherNight": 48,
+        "team": "outsider",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sweetheart.png"
     },
     {
@@ -1441,17 +2116,27 @@
         "reminders": [
             "Can not die"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/tealady.png"
     },
     {
         "id": "thief",
         "name": "Thief",
         "ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",
-        "firstNightReminder": "The Thief points to a player. Put the Thief's 'Negative vote' reminder by the chosen player's character token.",
-        "otherNightReminder": "The Thief points to a player. Put the Thief's 'Negative vote' reminder by the chosen player's character token.",
+        "firstNightReminder": "The Thief chooses a player.",
+        "otherNightReminder": "The Thief chooses a player.",
         "reminders": [
             "Negative vote"
         ],
+        "firstNight": 8,
+        "otherNight": 7,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/thief.png"
     },
     {
@@ -1463,6 +2148,11 @@
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 56,
+        "team": "outsider",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/tinker.png"
     },
     {
@@ -1470,22 +2160,32 @@
         "name": "Town Crier",
         "ability": "Each night*, you learn if a Minion nominated today.",
         "firstNightReminder": "",
-        "otherNightReminder": "Nod 'yes' or shake head 'no' for whether a Minion nominated today. Place the 'Minion not nominated' marker (remove 'Minion nominated', if any).",
+        "otherNightReminder": "Either nod or shake your head.",
         "reminders": [
             "Minions not nominated",
             "Minion nominated"
         ],
+        "firstNight": -1,
+        "otherNight": 65,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/towncrier.png"
     },
     {
         "id": "toymaker",
         "name": "Toymaker",
         "ability": "The Demon may choose not to attack & must do this at least once per game. Evil players get normal starting info.",
-        "firstNightReminder": "",
-        "otherNightReminder": "",
+        "firstNightReminder": "Resolve the Minion Info and Demon Info steps even though there are fewer than 7 players.",
+        "otherNightReminder": "If it is a night when a Demon attack could end the game, and the Demon is marked â€œFinal night: No Attack,â€ then the Demon does not act tonight. (Do not wake them.)",
         "reminders": [
             "No Attack"
         ],
+        "firstNight": 4,
+        "otherNight": 2,
+        "team": "fabled",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/toymaker.png"
     },
     {
@@ -1493,10 +2193,15 @@
         "name": "Undertaker",
         "ability": "Each night*, you learn which character died by execution today.",
         "firstNightReminder": "",
-        "otherNightReminder": "If a player was executed today: Show that player’s character token.",
+        "otherNightReminder": "If a player was executed today, show their character token.",
         "reminders": [
             "Executed"
         ],
+        "firstNight": -1,
+        "otherNight": 62,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/undertaker.png"
     },
     {
@@ -1504,12 +2209,17 @@
         "name": "Vigormortis",
         "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. [−1 Outsider]",
         "firstNightReminder": "",
-        "otherNightReminder": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbours is poisoned.",
+        "otherNightReminder": "The Vigormortis chooses a player. If that player is a Minion, poison a neighboring Townsfolk.",
         "reminders": [
             "Dead",
             "Has ability",
             "Poisoned"
         ],
+        "firstNight": -1,
+        "otherNight": 39,
+        "team": "demon",
+        "edition": "snv",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vigormortis.png"
     },
     {
@@ -1521,15 +2231,25 @@
         "reminders": [
             "No ability"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/virgin.png"
     },
     {
         "id": "vizier",
         "name": "Vizier",
         "ability": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.\r",
-        "firstNightReminder": "Anounce the Vizier Player to the group.",
+        "firstNightReminder": "Announce the Vizier player to the group.",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": 66,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vizier.png"
     },
     {
@@ -1537,10 +2257,15 @@
         "name": "Vortox",
         "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
         "firstNightReminder": "",
-        "otherNightReminder": "The Vortox points to a player. That player dies.",
+        "otherNightReminder": "The Vortox chooses a player.",
         "reminders": [
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 38,
+        "team": "demon",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vortox.png"
     },
     {
@@ -1550,41 +2275,61 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "traveller",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/voudon.png"
     },
     {
         "id": "washerwoman",
         "name": "Washerwoman",
         "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
-        "firstNightReminder": "Show the character token of a Townsfolk in play. Point to two players, one of which is that character.",
+        "firstNightReminder": "Show the Townsfolk character token. Point to both the TOWNSFOLK and WRONG players.",
         "otherNightReminder": "",
         "reminders": [
             "Townsfolk",
             "Wrong"
         ],
+        "firstNight": 41,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/washerwoman.png"
     },
     {
         "id": "widow",
         "name": "Widow",
         "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
-        "firstNightReminder": "Show the Grimoire to the Widow for as long as they need. The Widow points to a player. That player is poisoned. Wake a good player. Show the 'These characters are in play' card, then the Widow character token.",
+        "firstNightReminder": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player.",
         "otherNightReminder": "",
         "reminders": [
             "Poisoned",
             "Knows"
         ],
+        "firstNight": 25,
+        "otherNight": -1,
+        "team": "minion",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/widow.png"
     },
     {
         "id": "witch",
         "name": "Witch",
         "ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.",
-        "firstNightReminder": "The Witch points to a player. If that player nominates tomorrow they die immediately.",
-        "otherNightReminder": "If there are 4 or more players alive: The Witch points to a player. If that player nominates tomorrow they die immediately.",
+        "firstNightReminder": "The Witch chooses a player.",
+        "otherNightReminder": "The Witch chooses a player.",
         "reminders": [
             "Cursed"
         ],
+        "firstNight": 31,
+        "otherNight": 20,
+        "team": "minion",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/witch.png"
     },
     {
@@ -1592,11 +2337,72 @@
         "name": "Zombuul",
         "ability": "Each night*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead.",
         "firstNightReminder": "",
-        "otherNightReminder": "If no-one died during the day: The Zombuul points to a player. That player dies.",
+        "otherNightReminder": "If no one died today, the Zombuul chooses a player.",
         "reminders": [
             "Died today",
             "Dead"
         ],
+        "firstNight": -1,
+        "otherNight": 32,
+        "team": "demon",
+        "edition": "bmr",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/zombuul.png"
+    },
+    {
+        "id": "dawn",
+        "name": "Dawn",
+        "ability": "",
+        "firstNightReminder": "Wait for a few seconds. End the Night Phase.",
+        "otherNightReminder": "Wait for a few seconds. End the Night Phase.",
+        "reminders": [],
+        "firstNight": 64,
+        "otherNight": 80,
+        "team": "reminders",
+        "edition": NaN,
+        "setup": false,
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/dawn.png"
+    },
+    {
+        "id": "dusk",
+        "name": "Dusk",
+        "ability": "",
+        "firstNightReminder": "Start the Night Phase.",
+        "otherNightReminder": "Start the Night Phase.",
+        "reminders": [],
+        "firstNight": 0,
+        "otherNight": 0,
+        "team": "reminders",
+        "edition": NaN,
+        "setup": false,
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/dusk.png"
+    },
+    {
+        "id": "minioninfo",
+        "name": "Minion Info",
+        "ability": "",
+        "firstNightReminder": "If there are 7 or more players, wake all Minions:\nShow the THIS IS THE DEMON token. Point to the Demon.\nShow the THESE ARE YOUR MINIONS token. Point to the other Minions.",
+        "otherNightReminder": "",
+        "reminders": [],
+        "firstNight": 13,
+        "otherNight": -1,
+        "team": "reminders",
+        "edition": NaN,
+        "setup": false,
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/minioninfo.png"
+    },
+    {
+        "id": "demoninfo",
+        "name": "Demon Info",
+        "ability": "",
+        "firstNightReminder": "If there are 7 or more players, wake the Demon:\nShow the THESE ARE YOUR MINIONS token. Point to all Minions.\nShow the THESE CHARACTERS ARE NOT IN PLAY token. Show 3 not-in-play good character tokens.",
+        "otherNightReminder": "",
+        "reminders": [],
+        "firstNight": 16,
+        "otherNight": -1,
+        "team": "reminders",
+        "edition": NaN,
+        "setup": false,
+        "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/demoninfo.png"
     }
 ]

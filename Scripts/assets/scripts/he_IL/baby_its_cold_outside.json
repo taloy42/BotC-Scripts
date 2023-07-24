@@ -8,6 +8,11 @@
         "reminders": [
             "האלכימאי"
         ],
+        "firstNight": 10,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/alchemist.png"
     },
     {
@@ -19,6 +24,11 @@
         "reminders": [
             "?"
         ],
+        "firstNight": 40,
+        "otherNight": 54,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/amnesiac.png"
     },
     {
@@ -30,6 +40,11 @@
         "reminders": [
             "משוגע"
         ],
+        "firstNight": 32,
+        "otherNight": 21,
+        "team": "minion",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cerenovus.png"
     },
     {
@@ -39,6 +54,11 @@
         "firstNightReminder": "תסמן עם האצבעות (1,2,3,...) כמה מקומות מהשד נמצא המשרת הקרוב ביותר.",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": 49,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/clockmaker.png"
     },
     {
@@ -48,6 +68,11 @@
         "firstNightReminder": "החולמני מצביע על שחקן. תראה לו דמות אחת טובה ואחת רעה, כשאחת מהן היא הדמות האמיתית.",
         "otherNightReminder": "החולמני מצביע על שחקן. תראה לו דמות אחת טובה ואחת רעה, כשאחת מהן היא הדמות האמיתית.",
         "reminders": [],
+        "firstNight": 50,
+        "otherNight": 63,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/dreamer.png"
     },
     {
@@ -59,6 +84,11 @@
         "reminders": [
             "שיכור"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "tb",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/drunk.png"
     },
     {
@@ -68,6 +98,11 @@
         "firstNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
         "otherNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
         "reminders": [],
+        "firstNight": 45,
+        "otherNight": 60,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/empath.png"
     },
     {
@@ -80,6 +115,11 @@
             "מת",
             "פעם אחת"
         ],
+        "firstNight": -1,
+        "otherNight": 36,
+        "team": "demon",
+        "edition": "snv",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fanggu.png"
     },
     {
@@ -92,6 +132,11 @@
             "מת היום",
             "מת"
         ],
+        "firstNight": 28,
+        "otherNight": 44,
+        "team": "minion",
+        "edition": "bmr",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/godfather.png"
     },
     {
@@ -103,6 +148,11 @@
         "reminders": [
             "מת"
         ],
+        "firstNight": -1,
+        "otherNight": 31,
+        "team": "demon",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/imp.png"
     },
     {
@@ -112,6 +162,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/klutz.png"
     },
     {
@@ -124,6 +179,11 @@
             "זר",
             "לא זר"
         ],
+        "firstNight": 42,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "tb",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/librarian.png"
     },
     {
@@ -136,6 +196,11 @@
             "השד",
             "מת"
         ],
+        "firstNight": 22,
+        "otherNight": 42,
+        "team": "demon",
+        "edition": "experimental",
+        "setup": true,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lilmonsta.png"
     },
     {
@@ -145,6 +210,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mutant.png"
     },
     {
@@ -156,6 +226,11 @@
         "reminders": [
             "אין יכולת"
         ],
+        "firstNight": 57,
+        "otherNight": 72,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/nightwatchman.png"
     },
     {
@@ -167,6 +242,11 @@
         "reminders": [
             "נראה"
         ],
+        "firstNight": 54,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/noble.png"
     },
     {
@@ -176,6 +256,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "קרואלה מצביעה על שחקן ועל דמות בדף הדמויות. אם הדמות הזו לא במשחק, תעיר את השחקן ותראה לו \"אתה\" ואת אסימון הדמות הרלוונטית. אם הדמות הזו במשחק, כלום לא קורה.",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": 22,
+        "team": "minion",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pithag.png"
     },
     {
@@ -188,6 +273,11 @@
             "משוגע",
             "יש יכולת"
         ],
+        "firstNight": 37,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pixie.png"
     },
     {
@@ -199,6 +289,11 @@
         "reminders": [
             "רעים מתעוררים"
         ],
+        "firstNight": 11,
+        "otherNight": 9,
+        "team": "townsfolk",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/poppygrower.png"
     },
     {
@@ -211,6 +306,11 @@
             "שיכור",
             "ניחוש בוזבז"
         ],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "outsider",
+        "edition": "experimental",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/puzzlemaster.png"
     },
     {
@@ -220,6 +320,11 @@
         "firstNightReminder": "",
         "otherNightReminder": "",
         "reminders": [],
+        "firstNight": -1,
+        "otherNight": -1,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/savant.png"
     },
     {
@@ -231,6 +336,11 @@
         "reminders": [
             "אין יכולת"
         ],
+        "firstNight": 51,
+        "otherNight": 67,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/seamstress.png"
     },
     {
@@ -242,6 +352,11 @@
         "reminders": [
             "מורעל"
         ],
+        "firstNight": 27,
+        "otherNight": 17,
+        "team": "townsfolk",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/snakecharmer.png"
     },
     {
@@ -253,6 +368,11 @@
         "reminders": [
             "שיכור"
         ],
+        "firstNight": -1,
+        "otherNight": 48,
+        "team": "outsider",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sweetheart.png"
     },
     {
@@ -264,6 +384,11 @@
         "reminders": [
             "מקולל"
         ],
+        "firstNight": 31,
+        "otherNight": 20,
+        "team": "minion",
+        "edition": "snv",
+        "setup": false,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/witch.png"
     }
 ]

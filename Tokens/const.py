@@ -125,7 +125,7 @@ def FONT_PATH():
         return rf'{ROOT_DIR}resources\fonts\en_font.ttf'
 def NAME_FONT_PATH():
     if DIRECTION=='rtl':
-        return rf'{ROOT_DIR}resources\fonts\he_font.ttf'
+        return rf'{ROOT_DIR}resources\fonts\he_font_name.ttf'
     if DIRECTION=='ltr':
         return rf'{ROOT_DIR}resources\fonts\en_font_name.ttf'
 def FONT_SIZE():

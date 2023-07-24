@@ -65,9 +65,11 @@ def json_from_df(csv_path):
    return j 
 
 def json_source():
-    if os.path.isfile(os.path.join(csv_folder,'en_GB.csv')):
-        return json_from_df(os.path.join(csv_folder,'en_GB.csv'))
-    return json.loads(r'''
+   if os.path.isfile(os.path.join(csv_folder,'en_GB.csv')):
+      return json_from_df(os.path.join(csv_folder,'en_GB.csv'))
+   raise Exception('no base json')
+   #  return json.loads(
+r'''
 [
    {
       "ability":"Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment.",
@@ -2322,4 +2324,5 @@ def json_source():
       "team":"fabled"
    }
 ]
-                      ''')
+                      '''
+    #)

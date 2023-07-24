@@ -114,6 +114,7 @@ def position_foreground(img,bg_size,fg_size,fg_loc):
   bg = Image.new('RGBA',bg_size,color=(0,0,0,0))
   bg.paste(img,fg_loc,img)
   return bg
+  
 def add_img_to_bg(img,bg,loc=None,box=None,from_height=None):
   # img = crop_and_square(img)
   

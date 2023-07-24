@@ -40,6 +40,7 @@ def add_leaves(character, img,group=None):
 
   ability = character.get('ability','')
   changeSetup = '[' in ability and ']' in ability
+  changeSetup = character.get('setup',changeSetup)
   
   n_reminders = len(character.get('reminders',[]))
 
@@ -115,8 +116,8 @@ def create_token(character,img,group=None):
   # font = ImageFont.truetype(font=const.FONT_PATH(), size=20)
   # s = font.getsize(name)
   # draw.multiline_text(((W-s[0])//2,50),text,font=font,align='right',fill='black',)
-  # font = get_optimal_multiline_font(const.FONT_PATH(),text,H*font_space_frac,im_size=H)
-  font = ImageFont.truetype(font=const.FONT_PATH(), size=const.FONT_SIZE())
+  font = get_optimal_multiline_font(const.FONT_PATH(),text,int((H//2)*13/16),im_size=H)
+  # font = ImageFont.truetype(font=const.FONT_PATH(), size=const.FONT_SIZE())
   draw_multiline(draw,res.size,font,text)
   # add name
   # font = ImageFont.truetype(font='dorian2.ttf', size=50)
@@ -229,8 +230,8 @@ def get_optimal_multiline_size(font_path,text,max_height,min_height=60,im_size=5
     if check_multiline_font(font,text,max_height,min_height,im_size):
       return size
   return 1
-def get_optimal_multiline_font(font_path,text,max_height,min_height=60,im_size=512):
-  for size in range(50,1,-1):
+def get_optimal_multiline_font(font_path,text,max_height,min_height=90,im_size=512,max_font_size=25):
+  for size in range(max_font_size,1,-1):
     font = ImageFont.truetype(font=font_path, size=size)
     if check_multiline_font(font,text,max_height,min_height,im_size):
       break
@@ -249,7 +250,7 @@ def draw_multiline(draw,size,font,text,min_height=90,color='black'):
     draw.text(((W-s[0])//2,h),now,fill=color,font=font)
     h+=font.getsize(now)[1]
   return draw
-def check_multiline_font(font,text,max_height,min_height=60,im_size=512):
+def check_multiline_font(font,text,max_height,min_height=90,im_size=512):
   h = min_height
   later = text
   # R = get_diam_for_size(im_size)
