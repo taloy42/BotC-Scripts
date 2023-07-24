@@ -77,13 +77,14 @@ def gen_sheets_for_script(script,sheet_path = '.\\sheets',script_name='unnamed s
 def main():
     # script = const.SCRIPTS['trouble-brewing']
     # script = const.SCRIPTS['all-roles']
-    script = json.load(open(r'C:\Users\anukh\Downloads\BotC\repository\BotC-Scripts\Tokens\resources\scripts\all_roles_en_underscore.json','r'))
+    # script = json.load(open(r'C:\Users\anukh\Downloads\BotC\repository\BotC-Scripts\Tokens\resources\scripts\all_roles_en_underscore.json','r'))
+    script = json.load(open(r'C:\Users\anukh\Downloads\BotC\repository\BotC-Scripts\Tokens\resources\scripts\he_IL.json','r',encoding='utf8'))
     
     if script[0]['id']=='_meta' and 'direction' in script[0]:
         const.DIRECTION = script[0]['direction']
-    # const.DIRECTION = 'rtl'
-    sheet_path = 'sheets\\allroles'
-    gen_sheets_for_script(script,sheet_path,script_name='all_roles_en')
+    const.DIRECTION = 'rtl'
+    sheet_path = 'sheets'
+    gen_sheets_for_script(script,sheet_path,script_name='all_roles_he')
 
 if __name__=='__main__':
     main()
