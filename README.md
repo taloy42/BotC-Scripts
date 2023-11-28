@@ -1,2 +1,2 @@
 # BotC-Scripts
-generating scripts based on https://github.com/Skateside/pocket-grimoire
+generating scripts, tokens and more
