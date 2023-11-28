@@ -6,13 +6,13 @@ import pandas as pd
 
 ### PATHS ###
 config = configparser.ConfigParser()
-config.read(r'pyconfig.ini')
-dirs = config['DEFAULT']
-base_folder = ''
-json_folder = os.path.join(base_folder, dirs['json'])
-description_folder = os.path.join(base_folder,dirs['descriptions'])
-script_folder = os.path.join(base_folder,dirs['scripts'])
-csv_folder = os.path.join(base_folder,dirs['csv'])
+config.read(r"pyconfig.ini")
+dirs = config["DEFAULT"]
+base_folder = ""
+json_folder = os.path.join(base_folder, dirs["json"])
+description_folder = os.path.join(base_folder, dirs["descriptions"])
+script_folder = os.path.join(base_folder, dirs["scripts"])
+csv_folder = os.path.join(base_folder, dirs["csv"])
 
 
 ### LOCALES ###
@@ -22,54 +22,59 @@ csv_folder = os.path.join(base_folder,dirs['csv'])
 #         "en_GB",
 #         "es_ES",
 #         "fa_IR",
-#         "fil_PH", 
-#         "fr_FR", 
-#         "he_IL", 
-#         "hu_HU", 
-#         "it_IT", 
-#         "ja_JA", 
-#         "kw_KW", 
-#         "nl_NL", 
-#         "pl_PL", 
-#         "pt_BR", 
-#         "pt_PT", 
-#         "ru_RU", 
-#         "sv_SE", 
-#         "tr_TR", 
-#         "zh_CN", 
+#         "fil_PH",
+#         "fr_FR",
+#         "he_IL",
+#         "hu_HU",
+#         "it_IT",
+#         "ja_JA",
+#         "kw_KW",
+#         "nl_NL",
+#         "pl_PL",
+#         "pt_BR",
+#         "pt_PT",
+#         "ru_RU",
+#         "sv_SE",
+#         "tr_TR",
+#         "zh_CN",
 #         "zh_TW",
 # ]
-known_locales = [
-    'en_GB',
-    'he_IL'
-]
+known_locales = ["en_GB", "he_IL"]
 
 ### FOR CSV ###
-csv_text_entries = ['name', 'ability', 'firstNightReminder', 'otherNightReminder']
+csv_text_entries = ["name", "ability", "firstNightReminder", "otherNightReminder"]
+csv_int_entries = ["firstNight", "otherNight", "sao", "tokenCopies"]
 # csv_list_entries =['remindersGlobal', 'reminders']
-csv_list_entries =['reminders']
+csv_list_entries = [("reminders", str), ("reminderCopies", int)]
 
 
-image_pattern = 'https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/{}.png'
+image_pattern = (
+    "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/{}.png"
+)
+
+
 ### SOURCE FOR TRANSLATION ###
 def json_from_df(csv_path):
-   df = pd.read_csv(csv_path)
-   j = []
-    
-   for index,row in df.iterrows():
-      cur = dict()
-      for key in row.keys():
-         cur[key] = row[key]
-      cur['image'] = image_pattern.format(cur['id'])
-      j.append(cur)
-   return j 
+    df = pd.read_csv(csv_path)
+    j = []
+
+    for index, row in df.iterrows():
+        cur = dict()
+        for key in row.keys():
+            cur[key] = row[key]
+        cur["image"] = image_pattern.format(cur["id"])
+        j.append(cur)
+    return j
+
 
 def json_source():
-   if os.path.isfile(os.path.join(csv_folder,'en_GB.csv')):
-      return json_from_df(os.path.join(csv_folder,'en_GB.csv'))
-   raise Exception('no base json')
-   #  return json.loads(
-r'''
+    if os.path.isfile(os.path.join(csv_folder, "en_GB.csv")):
+        return json_from_df(os.path.join(csv_folder, "en_GB.csv"))
+    raise Exception("no base json")
+    #  return json.loads(
+
+
+r"""
 [
    {
       "ability":"Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment.",
@@ -2324,5 +2329,5 @@ r'''
       "team":"fabled"
    }
 ]
-                      '''
-    #)
+                      """
+# )

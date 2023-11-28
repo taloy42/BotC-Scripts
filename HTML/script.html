@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   botc script
+  </title>
+  <meta content="" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="main.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <div class="section townsfolk">
+   <div class="role townsfolk">
+    <img alt="Clockmaker image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/clockmaker.png"/>
+    <span class="name">
+     Clockmaker
+    </span>
+    <span class="ability">
+     You start knowing how many steps from the Demon to its nearest Minion.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Dreamer image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/dreamer.png"/>
+    <span class="name">
+     Dreamer
+    </span>
+    <span class="ability">
+     Each night, choose a player (not yourself or travelers): you learn 1 good and 1 evil character, 1 of which is correct.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Mathematician image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mathematician.png"/>
+    <span class="name">
+     Mathematician
+    </span>
+    <span class="ability">
+     Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Snake Charmer image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/snakecharmer.png"/>
+    <span class="name">
+     Snake Charmer
+    </span>
+    <span class="ability">
+     Each night, choose an alive player: a chosen Demon swaps characters &amp; alignments with you &amp; is then poisoned.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Flowergirl image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/flowergirl.png"/>
+    <span class="name">
+     Flowergirl
+    </span>
+    <span class="ability">
+     Each night*, you learn if a Demon voted today.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Oracle image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/oracle.png"/>
+    <span class="name">
+     Oracle
+    </span>
+    <span class="ability">
+     Each night*, you learn how many dead players are evil.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Town Crier image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/towncrier.png"/>
+    <span class="name">
+     Town Crier
+    </span>
+    <span class="ability">
+     Each night*, you learn if a Minion nominated today.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Juggler image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/juggler.png"/>
+    <span class="name">
+     Juggler
+    </span>
+    <span class="ability">
+     On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Savant image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/savant.png"/>
+    <span class="name">
+     Savant
+    </span>
+    <span class="ability">
+     Each day, you may visit the Storyteller to learn 2 things in private: 1 is true &amp; 1 is false.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Artist image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/artist.png"/>
+    <span class="name">
+     Artist
+    </span>
+    <span class="ability">
+     Once per game, during the day, privately ask the Storyteller any yes/no question.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Philosopher image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/philosopher.png"/>
+    <span class="name">
+     Philosopher
+    </span>
+    <span class="ability">
+     Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Seamstress image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/seamstress.png"/>
+    <span class="name">
+     Seamstress
+    </span>
+    <span class="ability">
+     Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.
+    </span>
+   </div>
+   <div class="role townsfolk">
+    <img alt="Sage image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sage.png"/>
+    <span class="name">
+     Sage
+    </span>
+    <span class="ability">
+     If the Demon kills you, you learn that it is 1 of 2 players.
+    </span>
+   </div>
+  </div>
+  <div class="section outsider">
+   <div class="role outsider">
+    <img alt="Barber image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/barber.png"/>
+    <span class="name">
+     Barber
+    </span>
+    <span class="ability">
+     If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.
+    </span>
+   </div>
+   <div class="role outsider">
+    <img alt="Klutz image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/klutz.png"/>
+    <span class="name">
+     Klutz
+    </span>
+    <span class="ability">
+     When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.
+    </span>
+   </div>
+   <div class="role outsider">
+    <img alt="Mutant image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mutant.png"/>
+    <span class="name">
+     Mutant
+    </span>
+    <span class="ability">
+     If you are “mad” about being an Outsider, you might be executed.
+    </span>
+   </div>
+   <div class="role outsider">
+    <img alt="Sweetheart image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sweetheart.png"/>
+    <span class="name">
+     Sweetheart
+    </span>
+    <span class="ability">
+     When you die, 1 player is drunk from now on.
+    </span>
+   </div>
+  </div>
+  <div class="section minion">
+   <div class="role minion">
+    <img alt="Cerenovus image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cerenovus.png"/>
+    <span class="name">
+     Cerenovus
+    </span>
+    <span class="ability">
+     Each night, choose a player &amp; a good character: they are “mad” they are this character tomorrow, or might be executed.
+    </span>
+   </div>
+   <div class="role minion">
+    <img alt="Witch image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/witch.png"/>
+    <span class="name">
+     Witch
+    </span>
+    <span class="ability">
+     Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.
+    </span>
+   </div>
+   <div class="role minion">
+    <img alt="Pit-Hag image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pithag.png"/>
+    <span class="name">
+     Pit-Hag
+    </span>
+    <span class="ability">
+     Each night*, choose a player &amp; a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.
+    </span>
+   </div>
+   <div class="role minion">
+    <img alt="Evil Twin image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/eviltwin.png"/>
+    <span class="name">
+     Evil Twin
+    </span>
+    <span class="ability">
+     You &amp; an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.
+    </span>
+   </div>
+  </div>
+  <div class="section demon">
+   <div class="role demon">
+    <img alt="Fang Gu image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fanggu.png"/>
+    <span class="name">
+     Fang Gu
+    </span>
+    <span class="ability">
+     Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu &amp; you die instead. [+1 Outsider]
+    </span>
+   </div>
+   <div class="role demon">
+    <img alt="No Dashii image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/nodashii.png"/>
+    <span class="name">
+     No Dashii
+    </span>
+    <span class="ability">
+     Each night*, choose a player: they die. Your 2 Townsfolk neighbours are poisoned.
+    </span>
+   </div>
+   <div class="role demon">
+    <img alt="Vigormortis image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vigormortis.png"/>
+    <span class="name">
+     Vigormortis
+    </span>
+    <span class="ability">
+     Each night*, choose a player: they die. Minions you kill keep their ability &amp; poison 1 Townsfolk neighbour. [−1 Outsider]
+    </span>
+   </div>
+   <div class="role demon">
+    <img alt="Vortox image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vortox.png"/>
+    <span class="name">
+     Vortox
+    </span>
+    <span class="ability">
+     Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.
+    </span>
+   </div>
+  </div>
+  <div class="section traveler">
+   <div class="role traveler">
+    <img alt="Barista image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/barista.png"/>
+    <span class="name">
+     Barista
+    </span>
+    <span class="ability">
+     Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which.
+    </span>
+   </div>
+   <div class="role traveler">
+    <img alt="Bone Collector image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bonecollector.png"/>
+    <span class="name">
+     Bone Collector
+    </span>
+    <span class="ability">
+     Once per game, at night, choose a dead player: they regain their ability until dusk.
+    </span>
+   </div>
+   <div class="role traveler">
+    <img alt="Butcher image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/butcher.png"/>
+    <span class="name">
+     Butcher
+    </span>
+    <span class="ability">
+     Each day, after the 1st execution, you may nominate again.
+    </span>
+   </div>
+   <div class="role traveler">
+    <img alt="Deviant image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/deviant.png"/>
+    <span class="name">
+     Deviant
+    </span>
+    <span class="ability">
+     If you were funny today, you cannot die by exile.
+    </span>
+   </div>
+   <div class="role traveler">
+    <img alt="Harlot image" class="image" src="https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/harlot.png"/>
+    <span class="name">
+     Harlot
+    </span>
+    <span class="ability">
+     Each night*, choose a living player: if they agree, you learn their character, but you both might die.
+    </span>
+   </div>
+  </div>
+  <div class="section fabled">
+  </div>
+  <script async="" defer="" src="main.js">
+  </script>
+ </body>
+</html>

@@ -4,15 +4,22 @@
         "name": "Artist",
         "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "No ability"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 5,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/artist.png"
     },
     {
@@ -20,13 +27,18 @@
         "name": "Baron",
         "ability": "There are extra Outsiders in play. [+2 Outsiders]",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": -1,
         "team": "minion",
+        "sao": 6,
         "edition": "tb",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/baron.png"
     },
     {
@@ -34,13 +46,18 @@
         "name": "Chambermaid",
         "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
         "firstNightReminder": "The Chambermaid chooses 2 living players. Give a finger signal.",
+        "firstNightReminderMD": "The Chambermaid chooses 2 living players. Give a finger signal.",
         "otherNightReminder": "The Chambermaid chooses 2 living players. Give a finger signal.",
+        "otherNightReminderMD": "The Chambermaid chooses 2 living players. Give a finger signal.",
         "reminders": [],
-        "firstNight": 62,
-        "otherNight": 78,
+        "reminderCopies": [],
+        "firstNight": 63,
+        "otherNight": 79,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "bmr",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/chambermaid.png"
     },
     {
@@ -48,13 +65,18 @@
         "name": "Clockmaker",
         "ability": "You start knowing how many steps from the Demon to its nearest Minion.",
         "firstNightReminder": "Give a finger signal.",
+        "firstNightReminderMD": "Give a finger signal.",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": 49,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 1,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/clockmaker.png"
     },
     {
@@ -62,15 +84,22 @@
         "name": "Drunk",
         "ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "Drunk"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": -1,
         "team": "outsider",
+        "sao": 6,
         "edition": "tb",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/drunk.png"
     },
     {
@@ -78,13 +107,18 @@
         "name": "Empath",
         "ability": "Each night, you learn how many of your 2 alive neighbours are evil.",
         "firstNightReminder": "Give a finger signal.",
+        "firstNightReminderMD": "Give a finger signal.",
         "otherNightReminder": "Give a finger signal.",
+        "otherNightReminderMD": "Give a finger signal.",
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": 45,
-        "otherNight": 60,
+        "otherNight": 61,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/empath.png"
     },
     {
@@ -92,15 +126,22 @@
         "name": "Imp",
         "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "The Imp chooses a player. If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the YOU ARE token, then show the Imp token.",
+        "otherNightReminderMD": "The Imp chooses a player. <i class=\"reminder-token\"></i> If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the <b>YOU ARE</b> token, then show the Imp token.",
         "reminders": [
             "Dead"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": 31,
         "team": "demon",
+        "sao": 3,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 4,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/imp.png"
     },
     {
@@ -108,16 +149,24 @@
         "name": "Investigator",
         "ability": "You start knowing that 1 of 2 players is a particular Minion.",
         "firstNightReminder": "Show the Minion character token. Point to both the MINION and WRONG players.",
+        "firstNightReminderMD": "Show the Minion character token. Point to both the <b>MINION</b> and <b>WRONG</b> players.",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "Minion",
             "Wrong"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 43,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 1,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/investigator.png"
     },
     {
@@ -125,13 +174,18 @@
         "name": "Klutz",
         "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": -1,
         "team": "outsider",
+        "sao": 6,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/klutz.png"
     },
     {
@@ -139,29 +193,41 @@
         "name": "Sage",
         "ability": "If the Demon kills you, you learn that it is 1 of 2 players.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon.",
+        "otherNightReminderMD": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon.",
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
-        "otherNight": 49,
+        "otherNight": 50,
         "team": "townsfolk",
+        "sao": 6,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sage.png"
     },
     {
         "id": "en_GB_scarletwoman",
         "name": "Scarlet Woman",
-        "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don’t count)",
+        "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (travelers don’t count)",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "If the Scarlet Woman became the Imp today, show them the YOU ARE token, then the Imp token.",
+        "otherNightReminderMD": "If the Scarlet Woman became the Imp today, show them the <b>YOU ARE</b> token, then the Imp token.",
         "reminders": [
             "Demon"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": 26,
         "team": "minion",
+        "sao": 6,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/scarletwoman.png"
     }
 ]

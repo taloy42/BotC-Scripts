@@ -3,32 +3,46 @@
         "id": "he_IL_alchemist",
         "name": "אלכימאי",
         "ability": "יש לך יכולת של משרת שלא במשחק.",
-        "firstNightReminder": "הראה לאלכימאי דמות משרת מחוץ למשחק.",
+        "firstNightReminder": "הראה את אסימון 'אתה' ואסימון של דמות משרת מחוץ למשחק",
+        "firstNightReminderMD": "Show the <b>YOU ARE</b> token and the character token of a not in play Minion.",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "האלכימאי"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": 10,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 6,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/alchemist.png"
     },
     {
         "id": "he_IL_amnesiac",
         "name": "אמנזי",
         "ability": "אתה לא יודע מה היכולת שלך. בכל יום, אתה יכול לנחש בפרטיות מה היכולת. אתה לומד כמה אתה קרוב.",
-        "firstNightReminder": "תחליט מה היכולת של האמנזי. אם היכולת שלו גורמת לו לקום בלילה, תעיר את האמנזי ותבצע את הפעולה בהתאם.",
-        "otherNightReminder": "אם היכולת של האמנזי גורמת לו לקום בלילה, תעיר אותו ותבצע את הפעולה בהתאם.",
+        "firstNightReminder": "?",
+        "firstNightReminderMD": "?",
+        "otherNightReminder": "?",
+        "otherNightReminderMD": "?",
         "reminders": [
             "?"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": 40,
-        "otherNight": 54,
+        "otherNight": 55,
         "team": "townsfolk",
+        "sao": 4,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/amnesiac.png"
     },
     {
@@ -36,23 +50,32 @@
         "name": "אמן",
         "ability": "פעם אחת במשחק, במהלך היום, תשאל את מספר-הסיפורים בפרטיות כל שאלה של כן או לא.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "ללא יכולת"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 5,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/artist.png"
     },
     {
         "id": "he_IL_balloonist",
-        "name": "מפריח הבלונים",
-        "ability": "בכל לילה, אתה לומד שחקן אחד מכל סוג דמות, עד שאין יותר סוגים ללמוד (תושב-עיירה, זר, משרת, שד). [+1 זר]",
-        "firstNightReminder": "בחר סוג דמות. הצבע על שחקן שדמותו מהסוג הנבחר. הנח את אסימון ה\"נראה\" של מפריח הבלונים ליד הדמות הזו.",
-        "otherNightReminder": "בחר סוג דמות שאין אסימון \"נראה\" ליד דמות מהסוג הזה כבר. הצבע על שחקן שדמותו מהסוג הנבחר, אם נשארו כאלה. הנח את אסימון ה\"נראה\" של מפריח הבלונים ליד הדמות הזו,.",
+        "name": "מפריח בלונים",
+        "ability": "בכל לילה, אתה לומד שחקן אחד מכל סוג דמות, עד שאין יותר סוגים ללמוד. [+1 זר]",
+        "firstNightReminder": "הראה שחקן כלשהו ",
+        "firstNightReminderMD": "Show any player <i class=\"reminder-token\"></i>",
+        "otherNightReminder": "הראה שחקן עם סוג דמות שונה מהלילות הקודמים. ",
+        "otherNightReminderMD": "Show a player with a different character type to previously <i class=\"reminder-token\"></i>",
         "reminders": [
             "ראה תושב-עיירה",
             "ראה זר",
@@ -60,103 +83,150 @@
             "ראה שד",
             "ראה מטייל"
         ],
+        "reminderCopies": [
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
         "firstNight": 55,
-        "otherNight": 69,
+        "otherNight": 70,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "experimental",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/balloonist.png"
     },
     {
         "id": "he_IL_boomdandy",
         "name": "פצצאבאלה",
-        "ability": "אם הוציאו אותך להורג, כולם מתים חוץ מ3 שחקנים. דקה לאחר מכן, השחקן שהכי הרבה שחקנים מצביעים עליו מת.",
+        "ability": "אם הוציאו אותך להורג, כולם חוץ מ3 שחקנים מתים. דקה לאחר מכן, השחקן שהכי הרבה שחקנים מצביעים עליו מת.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": -1,
         "team": "minion",
+        "sao": 6,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/boomdandy.png"
     },
     {
         "id": "he_IL_bountyhunter",
         "name": "צייד ראשים",
-        "ability": "אתה מתחיל עם הידיעה ששחקן אחד הוא רע. אם השחקן שאתה יודע עליו מת, אתה לומד עוד דמות רעה במהלך הלילה. [תושב-עיירה אחד הוא רע]",
-        "firstNightReminder": "תצביע על שחקן רע אחד. תעיר את תושב-העיירה שהוא רע והראו לו את הקלף \"אתה\" וסמן לו אגודל כלפי מטה, הסימן שמראה שהוא רע.",
-        "otherNightReminder": "אם השחקן הרע הידוע מת, תצביע על שחקן רע אחר.",
+        "ability": "אתה מתחיל בידיעה ששחקן אחד הוא רע. אם השחקן שאתה יודע עליו מת, אתה לומד על שחקן רע נוסף במהלך הלילה. [תושב-עיירה אחד הוא רע]",
+        "firstNightReminder": "הצבע על השחקן ה'ידוע'.",
+        "firstNightReminderMD": "Point to the <b>KNOWN</b> player.",
+        "otherNightReminder": "אם השחקן ה'ידוע' מת היום או הלילה, הצבע על שחקן 'ידוע' חדש.",
+        "otherNightReminderMD": "If the <b>KNOWN</b> player died today or tonight, point to a new <b>KNOWN</b> player.",
         "reminders": [
             "ידוע"
         ],
-        "firstNight": 56,
-        "otherNight": 71,
+        "reminderCopies": [
+            1
+        ],
+        "firstNight": 57,
+        "otherNight": 72,
         "team": "townsfolk",
+        "sao": 1,
         "edition": "experimental",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bountyhunter.png"
     },
     {
         "id": "he_IL_damsel",
         "name": "עלמה",
-        "ability": "כל המשרתים יודעים שהעלמה במשחק. אם משרת מנחש אותך בפומבי (פעם אחת), הקבוצה שלך מפסידה.",
-        "firstNightReminder": "הער את כל המשרתים, הראה להם את אסימון \"הדמות הזו בחרה בך\" ואז את אסימון ה\"עלמה\".",
-        "otherNightReminder": "אם העלמה נבחרה על ידי הצייד, הער אותה והראה לה את אסימון \"את\" ואז אסימון של דמות שלא במשחק.",
+        "ability": "כל המשרתים יודעים שאת במשחק. אם משרת מנחש אותך בפומבי (פעם אחת), הקבוצה שלך מפסידה.",
+        "firstNightReminder": "הער כל משרת. הראה את אסימון העלה. החזר את המשרת לישון.",
+        "firstNightReminderMD": "Wake each Minion. Show the Damsel token. Put each Minion to sleep.",
+        "otherNightReminder": "אם העלמה נבחרה על ידי הצייד, הראה לה את קלף 'אתה' ואת אסימון הדמות החדשה שלה.",
+        "otherNightReminderMD": "If the Damsel was chosen by the Huntsman, show them the <b>YOU ARE</b> info token and their new character token.",
         "reminders": [
             "ניחוש בוזבז"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": 39,
-        "otherNight": 53,
+        "otherNight": 54,
         "team": "outsider",
+        "sao": 6,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/damsel.png"
     },
     {
         "id": "he_IL_drunk",
         "name": "שיכור",
-        "ability": "אתה לא יודע שאתה שיכור. אתה חושב שאתה תושב-עיירה, אבל אתה לא.",
+        "ability": "אתה לא יודע שאתה השיכור. אתה חושב שאתה תושב-עיירה, אבל אתה לא.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "שיכור"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": -1,
         "team": "outsider",
+        "sao": 6,
         "edition": "tb",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/drunk.png"
     },
     {
         "id": "he_IL_empath",
         "name": "בוחן לבבות",
         "ability": "בכל לילה, אתה לומד כמה מבין 2 השכנים החיים שלך הם רעים.",
-        "firstNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
-        "otherNightReminder": "הראה מספר עם האצבעות (0,1,2) שאומר כמה שכנים חיים רעים יש לבוחן הלבבות.",
+        "firstNightReminder": "סמן עם האצבעות.",
+        "firstNightReminderMD": "Give a finger signal.",
+        "otherNightReminder": "סמן עם האצבעות.",
+        "otherNightReminderMD": "Give a finger signal.",
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": 45,
-        "otherNight": 60,
+        "otherNight": 61,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/empath.png"
     },
     {
         "id": "he_IL_fearmonger",
-        "name": "מעורר הפחד",
-        "ability": "בכל לילה, תבחר שחקן. אם אתה מעמיד אותו להצבעה והוא מוצא להורג, הקבוצה שלו מפסידה. כל השחקנים יודעים כאשר בחרת שחקן חדש.",
-        "firstNightReminder": "מעורר הפחד מצביע על שחקן. תניח את אסימון הפחד ליד השחקן הנבחר ותודיע שנבחר שחקן חדש עם היכולת של מעורר הפחד.",
-        "otherNightReminder": "מעורר הפחד מצביע על שחקן. אם הוא בחר בשחקן שונה מהלילה הקודם, תניח את אסימון הפחד ליד השחקן הנבחר ותודיע שנבחר שחקן חדש עם היכולת של מעורר הפחד.",
+        "name": "מעורר פחד",
+        "ability": "בכל לילה, בחר שחקן. אם אתה מעמיד אותו להצבעה והוא מוצא להורג, הקבוצה שלו מפסידה. כל השחקנים יודעים אם אתה בוחר שחקן חדש.",
+        "firstNightReminder": "מעורר הפחד בוחר שחקן.  הכרז ש\"מעורר הפחד בחר שחקן\"",
+        "firstNightReminderMD": "The Fearmonger chooses a player. <i class=\"reminder-token\"></i> Declare that \"the Fearmonger has chosen a player.\"",
+        "otherNightReminder": "מעורר הפחד בוחר שחקן.  אם השחקן לא היה מסומן בתזכורת 'פחד', הכרז ש\"מעורר הפחד בחר שחקן\".",
+        "otherNightReminderMD": "The Fearmonger chooses a player. <i class=\"reminder-token\"></i> If the player wasn't already marked with the <b>FEAR</b> reminder, declare that \"the Fearmonger has chosen a player.\"",
         "reminders": [
             "פחד"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": 33,
         "otherNight": 23,
         "team": "minion",
+        "sao": 2,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fearmonger.png"
     },
     {
@@ -164,80 +234,116 @@
         "name": "גובלין",
         "ability": "אם אתה מודיע בפומבי שאתה הגובלין כשאתה מועמד להצבעה ואתה גם מוצא להורג באותו יום, הקבוצה שלך מנצחת.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "הודיע"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": -1,
         "team": "minion",
+        "sao": 6,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/goblin.png"
     },
     {
         "id": "he_IL_godfather",
         "name": "סנדק",
         "ability": "אתה מתחיל בידיעה של איזה זרים יש  במשחק. אם אחד מהם מת היום, תבחר שחקן הלילה: הוא מת. [-1 או +1 זר]",
-        "firstNightReminder": "תראה כל אסימון של זר שבמשחק לסנדק.",
-        "otherNightReminder": "אם זר מת היום: הסנדק מצביע על שחקן. השחקן הזה מת.",
+        "firstNightReminder": "הראה את אסימוני הדמות של כל הזרים במשחק.",
+        "firstNightReminderMD": "Show the character tokens of all in-play Outsiders.",
+        "otherNightReminder": "אם זר מת היום, הסנדק בוחר שחקן. ",
+        "otherNightReminderMD": "If an Outsider died today, the Godfather chooses a player. <i class=\"reminder-token\"></i>",
         "reminders": [
             "מת היום",
             "מת"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 28,
-        "otherNight": 44,
+        "otherNight": 45,
         "team": "minion",
+        "sao": 1,
         "edition": "bmr",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/godfather.png"
     },
     {
         "id": "he_IL_goon",
         "name": "בריון",
-        "ability": "בכל לילה, השחקן הראשון שבוחר אותך עם היכולת שלו הוא שיכור עד השחר. אתה עובר לקבוצה שלו.",
+        "ability": "בכל לילה, השחקן הראשון שבוחר אותך עם היכולת שלו הוא שיכור עד בין הערביים. אתה עובר לקבוצה שלו.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "שיכור"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": -1,
         "team": "outsider",
+        "sao": 2,
         "edition": "bmr",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/goon.png"
     },
     {
         "id": "he_IL_gossip",
-        "name": "רכלן",
-        "ability": "בכל יום, אתה רשאי לצאת בהצהרה פומבית. הלילה, אם היא נכונה, שחקן מת.",
+        "name": "רכלנית",
+        "ability": "בכל יום, את רשאית לצאת בהצהרה פומבית. הלילה, אם היא הייתה נכונה, שחקן מת.",
         "firstNightReminder": "",
-        "otherNightReminder": "אם ההצהרה הפומבית של הרכלן הייתה נכונה: תבחר שחקן שלא מוגן ממוות הלילה. הוא מת.",
+        "firstNightReminderMD": NaN,
+        "otherNightReminder": "אם הרכלנית אמורה להרוג שחקן, הוא מת. ",
+        "otherNightReminderMD": "If the Gossip is due to kill a player, they die. <i class=\"reminder-token\"></i>",
         "reminders": [
             "מת"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": -1,
-        "otherNight": 45,
+        "otherNight": 46,
         "team": "townsfolk",
+        "sao": 4,
         "edition": "bmr",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gossip.png"
     },
     {
         "id": "he_IL_huntsman",
         "name": "צייד",
-        "ability": "פעם אחת במשחק, בלילה, תבחר שחקן חי: אם בחרת בעלמה, היא הופכת להיות תושב-עיירה שלא במשחק. [+עלמה]",
-        "firstNightReminder": "הצייד מנדנד את ראשו לשלילה או מצביע על שחקן. אם הוא הצביע על העלמה, תעיר את השחקן המתאים ותראה לו את אסימון \"אתה\" ואסימון של דמות שלא נמצאת במשחק.",
-        "otherNightReminder": "הצייד מנדנד את ראשו לשלילה או מצביע על שחקן. אם הוא הצביע על העלמה, תעיר את השחקן המתאים ותראה לו את אסימון \"אתה\" ואסימון של דמות שלא נמצאת במשחק.",
+        "ability": "פעם אחת במשחק, בלילה, תבחר שחקן חי: אם בחרת בעלמה, היא הופכת להיות תושב-עיירה שלא במשחק. [+העלמה]",
+        "firstNightReminder": "הצייד עלול לבחור שחקן.  אם השחקן הזה היה העלמה: החזר את הצייד לישון. הער את העלמה והראה להם את קלף 'אתה' ואת אסימון הדמות החדשה שלהם.",
+        "firstNightReminderMD": "The Huntsman might choose a player. <i class=\"reminder-token\"></i> If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the <b>YOU ARE</b> info token and their new character token.",
+        "otherNightReminder": "הצייד עלול לבחור שחקן.  אם השחקן הזה היה העלמה: החזר את הצייד לישון. הער את העלמה והראה להם את קלף 'אתה' ואת אסימון הדמות החדשה שלהם.",
+        "otherNightReminderMD": "The Huntsman might choose a player. <i class=\"reminder-token\"></i> If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the <b>YOU ARE</b> info token and their new character token.",
         "reminders": [
             "אין יכולת"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": 38,
-        "otherNight": 52,
+        "otherNight": 53,
         "team": "townsfolk",
+        "sao": 5,
         "edition": "experimental",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/huntsman.png"
     },
     {
@@ -245,161 +351,233 @@
         "name": "לגיון",
         "ability": "בכל לילה*, שחקן עלול למות. הוצאות להורג נכשלות אם רק רעים הצביעו. אתה נחשב גם כמשרת. [רוב השחקנים הם הלגיון]",
         "firstNightReminder": "",
-        "otherNightReminder": "תבחר שחקן, הוא מת.",
+        "firstNightReminderMD": NaN,
+        "otherNightReminder": "שחקן עלול למות. ",
+        "otherNightReminderMD": "A player might die. <i class=\"reminder-token\"></i>",
         "reminders": [
             "מת",
             "עומד למות"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": -1,
         "otherNight": 30,
         "team": "demon",
+        "sao": 3,
         "edition": "experimental",
         "setup": true,
+        "tokenCopies": -1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/legion.png"
     },
     {
         "id": "he_IL_lilmonsta",
         "name": "מפלצונת",
-        "ability": "בכל לילה, המשרתים בוחרים מי שומר על אסימון המפלצונת והוא \"יהיה השד\". שחקן מת בכל לילה*. [+1 משרת]",
-        "firstNightReminder": "תעיר את כל המשרתים ביחד, ותן להם להצביע מי הם רוצים שישמור על המפלצונת.",
-        "otherNightReminder": "תעיר את כל המשרתים ביחד, ותן להם להצביע מי הם רוצים שישמור על המפלצונת. תבחר שחקן, הוא מת.",
+        "ability": "בכל לילה, המשרתים בוחרים מי השמרטף של אסימון המפלצונת והוא \"השד\". שחקן מת בכל לילה*. [+1 משרת]",
+        "firstNightReminder": "הער את כל המשרתים, הרשה להם לבחור שמרטף. ",
+        "firstNightReminderMD": "Wake all Minions, allow them to choose a babysitter <i class=\"reminder-token\"></i>",
+        "otherNightReminder": "הער את כל המשרתים, הרשה להם לבחור שמרטף.  שחקן עלול למות. ",
+        "otherNightReminderMD": "Wake all Minions, allow them to choose a babysitter <i class=\"reminder-token\"></i> A player might die <i class=\"reminder-token\"></i>",
         "reminders": [
             "השד",
             "מת"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 22,
-        "otherNight": 42,
+        "otherNight": 43,
         "team": "demon",
+        "sao": 2,
         "edition": "experimental",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lilmonsta.png"
     },
     {
         "id": "he_IL_mutant",
         "name": "מוטנט",
-        "ability": "אם אתה \"משתגע\" על זה שאתה זר, אתה עלול למות.",
+        "ability": "אם אתה \"משוגע\" שאתה זר, אתה עלול להיות מוצא להורג.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": -1,
         "team": "outsider",
+        "sao": 6,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mutant.png"
     },
     {
         "id": "he_IL_noble",
         "name": "אציל",
-        "ability": "אתה מתחיל בלדעת שלושה שחקנים, שרק אחד מהם הוא רע.",
-        "firstNightReminder": "תצביע ל3 שחקנים שהדמות של אחד מהם היא רעה, בסדר אקראי",
+        "ability": "אתה מתחיל בידיעה של 3 שחקנים, 1 ורק 1 מהם הוא רע.",
+        "firstNightReminder": "הצבע על שלושת השחקנים המסומנים 'יודע'",
+        "firstNightReminderMD": "Point to all three players marked <b>KNOW</b>.",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "נראה"
+        ],
+        "reminderCopies": [
+            3
         ],
         "firstNight": 54,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 1,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/noble.png"
     },
     {
         "id": "he_IL_philosopher",
         "name": "פילוסוף",
-        "ability": "פעם אחת במשחק, בלילה, תבחר דמות טובה: תקבל את היכולת שלה. אם הדמות הזו במשחק, השחקן שלה שיכור.",
-        "firstNightReminder": "הפילוסוף מנדנד את ראשו לשלילה או מצביע על דמות טובה בדף הדמות שלו. אם הוא בחר בדמות: תחליף את האסימון של הדמות הזו עם האסימון של הפילוסוף. אם הדמות הזו במשחק, שים את סממן ה\"שיכור\" על הדמות ואת סממן \"לא הפילוסוף\" על הפילוסוף.",
-        "otherNightReminder": "אם הפילוסוף עוד לא השתמש ביכולת שלו: הפילוסוף מנדנד את ראשו לשלילה או מצביע על דמות טובה בדף הדמות שלו. אם הוא בחר בדמות: תחליף את האסימון של הדמות הזו עם האסימון של הפילוסוף. אם הדמות הזו במשחק, שים את סממן ה\"שיכור\" על הדמות ואת סממן \"לא הפילוסוף\" על הפילוסוף.",
+        "ability": "פעם אחת במשחק, בלילה, בחר דמות טובה: אתה מקבל את היכולת שלה. אם הדמות הזו במשחק, היא שיכורה.",
+        "firstNightReminder": "הפילוסוף עלול לבחור דמות. אם נדרש, החלף את אסימון הדמות שלו.  ",
+        "firstNightReminderMD": "The Philosopher might choose a character. If necessary, swap their character token. <i class=\"reminder-token\"></i> <i class=\"reminder-token\"></i>",
+        "otherNightReminder": "הפילוסוף עלול לבחור דמות. אם נדרש, החלף את אסימון הדמות שלו.  ",
+        "otherNightReminderMD": "The Philosopher might choose a character. If necessary, swap their character token. <i class=\"reminder-token\"></i>",
         "reminders": [
             "שיכור",
             "הוא הפילוסוף"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 9,
         "otherNight": 8,
         "team": "townsfolk",
+        "sao": 5,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/philosopher.png"
     },
     {
         "id": "he_IL_pixie",
         "name": "פיה",
         "ability": "את מתחילה בידיעה של דמות תושב-עיירה אחת שבמשחק. אם את היית \"משוגעת\" שאת הדמות הזו, את מקבלת את היכולת שלה כשהיא מתה.",
-        "firstNightReminder": "תראה לפיה אסימון של דמות תושב-עיירה שנמצאת במשחק.",
+        "firstNightReminder": "הראה את אסימון תושב העיירה המסומן 'משוגע'",
+        "firstNightReminderMD": "Show the Townsfolk character token marked <b>MAD</b>.",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "משוגע",
             "יש יכולת"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 37,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 1,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pixie.png"
     },
     {
         "id": "he_IL_poisoner",
         "name": "מרעיל",
-        "ability": "בכל לילה, תבחר שחקן: הוא מורעל ללילה ויום אחד.",
-        "firstNightReminder": "המרעיל מצביע על שחקן. הוא מורעל.",
-        "otherNightReminder": "השחקן שהורעל בלילה הקודם כבר לא מורעל. המרעיל מצביע על שחקן. הוא מורעל.",
+        "ability": "בכל לילה, בחר שחקן: הוא מורעל עד בין הערביים.",
+        "firstNightReminder": "המרעיל בוחר שחקן. ",
+        "firstNightReminderMD": "The Poisoner chooses a player. <i class=\"reminder-token\"></i>",
+        "otherNightReminder": "המרעיל בוחר שחקן. ",
+        "otherNightReminderMD": "The Poisoner chooses a player. <i class=\"reminder-token\"></i>",
         "reminders": [
             "מורעל"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": 24,
         "otherNight": 13,
         "team": "minion",
+        "sao": 2,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/poisoner.png"
     },
     {
         "id": "he_IL_poppygrower",
         "name": "מגדל פרג",
-        "ability": "משרתים ושדים לא יודעים אחד על השני. אם אתה מת, הם ילמדו הלילה אחד על השני.",
-        "firstNightReminder": "אל תודיע למשרתים ולשד אחד על השני.",
-        "otherNightReminder": "אם מגדל הפרג מת, תודיע לשד ולמשרתים אחד על השני.",
+        "ability": "משרתים ושדים לא יודעים אחד על השני. אם אתה מת, הם ילמדו הלילה על השאר.",
+        "firstNightReminder": "אל תבצע את שלבי מידע משרתים ומידע שד. הער את השד, הראה את קלף 'הדמויות האלה לא במשחק' ו3 אסימוני דמויות טובות מחוץ למשחק.",
+        "firstNightReminderMD": "Do not do the Minion Info and Demon Info steps. Wake the Demon, show the <b>THESE CHARACTERS ARE NOT IN PLAY</b> info token and any three good character tokens that are not in play.",
+        "otherNightReminder": "אם מגדל הפרג מת היום או הלילה, הער את המשרתים הראה את קלף 'זה השד' והצבע על השד. החזר אותם לישון. הער את השד, הראה לו את קלף 'אלה המשרתים שלך' והצבע על המשרתים. החזר את השד לישון.",
+        "otherNightReminderMD": "If the Poppy Grower died today or tonight, wake the Minions, show the <b>THIS IS THE DEMON</b> info token and point to the Demon. Put them to sleep. Wake the Demon, show the <b>THESE ARE YOUR MINIONS</b> info token and point to the Minions. Put the Demon to sleep.",
         "reminders": [
             "רעים מתעוררים"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": 11,
         "otherNight": 9,
         "team": "townsfolk",
+        "sao": 6,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/poppygrower.png"
     },
     {
         "id": "he_IL_snakecharmer",
         "name": "מהפנט נחשים",
-        "ability": "בכל לילה, תבחר שחקן חי: אם בחרת בשד אתה מחליף דמויות וקבוצות איתו, ואז הוא מורעל.",
-        "firstNightReminder": "מהפנט הנחשים מצביע על שחקן. אם השחקן הזה הוא השד: תחליף את הדמויות והקבוצות של השד ושל מהפנט הנחשים. תעיר כל אחד מהם ותראה להם את הדמות והקבוצה החדשה שלהם. מהפנט הנחשים החדש מורעל.",
-        "otherNightReminder": "מהפנט הנחשים מצביע על שחקן. אם השחקן הזה הוא השד: תחליף את הדמויות והקבוצות של השד ושל מהפנט הנחשים. תעיר כל אחד מהם ותראה להם את הדמות והקבוצה החדשה שלהם. מהפנט הנחשים החדש מורעל.",
+        "ability": "בכל לילה, בחר שחקן חי: שד שנבחר מחליף איתך דמויות ושיוך, ואז הוא מורעל.",
+        "firstNightReminder": "מהפנט הנחשים בוחר שחקן. אם הוא בחר שד: הראה את קלף 'אתה' ואת אסימון השד. הראה אגודל כלפי מטה והחלף את אסימון מהפנט הנחשים עם אסימון השד. החזר את מהפנט הנחשים הישן לישון. הער את השד הישן. הראה את קלף 'אתה' ואת אסימון מהפנט הנחשים, והראה אגודל כלפי מעלה. ",
+        "firstNightReminderMD": "The Snake Charmer chooses a player. If they chose the Demon: Show the <b>YOU ARE</b> &amp; Demon tokens. Give a thumbs down. Swap the Snake Charmer &amp; Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the <b>YOU ARE</b> and Snake Charmer tokens &amp; give a thumbs up. <i class=\"reminder-token\"></i>",
+        "otherNightReminder": "מהפנט הנחשים בוחר שחקן. אם הוא בחר שד: הראה את קלף 'אתה' ואת אסימון השד. הראה אגודל כלפי מטה והחלף את אסימון מהפנט הנחשים עם אסימון השד. החזר את מהפנט הנחשים הישן לישון. הער את השד הישן. הראה את קלף 'אתה' ואת אסימון מהפנט הנחשים, והראה אגודל כלפי מעלה. ",
+        "otherNightReminderMD": "The Snake Charmer chooses a player. If they chose the Demon: Show the <b>YOU ARE</b> &amp; Demon tokens. Give a thumbs down. Swap the Snake Charmer &amp; Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the <b>YOU ARE</b> and Snake Charmer tokens &amp; give a thumbs up. <i class=\"reminder-token\"></i>",
         "reminders": [
             "מורעל"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": 27,
         "otherNight": 17,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/snakecharmer.png"
     },
     {
         "id": "he_IL_vortox",
         "name": "וורטוקס",
-        "ability": "בכל לילה*, תבחר שחקן: הוא מת. יכולות של תושבי-עיירה נותנות מידע שגוי. בכל יום, אם אף אחד לא הוצא להורג, הרעים מנצחים.",
+        "ability": "בכל לילה*, בחר שחקן: הוא מת. יכולות של תושבי-עיירה נותנות מידע שגוי. בכל יום, אם אף אחד לא הוצא להורג, הרעים מנצחים.",
         "firstNightReminder": "",
-        "otherNightReminder": "הוורטוקס מצביע על שחקן. הוא מת.",
+        "firstNightReminderMD": NaN,
+        "otherNightReminder": "הוורטוקס בוחר שחקן. ",
+        "otherNightReminderMD": "The Vortox chooses a player. <i class=\"reminder-token\"></i>",
         "reminders": [
             "מת"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": 38,
         "team": "demon",
+        "sao": 3,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vortox.png"
     }
 ]

@@ -1,0 +1,49 @@
+.section {
+    border-left: 5px solid;
+    margin: 2em;
+}
+
+.group-title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: "Papyrus";
+}
+
+.role {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+/* .ability,
+.name {
+    display: table-cell;
+    vertical-align: middle;
+} */
+
+
+.ability {
+    color: #000;
+}
+
+.townsfolk {
+    color: #4683c9;
+}
+
+.outsider {
+    color: #46c9c9;
+}
+
+.minion {
+    color: #f78503;
+}
+
+.demon {
+    color: #ff0000;
+}
+
+.image {
+    width: 3em;
+}

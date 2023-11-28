@@ -4,15 +4,22 @@
         "name": "Amnesiac",
         "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
         "firstNightReminder": "?",
+        "firstNightReminderMD": "?",
         "otherNightReminder": "?",
+        "otherNightReminderMD": "?",
         "reminders": [
             "?"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": 40,
-        "otherNight": 54,
+        "otherNight": 55,
         "team": "townsfolk",
+        "sao": 4,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/amnesiac.png"
     },
     {
@@ -20,15 +27,22 @@
         "name": "Apprentice",
         "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
         "firstNightReminder": "Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",
+        "firstNightReminderMD": "Show the Apprentice the <b>You are</b> card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's <b>Is the Apprentice</b> reminder by that character token.",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "Is the Apprentice"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": 5,
         "otherNight": -1,
-        "team": "traveller",
+        "team": "traveler",
+        "sao": 100,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/apprentice.png"
     },
     {
@@ -36,19 +50,30 @@
         "name": "Balloonist",
         "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
         "firstNightReminder": "Show any player",
+        "firstNightReminderMD": "Show any player <i class=\"reminder-token\"></i>",
         "otherNightReminder": "Show a player with a different character type to previously",
+        "otherNightReminderMD": "Show a player with a different character type to previously <i class=\"reminder-token\"></i>",
         "reminders": [
             "Seen Townsfolk",
             "Seen Outsider",
             "Seen Minion",
             "Seen Demon",
-            "Seen Traveller"
+            "Seen traveler"
+        ],
+        "reminderCopies": [
+            1,
+            1,
+            1,
+            1,
+            1
         ],
         "firstNight": 55,
-        "otherNight": 69,
+        "otherNight": 70,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "experimental",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/balloonist.png"
     },
     {
@@ -56,16 +81,24 @@
         "name": "Barista",
         "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which.",
         "firstNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+        "firstNightReminderMD": "Choose a player. <i class=\"reminder-token\"></i> wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
         "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+        "otherNightReminderMD": "Choose a player. <i class=\"reminder-token\"></i> wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
         "reminders": [
             "Sober & Healthy",
             "Ability twice"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 6,
         "otherNight": 3,
-        "team": "traveller",
+        "team": "traveler",
+        "sao": 100,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/barista.png"
     },
     {
@@ -73,13 +106,18 @@
         "name": "Beggar",
         "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment. You are sober & healthy.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": -1,
-        "team": "traveller",
+        "team": "traveler",
+        "sao": 100,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/beggar.png"
     },
     {
@@ -87,16 +125,24 @@
         "name": "Bone Collector",
         "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",
+        "otherNightReminderMD": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's <b>Has Ability</b> reminder by the chosen player's character token. <i class=\"reminder-token\"></i> (They may need to be woken tonight to use it.)",
         "reminders": [
             "No ability",
             "Has ability"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": -1,
         "otherNight": 4,
-        "team": "traveller",
+        "team": "traveler",
+        "sao": 100,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/bonecollector.png"
     },
     {
@@ -104,16 +150,24 @@
         "name": "Cannibal",
         "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "Poisoned",
             "Died today"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": -1,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 6,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cannibal.png"
     },
     {
@@ -121,15 +175,22 @@
         "name": "Cerenovus",
         "ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
         "firstNightReminder": "The Cerenovus chooses a player & a character. Put the Cerenovus to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token, the Cerenovus token, then the madness-character token.",
+        "firstNightReminderMD": "The Cerenovus chooses a player &amp; a character. <i class=\"reminder-token\"></i> Put the Cerenovus to sleep. Wake the target. Show the <b>THIS CHARACTER SELECTED YOU</b> token, the Cerenovus token, then the madness-character token.",
         "otherNightReminder": "The Cerenovus chooses a player & a character. Put the Cerenovus to sleep. Wake the target. Show the THIS CHARACTER SELECTED YOU token, the Cerenovus token, then the madness-character token.",
+        "otherNightReminderMD": "The Cerenovus chooses a player &amp; a character. <i class=\"reminder-token\"></i> Put the Cerenovus to sleep. Wake the target. Show the <b>THIS CHARACTER SELECTED YOU</b> token, the Cerenovus token, then the madness-character token.",
         "reminders": [
             "Mad"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": 32,
         "otherNight": 21,
         "team": "minion",
+        "sao": 2,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/cerenovus.png"
     },
     {
@@ -137,27 +198,37 @@
         "name": "Chef",
         "ability": "You start knowing how many pairs of evil players there are.",
         "firstNightReminder": "Give a finger signal.",
+        "firstNightReminderMD": "Give a finger signal.",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": 44,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 1,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/chef.png"
     },
     {
         "id": "en_GB_dreamer",
         "name": "Dreamer",
-        "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
+        "ability": "Each night, choose a player (not yourself or travelers): you learn 1 good and 1 evil character, 1 of which is correct.",
         "firstNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+        "firstNightReminderMD": "The Dreamer points to a player. Show 1 good &amp; 1 evil character token, 1 of which is their character.",
         "otherNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+        "otherNightReminderMD": "The Dreamer points to a player. Show 1 good &amp; 1 evil character token, 1 of which is their character.",
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": 50,
-        "otherNight": 63,
+        "otherNight": 64,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/dreamer.png"
     },
     {
@@ -165,15 +236,22 @@
         "name": "Drunk",
         "ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "Drunk"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": -1,
         "team": "outsider",
+        "sao": 6,
         "edition": "tb",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/drunk.png"
     },
     {
@@ -181,16 +259,24 @@
         "name": "Fang Gu",
         "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "The Fang Gu chooses a player. If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the YOU ARE and Fang Gu tokens & give a thumbs-down.",
+        "otherNightReminderMD": "The Fang Gu chooses a player. <i class=\"reminder-token\"></i> If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the <b>YOU ARE</b> and Fang Gu tokens &amp; give a thumbs-down. <i class=\"reminder-token\"></i>",
         "reminders": [
             "Dead",
             "Once"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": -1,
         "otherNight": 36,
         "team": "demon",
+        "sao": 3,
         "edition": "snv",
         "setup": true,
+        "tokenCopies": 2,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fanggu.png"
     },
     {
@@ -198,15 +284,22 @@
         "name": "Fortune Teller",
         "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
         "firstNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the RED HERRING).",
+        "firstNightReminderMD": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the <b>RED HERRING</b>).",
         "otherNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the RED HERRING).",
+        "otherNightReminderMD": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the <b>RED HERRING</b>).",
         "reminders": [
             "Red herring"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": 46,
-        "otherNight": 61,
+        "otherNight": 62,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/fortuneteller.png"
     },
     {
@@ -214,15 +307,22 @@
         "name": "Gambler",
         "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "The Gambler chooses a player & a character.",
+        "otherNightReminderMD": "The Gambler chooses a player &amp; a character. <i class=\"reminder-token\"></i>",
         "reminders": [
             "Dead"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": 16,
         "team": "townsfolk",
+        "sao": 3,
         "edition": "bmr",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/gambler.png"
     },
     {
@@ -230,16 +330,24 @@
         "name": "Godfather",
         "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [−1 or +1 Outsider]",
         "firstNightReminder": "Show the character tokens of all in-play Outsiders.",
+        "firstNightReminderMD": "Show the character tokens of all in-play Outsiders.",
         "otherNightReminder": "If an Outsider died today, the Godfather chooses a player.",
+        "otherNightReminderMD": "If an Outsider died today, the Godfather chooses a player. <i class=\"reminder-token\"></i>",
         "reminders": [
             "Died today",
             "Dead"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 28,
-        "otherNight": 44,
+        "otherNight": 45,
         "team": "minion",
+        "sao": 1,
         "edition": "bmr",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/godfather.png"
     },
     {
@@ -247,15 +355,22 @@
         "name": "Grandmother",
         "ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",
         "firstNightReminder": "Point to the grandchild player & show their character token.",
+        "firstNightReminderMD": "Point to the grandchild player &amp; show their character token.",
         "otherNightReminder": "If the grandchild was killed by the Demon, the Grandmother dies too.",
+        "otherNightReminderMD": "If the grandchild was killed by the Demon, the Grandmother dies too. <i class=\"reminder-token\"></i>",
         "reminders": [
             "Grandchild"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": 48,
-        "otherNight": 58,
+        "otherNight": 59,
         "team": "townsfolk",
+        "sao": 1,
         "edition": "bmr",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/grandmother.png"
     },
     {
@@ -263,15 +378,22 @@
         "name": "Harlot",
         "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
+        "otherNightReminderMD": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the <b>This character selected you</b> token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die. <i class=\"reminder-token\"></i> <i class=\"reminder-token\"></i>",
         "reminders": [
             "Dead"
         ],
+        "reminderCopies": [
+            2
+        ],
         "firstNight": -1,
         "otherNight": 6,
-        "team": "traveller",
+        "team": "traveler",
+        "sao": 100,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/harlot.png"
     },
     {
@@ -279,15 +401,22 @@
         "name": "Imp",
         "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "The Imp chooses a player. If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the YOU ARE token, then show the Imp token.",
+        "otherNightReminderMD": "The Imp chooses a player. <i class=\"reminder-token\"></i> If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the <b>YOU ARE</b> token, then show the Imp token.",
         "reminders": [
             "Dead"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": -1,
         "otherNight": 31,
         "team": "demon",
+        "sao": 3,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 4,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/imp.png"
     },
     {
@@ -295,16 +424,24 @@
         "name": "Investigator",
         "ability": "You start knowing that 1 of 2 players is a particular Minion.",
         "firstNightReminder": "Show the Minion character token. Point to both the MINION and WRONG players.",
+        "firstNightReminderMD": "Show the Minion character token. Point to both the <b>MINION</b> and <b>WRONG</b> players.",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "Minion",
             "Wrong"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 43,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 1,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/investigator.png"
     },
     {
@@ -312,17 +449,26 @@
         "name": "Lunatic",
         "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",
         "firstNightReminder": "If there are 7 or more players, wake the Lunatic: Show the THESE ARE YOUR MINIONS token. Point to any players. Show the THESE CHARACTERS ARE NOT IN PLAY token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the YOU ARE info token and the Demon token. Show the THIS PLAYER IS info token and the Lunatic token, then point to the Lunatic.",
+        "firstNightReminderMD": "If there are 7 or more players, wake the Lunatic: Show the <b>THESE ARE YOUR MINIONS</b> token. Point to any players. Show the <b>THESE CHARACTERS ARE NOT IN PLAY</b> token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the <b>YOU ARE</b> info token and the Demon token. Show the <b>THIS PLAYER IS</b> info token and the Lunatic token, then point to the Lunatic.",
         "otherNightReminder": "Do whatever needs to be done to simulate the Demon acting. Put the Lunatic to sleep. Wake the Demon. Show the Lunatic token & point to them, then their target(s).",
+        "otherNightReminderMD": "Do whatever needs to be done to simulate the Demon acting. <i class=\"reminder-token\"></i> Put the Lunatic to sleep. Wake the Demon. Show the Lunatic token &amp; point to them, then their target(s).",
         "reminders": [
             "Attack 1",
             "Attack 2",
             "Attack 3"
         ],
+        "reminderCopies": [
+            1,
+            1,
+            1
+        ],
         "firstNight": 15,
         "otherNight": 27,
         "team": "outsider",
+        "sao": 6,
         "edition": "bmr",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/lunatic.png"
     },
     {
@@ -330,13 +476,18 @@
         "name": "Mutant",
         "ability": "If you are “mad” about being an Outsider, you might be executed.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": -1,
         "team": "outsider",
+        "sao": 6,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/mutant.png"
     },
     {
@@ -344,16 +495,24 @@
         "name": "Philosopher",
         "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
         "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
+        "firstNightReminderMD": "The Philosopher might choose a character. If necessary, swap their character token. <i class=\"reminder-token\"></i> <i class=\"reminder-token\"></i>",
         "otherNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
+        "otherNightReminderMD": "The Philosopher might choose a character. If necessary, swap their character token. <i class=\"reminder-token\"></i>",
         "reminders": [
             "Drunk",
             "Is the Philosopher"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 9,
         "otherNight": 8,
         "team": "townsfolk",
+        "sao": 5,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/philosopher.png"
     },
     {
@@ -361,13 +520,18 @@
         "name": "Pit-Hag",
         "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the YOU ARE token & their new character token.",
+        "otherNightReminderMD": "The Pit-Hag chooses a player &amp; a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the <b>YOU ARE</b> token &amp; their new character token.",
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": 22,
         "team": "minion",
+        "sao": 3,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/pithag.png"
     },
     {
@@ -375,13 +539,18 @@
         "name": "Ravenkeeper",
         "ability": "If you die at night, you are woken to choose a player: you learn their character.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",
+        "otherNightReminderMD": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
-        "otherNight": 59,
+        "otherNight": 60,
         "team": "townsfolk",
+        "sao": 6,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/ravenkeeper.png"
     },
     {
@@ -389,13 +558,18 @@
         "name": "Recluse",
         "ability": "You might register as evil & as a Minion or Demon, even if dead.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": -1,
         "team": "outsider",
+        "sao": 6,
         "edition": "tb",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/recluse.png"
     },
     {
@@ -403,13 +577,18 @@
         "name": "Savant",
         "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [],
+        "reminderCopies": [],
         "firstNight": -1,
         "otherNight": -1,
         "team": "townsfolk",
+        "sao": 4,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/savant.png"
     },
     {
@@ -417,15 +596,22 @@
         "name": "Snake Charmer",
         "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
         "firstNightReminder": "The Snake Charmer chooses a player. If they chose the Demon: Show the YOU ARE & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the YOU ARE and Snake Charmer tokens & give a thumbs up.",
+        "firstNightReminderMD": "The Snake Charmer chooses a player. If they chose the Demon: Show the <b>YOU ARE</b> &amp; Demon tokens. Give a thumbs down. Swap the Snake Charmer &amp; Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the <b>YOU ARE</b> and Snake Charmer tokens &amp; give a thumbs up. <i class=\"reminder-token\"></i>",
         "otherNightReminder": "The Snake Charmer chooses a player. If they chose the Demon: Show the YOU ARE & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the YOU ARE and Snake Charmer tokens & give a thumbs up.",
+        "otherNightReminderMD": "The Snake Charmer chooses a player. If they chose the Demon: Show the <b>YOU ARE</b> &amp; Demon tokens. Give a thumbs down. Swap the Snake Charmer &amp; Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the <b>YOU ARE</b> and Snake Charmer tokens &amp; give a thumbs up. <i class=\"reminder-token\"></i>",
         "reminders": [
             "Poisoned"
+        ],
+        "reminderCopies": [
+            1
         ],
         "firstNight": 27,
         "otherNight": 17,
         "team": "townsfolk",
+        "sao": 2,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/snakecharmer.png"
     },
     {
@@ -433,15 +619,22 @@
         "name": "Sweetheart",
         "ability": "When you die, 1 player is drunk from now on.",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now.",
+        "otherNightReminderMD": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now. <i class=\"reminder-token\"></i>",
         "reminders": [
             "Drunk"
         ],
+        "reminderCopies": [
+            1
+        ],
         "firstNight": -1,
-        "otherNight": 48,
+        "otherNight": 49,
         "team": "outsider",
+        "sao": 6,
         "edition": "snv",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/sweetheart.png"
     },
     {
@@ -449,17 +642,26 @@
         "name": "Vigormortis",
         "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. [−1 Outsider]",
         "firstNightReminder": "",
+        "firstNightReminderMD": NaN,
         "otherNightReminder": "The Vigormortis chooses a player. If that player is a Minion, poison a neighboring Townsfolk.",
+        "otherNightReminderMD": "The Vigormortis chooses a player. <i class=\"reminder-token\"></i> If that player is a Minion, poison a neighboring Townsfolk. <i class=\"reminder-token\"></i> <i class=\"reminder-token\"></i>",
         "reminders": [
             "Dead",
             "Has ability",
             "Poisoned"
         ],
+        "reminderCopies": [
+            1,
+            3,
+            3
+        ],
         "firstNight": -1,
         "otherNight": 39,
         "team": "demon",
+        "sao": 3,
         "edition": "snv",
         "setup": true,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/vigormortis.png"
     },
     {
@@ -467,16 +669,24 @@
         "name": "Widow",
         "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
         "firstNightReminder": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player.",
+        "firstNightReminderMD": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player. <i class=\"reminder-token\"></i>",
         "otherNightReminder": "",
+        "otherNightReminderMD": NaN,
         "reminders": [
             "Poisoned",
             "Knows"
         ],
+        "reminderCopies": [
+            1,
+            1
+        ],
         "firstNight": 25,
         "otherNight": -1,
         "team": "minion",
+        "sao": 1,
         "edition": "experimental",
         "setup": false,
+        "tokenCopies": 1,
         "image": "https://raw.githubusercontent.com/taloy42/BotC-Scripts/main/Resources/Icons/widow.png"
     }
 ]
